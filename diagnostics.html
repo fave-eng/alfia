@@ -1,0 +1,42 @@
+<!doctype html><html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Диагностика · Альфия</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#153246;background:#f4f8fa}*{box-sizing:border-box}body{margin:0}.wrap{max-width:960px;margin:0 auto;padding:24px 16px 60px}header{background:#0a4c5c;color:#fff;padding:28px;border-radius:24px;margin:12px 0 20px}h1{margin:6px 0 12px}p{line-height:1.55}.card{background:white;border:1px solid #d9e5e9;border-radius:18px;padding:20px;margin:12px 0;box-shadow:0 5px 20px #1032420b}.checks{display:grid;gap:10px}button{background:#126a80;color:white;border:0;border-radius:12px;padding:14px 20px;font-weight:700;cursor:pointer}button:disabled{opacity:.6}.item{border:1px solid #dde8ec;background:#f8fbfc;border-radius:12px;padding:13px}.item.ok{border-color:#b5e3d8}.item.bad{border-color:#ebc6c6}.item.warn{border-color:#f4dca5}.item strong{display:block;margin-bottom:5px}.status{color:#657884}.ok .status{color:#17654b}.bad .status{color:#a32e39}pre{padding:14px;background:#eaf3f6;border-radius:12px;overflow:auto;white-space:pre-wrap;font-size:13px}.tools{display:flex;flex-wrap:wrap;gap:12px}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script><script src="config.js" defer></script></head>
+<body><main class="wrap"><header><p>Служебная страница · отдельная ученица</p><h1>Диагностика Альфии</h1><p>Проверяет файлы и доступ к облачному хранилищу. Не удаляет данные и не отправляет сообщения в Telegram.</p></header>
+<div class="tools"><button id="run">Запустить проверку</button><button id="copy" type="button">Скопировать отчёт</button><a href="index.html" style="align-self:center;color:#136a82">Открыть сайт</a></div>
+<section class="card"><h2>Результаты</h2><div class="checks" id="checks"><p>Нажми «Запустить проверку».</p></div></section>
+<section class="card"><h2>Технический отчёт</h2><pre id="report">Проверка не запускалась.</pre></section></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const output=document.getElementById('checks'), report=document.getElementById('report'), run=document.getElementById('run');
+ let items=[];
+ const add=(name,status,detail)=>{items.push({name,status,detail});const e=document.createElement('div');e.className='item '+status;const title=document.createElement('strong');title.textContent=({ok:'✓ ',bad:'✗ ',warn:'! '})[status]+name;const d=document.createElement('div');d.className='status';d.textContent=detail;e.append(title,d);output.append(e)};
+ run.onclick=async()=>{
+ run.disabled=true;output.textContent='';items=[];
+ const config=window.APP_CONFIG||{},sid=config.student?.id,url=config.supabase?.url,key=config.supabase?.anonKey;
+ add('config.js',sid==='alfiya'?'ok':'bad',sid==='alfiya'?'student_id = alfiya':'Ожидается student_id = alfiya');
+ add('Курс',config.student?.level==='A1'?'ok':'bad',`${config.student?.level||'?'} · ${config.student?.textbook||'?'}`);
+ for(const path of ['data/lessons/lesson-1.json','data/grammar-data.js','data/vocabulary-data.js']){
+  try{const r=await fetch(path,{cache:'no-store'});add(path,r.ok?'ok':'bad',`HTTP ${r.status}`)}catch(e){add(path,'bad',String(e))}
+ }
+ if(!window.supabase?.createClient) add('Supabase SDK','warn','Библиотека не загрузилась. Проверь интернет/CDN.');
+ else if(!url||!key) add('Supabase config','bad','Нет URL или публичного ключа');
+ else{
+  try{
+   const db=window.supabase.createClient(url,key,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
+   for(const [name,table] of Object.entries(config.supabase.tables||{})){
+    const {data,error}=await db.from(table).select('*').eq('student_id','alfiya').limit(1);
+    add('Supabase / '+name,error?'bad':'ok',error?`${error.code||'ERROR'} · ${error.message}`:`Доступно. Записей в выборке: ${(data||[]).length}`);
+   }
+   const func=config.features?.telegramFunction||'notify-alfiya-telegram';
+   try{const response=await fetch(url.replace(/\/$/,'')+'/functions/v1/'+func,{method:'POST',headers:{'content-type':'application/json',apikey:key,authorization:'Bearer '+key},body:JSON.stringify({eventType:'diagnostics',studentId:'alfiya'})}); const json=await response.json().catch(()=>({})); add('Edge Function / '+func,response.ok&&json.ok?'ok':'warn',`HTTP ${response.status}; версия ${json.version||'недоступна'}; бот ${json.telegramConfigured===true?'configured':json.telegramConfigured===false?'not configured':'unknown'}`)}catch(e){add('Edge Function','warn',String(e))}
+  }catch(e){add('Supabase','bad',String(e))}
+ }
+ report.textContent=JSON.stringify({studentId:'alfiya',runAt:new Date().toISOString(),checks:items},null,2);
+ run.disabled=false;
+ };
+ document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.writeText(report.textContent);document.getElementById('copy').textContent='Скопировано'}catch{document.getElementById('copy').textContent='Не удалось скопировать'}};
+});
+</script></body></html>

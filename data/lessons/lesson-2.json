@@ -1,0 +1,18 @@
+{
+  "id": "lesson-2",
+  "number": 2,
+  "title": "1B Two jobs",
+  "subtitle": "Speakout A1 · Jobs and be with he / she / it",
+  "status": "draft",
+  "vocabularyId": "vocab-lesson-2",
+  "grammarIds": [
+    "grammar-be-he-she-it"
+  ],
+  "publishedAt": "",
+  "totalPoints": 0,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": []
+}

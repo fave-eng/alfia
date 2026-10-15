@@ -1,0 +1,5 @@
+# This project ID comes from the Supabase URL used by the uploaded Kristina site.
+project_id = "zqzgarvmpqqqaobeicpc"
+
+[functions.notify-alfiya-telegram]
+verify_jwt = false
