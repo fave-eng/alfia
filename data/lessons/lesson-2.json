@@ -6,7 +6,8 @@
   "status": "available",
   "vocabularyId": "vocab-lesson-2",
   "grammarIds": [
-    "grammar-be-he-she-it"
+    "grammar-be-he-she-it",
+    "grammar-a-an"
   ],
   "publishedAt": "2026-10-15",
   "totalPoints": 51,
@@ -808,7 +809,8 @@
           ]
         }
       ],
-      "hideAnswersOnError": true
+      "hideAnswersOnError": true,
+      "audio": "audio/SO3_A1_WB_1C_Audio_1_09.mp3"
     }
   ]
 }

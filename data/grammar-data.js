@@ -229,7 +229,7 @@ window.GRAMMAR_DATA = [
   {
     "id": "grammar-be-he-she-it",
     "order": 2,
-    "title": "Present simple be: he, she, it (+ a/an)",
+    "title": "Present simple be: he, she, it",
     "level": "A1",
     "status": "available",
     "publishedAt": "2026-10-15",
@@ -239,8 +239,8 @@ window.GRAMMAR_DATA = [
     "attempts": 0,
     "lockOnPass": true,
     "revealAnswersOnError": false,
-    "explanation": "He / she / it + is: утверждения, вопросы, краткие ответы и a/an перед профессиями.",
-    "formula": "He / She / It + is · is not · Is he / she / it …?",
+    "explanation": "Формы is, isn’t, he’s, she’s, it’s в утверждениях, отрицаниях, вопросах и кратких ответах.",
+    "formula": "He / She / It + is · He / She / It + is not · Is + he / she / it …?",
     "glanceCards": [],
     "anchorLinks": [],
     "miniRules": [],
@@ -306,55 +306,47 @@ window.GRAMMAR_DATA = [
         ]
       },
       {
-        "id": "a-an-occupations",
+        "id": "short-answers-with-be",
         "type": "exercise",
-        "title": "Jobs: a or an?",
-        "difficulty": "Build a sentence",
-        "instructions": "Choose a or an. Think about the first sound of the following word.",
+        "title": "Complete short answers",
+        "difficulty": "Use the correct form",
+        "instructions": "Write the missing form of be. Do not use contractions in positive short answers.",
         "items": [
           {
             "id": "1",
             "number": 1,
-            "input": "select",
-            "prompt": "He is ___ actor.",
-            "options": [
-              "a",
-              "an"
-            ],
-            "answer": 1
+            "input": "text",
+            "prompt": "Is he a teacher? — Yes, he ___.",
+            "answer": "is"
           },
           {
             "id": "2",
             "number": 2,
-            "input": "select",
-            "prompt": "She’s ___ nurse.",
-            "options": [
-              "a",
-              "an"
-            ],
-            "answer": 0
+            "input": "text",
+            "prompt": "Is she a singer? — No, she ___.",
+            "answer": "isn’t",
+            "acceptedAnswers": [
+              "isn’t",
+              "is not"
+            ]
           },
           {
             "id": "3",
             "number": 3,
-            "input": "select",
-            "prompt": "Rob is ___ office worker.",
-            "options": [
-              "a",
-              "an"
-            ],
-            "answer": 1
+            "input": "text",
+            "prompt": "Is it in Rome? — Yes, it ___.",
+            "answer": "is"
           },
           {
             "id": "4",
             "number": 4,
-            "input": "select",
-            "prompt": "Sandra is ___ student.",
-            "options": [
-              "a",
-              "an"
-            ],
-            "answer": 0
+            "input": "text",
+            "prompt": "Is Rob from London? — No, he ___.",
+            "answer": "isn’t",
+            "acceptedAnswers": [
+              "isn’t",
+              "is not"
+            ]
           }
         ]
       },
@@ -470,6 +462,227 @@ window.GRAMMAR_DATA = [
         ]
       }
     ],
-    "guideHtml": "<div class=\"g1-course\">\n<article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Unit 1B</span><h2>Be: he, she, it</h2>\n<p>В прошлом уроке мы говорили <strong>I am</strong> и <strong>you are</strong>. Теперь мы описываем <strong>другого человека</strong> или <strong>предмет / место</strong>. Для <em>he, she, it</em> нужна форма <strong>is</strong>.</p></article>\n<nav class=\"g1-navigation\" aria-label=\"Разделы объяснения\"><a href=\"#b1-meaning\">01 · Значение</a><a href=\"#b1-statements\">02 · Утверждения</a><a href=\"#b1-negative\">03 · Отрицания</a><a href=\"#b1-questions\">04 · Вопросы</a><a href=\"#b1-articles\">05 · A / An</a><a href=\"#b1-comparison\">06 · Сравнение</a><a href=\"#b1-errors\">07 · Ошибки</a><a href=\"#grammar-practice-section\">Практика</a></nav>\n<section class=\"g1-section\" id=\"b1-meaning\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>О ком или о чём мы говорим?</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Подлежащее</th><th>Кого / что обозначает</th><th>Пример</th></tr></thead><tbody><tr><td><strong>He</strong> — он</td><td>мужчина или мальчик</td><td>He <strong>is</strong> a doctor.</td></tr><tr><td><strong>She</strong> — она</td><td>женщина или девочка</td><td>She <strong>is</strong> an artist.</td></tr><tr><td><strong>It</strong> — оно / это</td><td>предмет, место, здание и др.</td><td>The Colosseum? It <strong>is</strong> in Rome.</td></tr></tbody></table></div><p>Имя человека тоже требует <strong>is</strong>: <em>Kasia is a doctor.</em> Мы можем заменить <em>Kasia</em> на <em>she</em>, но не меняем форму глагола: <em>She is a doctor.</em></p><div class=\"g1-note\"><strong>Обратите внимание:</strong> <em>it</em> не используем вместо <em>he / she</em>, когда в обычной ситуации говорим о знакомом человеке. <em>It’s in Rome</em> относится к зданию или месту, а не к мужчине или женщине.</div></section>\n<section class=\"g1-section\" id=\"b1-statements\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Утверждения</h3></div><div class=\"g1-scheme\"><span class=\"g1-token g1-subject\">He / She / It</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">is</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">информация</span></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Полная форма</th><th>Сокращение</th></tr></thead><tbody><tr><td>He <strong>is</strong> a teacher.</td><td><strong>He’s</strong> a teacher.</td></tr><tr><td>She <strong>is</strong> from Beijing.</td><td><strong>She’s</strong> from Beijing.</td></tr><tr><td>It <strong>is</strong> in London.</td><td><strong>It’s</strong> in London.</td></tr></tbody></table></div><p>В обычной разговорной речи <em>he’s / she’s / it’s</em> естественны. Апостроф заменяет пропущенную букву в <em>is</em>. Имена также могут соединяться с <em>’s</em>: <em>Jack’s a student</em>, но это сокращение нельзя путать с притяжательным <em>Jack’s job</em> («работа Джека»).</p></section>\n<section class=\"g1-section\" id=\"b1-negative\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Отрицания</h3></div><div class=\"g1-scheme\"><span class=\"g1-token\">He / She / It</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">is</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-n\">not</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">информация</span></div><div class=\"g1-grid\"><div class=\"g1-sentence\"><span class=\"g1-name\">Полная форма</span><div class=\"g1-english\">She <strong>is not</strong> a nurse.</div><small>Она не медсестра.</small></div><div class=\"g1-sentence\"><span class=\"g1-name\">Два нормальных сокращения</span><div class=\"g1-english\">She <strong>isn’t</strong> a nurse.</div><div class=\"g1-english\">She<strong>’s not</strong> a nurse.</div><small>Оба варианта правильные.</small></div></div><p>Не ставим <em>not</em> прямо после <em>she</em> без глагола: <span class=\"g1-wrong\">She not a nurse.</span> → <span class=\"g1-right\">She isn’t a nurse.</span></p></section>\n<section class=\"g1-section\" id=\"b1-questions\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Вопросы и короткие ответы</h3></div><p>В общем вопросе <strong>is</strong> выходит перед подлежащим. Сравните одинаковую информацию:</p><div class=\"g1-example-flow\"><div><small>Утверждение</small><span class=\"g1-english\">He <strong>is</strong> a taxi driver.</span></div><div><small>Вопрос</small><span class=\"g1-english\"><strong>Is</strong> he a taxi driver?</span></div></div><div class=\"g1-scheme\"><span class=\"g1-token g1-token-v\">Is</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">he / she / it</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">информация?</span></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Вопрос</th><th>Да</th><th>Нет</th></tr></thead><tbody><tr><td>Is <strong>he</strong> a teacher?</td><td>Yes, <strong>he is.</strong></td><td>No, <strong>he isn’t.</strong></td></tr><tr><td>Is <strong>she</strong> from Poland?</td><td>Yes, <strong>she is.</strong></td><td>No, <strong>she isn’t.</strong></td></tr><tr><td>Is <strong>it</strong> in Rome?</td><td>Yes, <strong>it is.</strong></td><td>No, <strong>it isn’t.</strong></td></tr></tbody></table></div><div class=\"g1-note\"><strong>Положительный короткий ответ:</strong> <em>Yes, he is.</em>, но не <span class=\"g1-wrong\">Yes, he’s.</span>. Сокращения в конце утвердительного краткого ответа стандартно не используют.</div><p>Если спрашиваем конкретную информацию, добавляем вопросительное слово: <strong>Where is</strong> Sophie from? <strong>What is</strong> Jack’s job? = <strong>What’s</strong> Jack’s job?</p></section>\n<section class=\"g1-section\" id=\"b1-articles\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Почему a doctor, но an artist?</h3></div><p>Перед профессией, обозначенной <strong>исчисляемым существительным в единственном числе</strong>, обычно нужен артикль: <em>He’s a doctor</em>, <em>She’s an artist</em>. Выбор зависит от <strong>следующего звука</strong>, не только от первой буквы.</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Артикль</th><th>Следующий звук</th><th>Примеры</th></tr></thead><tbody><tr><td><strong>a</strong></td><td>согласный</td><td>a nurse · a taxi driver · a businessperson</td></tr><tr><td><strong>an</strong></td><td>гласный</td><td>an artist · an actor · an office worker</td></tr></tbody></table></div><div class=\"g1-compare\"><div class=\"g1-compare-item\"><h4>Профессия</h4><span class=\"g1-english\">She’s <strong>a doctor.</strong></span><p>Существительное: обычно нужен <em>a/an</em>.</p></div><div class=\"g1-compare-item\"><h4>Национальность как прилагательное</h4><span class=\"g1-english\">She’s <strong>British.</strong></span><p>Здесь <em>British</em> — прилагательное, без артикля.</p></div></div><p>Человек может быть <strong>an American</strong> (существительное) или <strong>American</strong> (прилагательное). Это не противоречие: роль слова разная. На уровне этого урока запомни в первую очередь <em>She’s American</em> и <em>She’s a doctor</em>.</p></section>\n<section class=\"g1-section\" id=\"b1-comparison\"><div class=\"g1-section-head\"><span class=\"g1-num\">06</span><h3>Сравним I / you и he / she / it</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто?</th><th>Утверждение</th><th>Отрицание</th><th>Вопрос</th></tr></thead><tbody><tr><td>I</td><td>I <strong>am</strong> an artist.</td><td>I’m not an artist.</td><td>Am I an artist?</td></tr><tr><td>You</td><td>You <strong>are</strong> a student.</td><td>You aren’t a student.</td><td>Are you a student?</td></tr><tr><td>He</td><td>He <strong>is</strong> a waiter.</td><td>He isn’t a waiter.</td><td>Is he a waiter?</td></tr><tr><td>She</td><td>She <strong>is</strong> a nurse.</td><td>She isn’t a nurse.</td><td>Is she a nurse?</td></tr><tr><td>It</td><td>It <strong>is</strong> in Italy.</td><td>It isn’t in Italy.</td><td>Is it in Italy?</td></tr></tbody></table></div><p>В каждом вопросе именно форма <em>be</em> меняется местами с подлежащим. Не добавляем <em>do / does</em> к вопросам с обычным <em>be</em>.</p></section>\n<section class=\"g1-section\" id=\"b1-errors\"><div class=\"g1-section-head\"><span class=\"g1-num\">07</span><h3>Типичные ошибки</h3></div><ul class=\"g1-contrast\"><li><span class=\"g1-wrong\">She are a doctor.</span> → <span class=\"g1-right\">She is a doctor.</span> <small>С she нужна форма is.</small></li><li><span class=\"g1-wrong\">He not a teacher.</span> → <span class=\"g1-right\">He isn’t a teacher.</span> <small>Нужен глагол be.</small></li><li><span class=\"g1-wrong\">He is a driver?</span> → <span class=\"g1-right\">Is he a driver?</span> <small>В нейтральном общем вопросе is ставим первым.</small></li><li><span class=\"g1-wrong\">She’s an nurse.</span> → <span class=\"g1-right\">She’s a nurse.</span> <small>Следующий звук согласный.</small></li><li><span class=\"g1-wrong\">Yes, she’s.</span> → <span class=\"g1-right\">Yes, she is.</span> <small>Не сокращаем положительный короткий ответ.</small></li><li><span class=\"g1-wrong\">Where Sophie is from?</span> → <span class=\"g1-right\">Where is Sophie from?</span> <small>Порядок вопроса.</small></li></ul></section>\n</div>"
+    "guideHtml": "<div class=\"g1-course\">\n<article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Unit 1B · Grammar 1</span><h2>Be: he, she, it</h2>\n<p>В прошлом уроке мы говорили <strong>I am</strong> и <strong>you are</strong>. Теперь мы описываем <strong>другого человека</strong> или <strong>предмет / место</strong>. Для <em>he, she, it</em> нужна форма <strong>is</strong>.</p></article>\n<nav class=\"g1-navigation\" aria-label=\"Разделы объяснения\"><a href=\"#b1-meaning\">01 · Значение</a><a href=\"#b1-statements\">02 · Утверждения</a><a href=\"#b1-negative\">03 · Отрицания</a><a href=\"#b1-questions\">04 · Вопросы</a><a href=\"#b1-comparison\">05 · Сравнение</a><a href=\"#b1-errors\">06 · Ошибки</a><a href=\"#grammar-practice-section\">Практика</a></nav>\n<section class=\"g1-section\" id=\"b1-meaning\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>О ком или о чём мы говорим?</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Подлежащее</th><th>Кого / что обозначает</th><th>Пример</th></tr></thead><tbody><tr><td><strong>He</strong> — он</td><td>мужчина или мальчик</td><td>He <strong>is</strong> a doctor.</td></tr><tr><td><strong>She</strong> — она</td><td>женщина или девочка</td><td>She <strong>is</strong> an artist.</td></tr><tr><td><strong>It</strong> — оно / это</td><td>предмет, место, здание и др.</td><td>The Colosseum? It <strong>is</strong> in Rome.</td></tr></tbody></table></div><p>Имя человека тоже требует <strong>is</strong>: <em>Kasia is a doctor.</em> Мы можем заменить <em>Kasia</em> на <em>she</em>, но не меняем форму глагола: <em>She is a doctor.</em></p><div class=\"g1-note\"><strong>Обратите внимание:</strong> <em>it</em> не используем вместо <em>he / she</em>, когда в обычной ситуации говорим о знакомом человеке. <em>It’s in Rome</em> относится к зданию или месту, а не к мужчине или женщине.</div></section>\n<section class=\"g1-section\" id=\"b1-statements\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Утверждения</h3></div><div class=\"g1-scheme\"><span class=\"g1-token g1-subject\">He / She / It</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">is</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">информация</span></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Полная форма</th><th>Сокращение</th></tr></thead><tbody><tr><td>He <strong>is</strong> a teacher.</td><td><strong>He’s</strong> a teacher.</td></tr><tr><td>She <strong>is</strong> from Beijing.</td><td><strong>She’s</strong> from Beijing.</td></tr><tr><td>It <strong>is</strong> in London.</td><td><strong>It’s</strong> in London.</td></tr></tbody></table></div><p>В обычной разговорной речи <em>he’s / she’s / it’s</em> естественны. Апостроф заменяет пропущенную букву в <em>is</em>. Имена также могут соединяться с <em>’s</em>: <em>Jack’s a student</em>, но это сокращение нельзя путать с притяжательным <em>Jack’s job</em> («работа Джека»).</p></section>\n<section class=\"g1-section\" id=\"b1-negative\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Отрицания</h3></div><div class=\"g1-scheme\"><span class=\"g1-token\">He / She / It</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">is</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-n\">not</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">информация</span></div><div class=\"g1-grid\"><div class=\"g1-sentence\"><span class=\"g1-name\">Полная форма</span><div class=\"g1-english\">She <strong>is not</strong> a nurse.</div><small>Она не медсестра.</small></div><div class=\"g1-sentence\"><span class=\"g1-name\">Два нормальных сокращения</span><div class=\"g1-english\">She <strong>isn’t</strong> a nurse.</div><div class=\"g1-english\">She<strong>’s not</strong> a nurse.</div><small>Оба варианта правильные.</small></div></div><p>Не ставим <em>not</em> прямо после <em>she</em> без глагола: <span class=\"g1-wrong\">She not a nurse.</span> → <span class=\"g1-right\">She isn’t a nurse.</span></p></section>\n<section class=\"g1-section\" id=\"b1-questions\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Вопросы и короткие ответы</h3></div><p>В общем вопросе <strong>is</strong> выходит перед подлежащим. Сравните одинаковую информацию:</p><div class=\"g1-example-flow\"><div><small>Утверждение</small><span class=\"g1-english\">He <strong>is</strong> a taxi driver.</span></div><div><small>Вопрос</small><span class=\"g1-english\"><strong>Is</strong> he a taxi driver?</span></div></div><div class=\"g1-scheme\"><span class=\"g1-token g1-token-v\">Is</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">he / she / it</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">информация?</span></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Вопрос</th><th>Да</th><th>Нет</th></tr></thead><tbody><tr><td>Is <strong>he</strong> a teacher?</td><td>Yes, <strong>he is.</strong></td><td>No, <strong>he isn’t.</strong></td></tr><tr><td>Is <strong>she</strong> from Poland?</td><td>Yes, <strong>she is.</strong></td><td>No, <strong>she isn’t.</strong></td></tr><tr><td>Is <strong>it</strong> in Rome?</td><td>Yes, <strong>it is.</strong></td><td>No, <strong>it isn’t.</strong></td></tr></tbody></table></div><div class=\"g1-note\"><strong>Положительный короткий ответ:</strong> <em>Yes, he is.</em>, но не <span class=\"g1-wrong\">Yes, he’s.</span>. Сокращения в конце утвердительного краткого ответа стандартно не используют.</div><p>Если спрашиваем конкретную информацию, добавляем вопросительное слово: <strong>Where is</strong> Sophie from? <strong>What is</strong> Jack’s job? = <strong>What’s</strong> Jack’s job?</p></section>\n\n<section class=\"g1-section\" id=\"b1-comparison\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Сравним I / you и he / she / it</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто?</th><th>Утверждение</th><th>Отрицание</th><th>Вопрос</th></tr></thead><tbody><tr><td>I</td><td>I <strong>am</strong> an artist.</td><td>I’m not an artist.</td><td>Am I an artist?</td></tr><tr><td>You</td><td>You <strong>are</strong> a student.</td><td>You aren’t a student.</td><td>Are you a student?</td></tr><tr><td>He</td><td>He <strong>is</strong> a waiter.</td><td>He isn’t a waiter.</td><td>Is he a waiter?</td></tr><tr><td>She</td><td>She <strong>is</strong> a nurse.</td><td>She isn’t a nurse.</td><td>Is she a nurse?</td></tr><tr><td>It</td><td>It <strong>is</strong> in Italy.</td><td>It isn’t in Italy.</td><td>Is it in Italy?</td></tr></tbody></table></div><p>В каждом вопросе именно форма <em>be</em> меняется местами с подлежащим. Не добавляем <em>do / does</em> к вопросам с обычным <em>be</em>.</p></section>\n<section class=\"g1-section\" id=\"b1-errors\"><div class=\"g1-section-head\"><span class=\"g1-num\">06</span><h3>Типичные ошибки</h3></div><ul class=\"g1-contrast\"><li><span class=\"g1-wrong\">She are a doctor.</span> → <span class=\"g1-right\">She is a doctor.</span> <small>С she нужна форма is.</small></li><li><span class=\"g1-wrong\">He not a teacher.</span> → <span class=\"g1-right\">He isn’t a teacher.</span> <small>Нужен глагол be.</small></li><li><span class=\"g1-wrong\">He is a driver?</span> → <span class=\"g1-right\">Is he a driver?</span> <small>В нейтральном общем вопросе is ставим первым.</small></li><li><span class=\"g1-wrong\">Yes, she’s.</span> → <span class=\"g1-right\">Yes, she is.</span> <small>Не сокращаем положительный короткий ответ.</small></li><li><span class=\"g1-wrong\">Where Sophie is from?</span> → <span class=\"g1-right\">Where is Sophie from?</span> <small>Порядок вопроса.</small></li></ul></section>\n</div>"
+  },
+  {
+    "id": "grammar-a-an",
+    "order": 3,
+    "title": "Articles: a / an",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-15",
+    "linkedLessonId": "lesson-2",
+    "page": "grammar-topic.html?id=grammar-a-an",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Неопределённый артикль перед одной профессией: a nurse / an actor. Выбор по первому звуку слова и случаи без артикля.",
+    "formula": "a + consonant sound · an + vowel sound · one singular countable noun",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "exercises": [
+      {
+        "id": "choose-the-article",
+        "type": "exercise",
+        "title": "Choose a or an",
+        "difficulty": "Start here",
+        "instructions": "Choose a or an before each job.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "She is ___ nurse.",
+            "options": [
+              "a",
+              "an"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "He is ___ actor.",
+            "options": [
+              "a",
+              "an"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "Rob is ___ office worker.",
+            "options": [
+              "a",
+              "an"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "She is ___ taxi driver.",
+            "options": [
+              "a",
+              "an"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "write-the-article",
+        "type": "exercise",
+        "title": "Write the correct article",
+        "difficulty": "Write a word",
+        "instructions": "Write a or an. Remember: choose by the next sound.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "Charlie is ___ artist.",
+            "answer": "an"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "Kasia is ___ doctor.",
+            "answer": "a"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "She’s ___ assistant.",
+            "answer": "an"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "He’s ___ football player.",
+            "answer": "a"
+          }
+        ]
+      },
+      {
+        "id": "article-or-no-article",
+        "type": "exercise",
+        "title": "When do we need an article?",
+        "difficulty": "Compare meanings",
+        "instructions": "Choose a, an or no article (—). Look at the whole phrase, not only the first word.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "Sandra is ___ student.",
+            "options": [
+              "a",
+              "an",
+              "—"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Rob is ___ British.",
+            "options": [
+              "a",
+              "an",
+              "—"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "He is ___ American designer.",
+            "options": [
+              "a",
+              "an",
+              "—"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "Sandra is ___ from Colombia.",
+            "options": [
+              "a",
+              "an",
+              "—"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "compose-sentences-with-articles",
+        "type": "exercise",
+        "title": "Build the complete sentence",
+        "difficulty": "Use it yourself",
+        "instructions": "Write a complete sentence from the prompts. Use the correct article where necessary.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "he / actor",
+            "answer": "He’s an actor.",
+            "acceptedAnswers": [
+              "He’s an actor.",
+              "He is an actor."
+            ]
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "she / nurse",
+            "answer": "She’s a nurse.",
+            "acceptedAnswers": [
+              "She’s a nurse.",
+              "She is a nurse."
+            ]
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "Rob / office worker",
+            "answer": "Rob is an office worker."
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "Maya / not / engineer",
+            "answer": "Maya isn’t an engineer.",
+            "acceptedAnswers": [
+              "Maya isn’t an engineer.",
+              "Maya is not an engineer."
+            ]
+          }
+        ]
+      }
+    ],
+    "guideHtml": "<div class=\"g1-course\">\n<article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Unit 1B · Grammar 2</span>\n<h2>Articles: a / an</h2>\n<p>В английском мы часто говорим не просто <strong>doctor</strong>, а <strong>a doctor</strong> — «врач». Артикль показывает, что речь об <strong>одном человеке или предмете</strong>, названном исчисляемым существительным в единственном числе. Это отдельное правило: форма глагола <em>is</em> сама по себе не определяет выбор <em>a/an</em>.</p></article>\n<nav class=\"g1-navigation\" aria-label=\"Разделы объяснения\"><a href=\"#art-why\">01 · Зачем</a><a href=\"#art-sound\">02 · Как выбрать</a><a href=\"#art-jobs\">03 · Профессии</a><a href=\"#art-no\">04 · Без артикля</a><a href=\"#art-compare\">05 · Сравнения</a><a href=\"#art-errors\">06 · Ошибки</a><a href=\"#grammar-practice-section\">Практика</a></nav>\n<section class=\"g1-section\" id=\"art-why\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Зачем нужны a и an?</h3></div>\n<p>Слова <strong>a</strong> и <strong>an</strong> — варианты <strong>неопределённого артикля</strong>. Мы используем их перед исчисляемым существительным в единственном числе, когда говорим об одном человеке или предмете без указания, какой именно это человек или предмет.</p>\n<div class=\"g1-scheme\"><span class=\"g1-token g1-subject\">a / an</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">singular countable noun</span></div>\n<div class=\"g1-grid\"><div class=\"g1-sentence\"><span class=\"g1-name\">Профессия</span><div class=\"g1-english\">She’s <strong>a nurse.</strong></div><small>Она медсестра.</small></div><div class=\"g1-sentence\"><span class=\"g1-name\">Предмет</span><div class=\"g1-english\">It’s <strong>an umbrella.</strong></div><small>Это зонт.</small></div></div>\n<p>В русском мы не произносим отдельного слова, соответствующего этому артиклю, поэтому его легко пропустить. В обычном утвердительном предложении про одну профессию <span class=\"g1-wrong\">She’s doctor.</span> неправильно, а <span class=\"g1-right\">She’s a doctor.</span> правильно.</p></section>\n<section class=\"g1-section\" id=\"art-sound\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>A или an? Слушаем первый звук</h3></div>\n<p>Выбор зависит от <strong>первого звука следующего слова</strong>, а не только от первой буквы. Если слово начинается с согласного звука, выбираем <strong>a</strong>. Если с гласного — <strong>an</strong>.</p>\n<div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Следующий звук</th><th>Артикль</th><th>Примеры</th></tr></thead><tbody>\n<tr><td>Согласный</td><td><strong>a</strong></td><td><strong>a</strong> nurse · <strong>a</strong> doctor · <strong>a</strong> taxi driver</td></tr>\n<tr><td>Гласный</td><td><strong>an</strong></td><td><strong>an</strong> actor · <strong>an</strong> artist · <strong>an</strong> office worker</td></tr></tbody></table></div>\n<div class=\"g1-note\"><strong>Почему именно звук?</strong> Например, в <em>an hour</em> буква <em>h</em> не произносится, а в <em>a university</em> первое звучание — /j/. Поэтому смотрим на произношение. Для нашего урока достаточно уверенно различать <em>a nurse</em> и <em>an artist</em>.</div></section>\n<section class=\"g1-section\" id=\"art-jobs\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Описываем профессию</h3></div>\n<div class=\"g1-scheme\"><span class=\"g1-token g1-subject\">He / She</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">is</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-n\">a / an</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">job</span></div>\n<div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Предложение</th><th>Почему?</th></tr></thead><tbody>\n<tr><td>He’s <strong>a</strong> waiter.</td><td><em>waiter</em> начинается с согласного звука /w/.</td></tr>\n<tr><td>She’s <strong>an</strong> assistant.</td><td><em>assistant</em> начинается с гласного звука.</td></tr>\n<tr><td>Rob is <strong>an</strong> office worker.</td><td><em>office</em> начинается с гласного звука.</td></tr>\n<tr><td>Charlie is <strong>a</strong> digital designer.</td><td>Первое слово после артикля — <em>digital</em> со звуком /d/.</td></tr></tbody></table></div>\n<p>Если перед профессией стоит описывающее прилагательное, выбираем артикль по звуку <strong>прилагательного</strong>: <strong>an</strong> American doctor, но <strong>a</strong> British doctor.</p></section>\n<section class=\"g1-section\" id=\"art-no\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Когда a / an НЕ нужны?</h3></div>\n<p>Артикль <em>a/an</em> используется не в каждом предложении с <em>is</em>. Посмотрим на роль следующего слова.</p>\n<div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Что после be?</th><th>Пример</th><th>Почему?</th></tr></thead><tbody>\n<tr><td>Профессия в единственном числе</td><td>She’s <strong>a</strong> doctor.</td><td><em>doctor</em> — исчисляемое существительное.</td></tr>\n<tr><td>Национальность как прилагательное</td><td>She’s <strong>British.</strong></td><td><em>British</em> — прилагательное; артикль не нужен.</td></tr>\n<tr><td>Имя собственное</td><td>She’s <strong>Anna.</strong></td><td>Имя не требует <em>a/an</em>.</td></tr>\n<tr><td>Профессии во множественном числе</td><td>They’re <strong>doctors.</strong></td><td><em>a/an</em> означают единственное число.</td></tr>\n<tr><td>Место происхождения</td><td>She’s <strong>from Italy.</strong></td><td>После <em>from</em> стоит название страны.</td></tr></tbody></table></div>\n<p>Обратите внимание: <em>She’s American</em> (прилагательное) и <em>She’s an American</em> (существительное) обе возможны, но по-разному построены. В упражнениях данного урока отрабатываем прежде всего профессию и национальность-прилагательное.</p></section>\n<section class=\"g1-section\" id=\"art-compare\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Один человек, разные сведения</h3></div>\n<div class=\"g1-compare\"><div class=\"g1-compare-item\"><h4>Кем работает?</h4><span class=\"g1-english\">Sandra is <strong>a student.</strong></span><p>«Студентка» — существительное в единственном числе, нужен <em>a</em>.</p></div>\n<div class=\"g1-compare-item\"><h4>Какой национальности?</h4><span class=\"g1-english\">Sandra is <strong>Colombian.</strong></span><p>«Колумбийка» здесь выражена прилагательным. Артикль не ставим.</p></div></div>\n<div class=\"g1-example-flow\"><div><small>Говорим об одном человеке</small><span class=\"g1-english\">He is <strong>an artist.</strong></span></div><div><small>Говорим о нескольких людях</small><span class=\"g1-english\">They are <strong>artists.</strong></span></div></div></section>\n<section class=\"g1-section\" id=\"art-errors\"><div class=\"g1-section-head\"><span class=\"g1-num\">06</span><h3>Типичные ошибки</h3></div>\n<ul class=\"g1-contrast\">\n<li><span class=\"g1-wrong\">She is nurse.</span> → <span class=\"g1-right\">She is a nurse.</span> <small>Перед профессией в единственном числе нужен артикль.</small></li>\n<li><span class=\"g1-wrong\">He’s a actor.</span> → <span class=\"g1-right\">He’s an actor.</span> <small>Следующий звук гласный.</small></li>\n<li><span class=\"g1-wrong\">Rob is an waiter.</span> → <span class=\"g1-right\">Rob is a waiter.</span> <small>Следующий звук согласный.</small></li>\n<li><span class=\"g1-wrong\">She’s a British.</span> → <span class=\"g1-right\">She’s British.</span> <small>В данном значении <em>British</em> — прилагательное.</small></li>\n<li><span class=\"g1-wrong\">They are a doctors.</span> → <span class=\"g1-right\">They are doctors.</span> <small>Во множественном числе a/an не используются.</small></li>\n</ul></section></div>"
   }
 ];
