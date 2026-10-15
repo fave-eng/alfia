@@ -2036,7 +2036,8 @@
       correct = JSON.stringify(actual) === JSON.stringify(expected);
     } else if (inputType === 'single') {
       actual = itemNode.querySelector('input:checked')?.value ?? '';
-      correct = Number(actual) === Number(item.answer);
+      // Unanswered multiple-choice items must never score as option 0.
+      correct = actual !== '' && Number(actual) === Number(item.answer);
     } else if (inputType === 'select') {
       actual = itemNode.querySelector('select')?.value ?? '';
       correct = actual !== '' && Number(actual) === Number(item.answer);
@@ -2524,6 +2525,18 @@
     const exampleGroups = Array.isArray(topic.exampleGroups) ? topic.exampleGroups : [];
     const examples = Array.isArray(topic.examples) ? topic.examples : [];
     const mistakes = Array.isArray(topic.commonMistakes) ? topic.commonMistakes : [];
+
+    if (typeof topic.guideHtml === 'string' && topic.guideHtml.trim()) {
+      // A topic may supply a carefully structured, lesson-specific explanation.
+      // It is bundled locally in grammar-data.js, not user-submitted HTML.
+      root.innerHTML = `${topic.guideHtml}
+        <section class="section" id="grammar-practice-section" aria-labelledby="grammar-practice-title">
+          <div class="section-heading"><div><span class="eyebrow">Practice</span><h2 id="grammar-practice-title">Four steps · 16 questions</h2></div></div>
+          <div id="grammar-quiz"></div>
+        </section>`;
+      renderGrammarPractice(topic, byId('grammar-quiz'));
+      return;
+    }
 
     root.innerHTML = `
       <article class="card grammar-intro-card">

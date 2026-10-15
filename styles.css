@@ -3483,3 +3483,64 @@ label.odd-option {
 .a1-chat-writing textarea {min-height:200px;line-height:1.65;width:100%}
 @media (max-width:840px){.a1-writing-layout {grid-template-columns:1fr}.a1-profile-grid {grid-template-columns:1fr}.a1-person-card img {width:65px;height:65px}}
 @media (max-width:540px){.a1-greeting-scene {grid-template-columns:1fr;padding:.7rem}.a1-greeting-media img {height:160px;margin:auto}.a1-greeting-media {background:white;border-radius:9px}.a1-scene-lines .exercise-item {padding:.4rem .15rem}.a1-dialogue{padding:.7rem}.a1-dialogue-line{grid-template-columns:1.3rem minmax(0,1fr);gap:.2rem}.a1-inline-gap .text-field {width:97px}.a1-chat-body {padding:.6rem}.a1-chat-message{max-width:97%}}
+
+/* Lesson 1A: original scenes shown whole, rather than thin, cropped portraits. */
+.a1-greeting-scene {display:flex;flex-direction:column;align-items:stretch;gap:.75rem;padding:1rem;overflow:visible}
+.a1-greeting-media {width:100%;text-align:center;background:#fff;border-radius:12px;padding:8px}
+.a1-greeting-media a {display:block;width:100%;max-width:600px;margin:auto}
+.a1-greeting-media img {width:100%;max-width:600px;height:auto;max-height:none;object-fit:contain;object-position:center}
+.a1-scene-lines {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;width:100%}
+.a1-scene-lines .exercise-item {min-width:0;border:1px solid #e0e7ef;padding:.75rem;background:#fff;border-radius:12px}
+@media(max-width:690px){.a1-scene-lines{grid-template-columns:1fr}.a1-greeting-scene{padding:.65rem}.a1-greeting-media{padding:2px}}
+/* Grammar lesson: editorial learning-page, not repeated generic rule cards. */
+.g1-course {--g1-blue:#2f638e;--g1-teal:#087c82;--g1-tint:#eff6fb;color:#223347;line-height:1.65}
+.g1-lead {background:#fff;border:1px solid #d8e5ed;border-radius:18px;padding:clamp(19px,4vw,30px)}
+.g1-eyebrow{display:inline-block;font-weight:800;letter-spacing:.09em;text-transform:uppercase;font-size:.72rem;color:#2f638e;margin-bottom:8px}
+.g1-lead h2{font-size:clamp(1.42rem,3vw,2rem);margin:0 0 12px;color:#173c5a;line-height:1.2}
+.g1-lead p{max-width:75ch;line-height:1.75;margin:0}
+.g1-navigation{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 22px}
+.g1-navigation a{background:#fff;border:1px solid #d2e3eb;color:#24536f;text-decoration:none;border-radius:999px;padding:8px 12px;font-size:.87rem;font-weight:700}
+.g1-navigation a:hover{background:#edf7f8}
+.g1-section{scroll-margin-top:28px;margin:18px 0 23px;padding:clamp(18px,3vw,28px);border:1px solid #dae4eb;border-radius:17px;background:#fff}
+.g1-section-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px}
+.g1-num{display:grid;place-items:center;min-width:34px;height:34px;border-radius:11px;color:#fff;background:#35688c;font-size:.86rem;font-weight:800}
+.g1-section h3{font-size:1.24rem;line-height:1.35;margin:2px 0 0;color:#173c5a}
+.g1-section p{line-height:1.72;margin:10px 0}
+.g1-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:15px 0}
+.g1-sentence{padding:16px;background:#f5f9fc;border:1px solid #e1eaf1;border-radius:12px;min-width:0}
+.g1-sentence .g1-name{display:block;font-size:.78rem;font-weight:800;color:#53758b;margin-bottom:7px}
+.g1-english{font-size:clamp(1.03rem,2vw,1.28rem);font-weight:750;line-height:1.6;color:#132b43;overflow-wrap:anywhere}
+.g1-sentence small{display:block;margin-top:5px;color:#596c78;font-size:.84rem}
+.g1-subject{color:var(--g1-blue);font-weight:850}
+.g1-verb{color:var(--g1-teal);font-weight:850;background:#e0f5f3;padding:1px 4px;border-radius:5px}
+.g1-negative{color:#9c4160;font-weight:850;background:#fbeef1;padding:1px 4px;border-radius:5px}
+.g1-scheme{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:14px 0;padding:15px;background:#f1f7fb;border:1px solid #d9e9f1;border-radius:12px}
+.g1-token{font-weight:800;padding:8px 12px;background:#fff;border:1px solid #d5e1eb;border-radius:9px;text-align:center}
+.g1-token.g1-token-v{background:#e2f5f2;color:#087c82;border-color:#bee7df}
+.g1-token.g1-token-n{background:#fbeef1;color:#9c4160;border-color:#f1d6de}
+.g1-plus{font-size:1.12rem;color:#7995a5;font-weight:800}
+.g1-scheme-caption{font-size:.85rem;color:#556d7d;margin:-4px 0 12px}
+.g1-table-wrap{overflow-x:auto;margin:14px 0;border:1px solid #dbe7ed;border-radius:12px}
+.g1-table{width:100%;min-width:400px;border-collapse:collapse;table-layout:auto;background:white}
+.g1-table th{background:#eaf4f7;color:#1b4c67;font-size:.86rem;line-height:1.4;text-align:left}
+.g1-table th,.g1-table td{padding:12px 14px;border-bottom:1px solid #e0eaf0;vertical-align:top}
+.g1-table td{font-size:.93rem;line-height:1.6}
+.g1-table tr:last-child td{border-bottom:0}
+.g1-table strong{color:#087c82}
+.g1-note{border-left:4px solid #5b8ea9;border-radius:0 9px 9px 0;background:#f4f9fc;padding:12px 15px;margin:15px 0;line-height:1.7}
+.g1-note strong{color:#1e526f}
+.g1-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:15px 0}
+.g1-compare-item{border:1px solid #dce7ec;border-radius:13px;padding:15px;background:#fcfeff}
+.g1-compare-item h4{margin:0 0 8px;font-size:.92rem;color:#38667f}
+.g1-compare-item p{font-size:.91rem;margin:5px 0}
+.g1-compare-item .g1-english{display:block;font-size:1.02rem}
+.g1-example-flow{border:1px solid #d4e6ec;border-radius:13px;background:#f6fbfc;padding:16px;margin:12px 0}
+.g1-example-flow>div+div{margin-top:8px}
+.g1-example-flow small{display:block;color:#60788a}
+.g1-contrast{list-style:none;padding:0;margin:12px 0;display:grid;gap:9px}
+.g1-contrast li{border-bottom:1px solid #e2ebf0;padding:8px 0;line-height:1.65}
+.g1-wrong{color:#b44851;text-decoration:line-through;text-decoration-thickness:1px}
+.g1-right{color:#16776d;font-weight:750}
+.g1-subsection{font-weight:800;color:#214f69;margin:17px 0 6px;font-size:1rem}
+.g1-course + .section{margin-top:22px}
+@media(max-width:620px){.g1-grid,.g1-compare{grid-template-columns:1fr}.g1-table{min-width:340px}.g1-table th,.g1-table td{padding:10px 9px}.g1-navigation a{padding:8px 10px;font-size:.78rem}.g1-section{padding:16px}.g1-scheme{gap:6px}.g1-token{padding:6px 8px}}
