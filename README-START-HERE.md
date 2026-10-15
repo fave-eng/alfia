@@ -1,75 +1,73 @@
-# Альфия · English Space · Speakout A1 (3rd edition)
+# Alfiya · English Space · Speakout A1 (3rd Edition)
 
-Это отдельный сайт ученицы Альфии. Создан на основе интерфейса и механики сайта Кристины, но **ни одного её задания, аудиофайла, картинки, результата или личного ответа в архиве нет**.
+## Start state: EMPTY
 
-## Что уже готово
+This is a clean, individual student website for **Альфия (Alfiya)**. It has **no homework assignments, vocabulary words, grammar topics, knowledge-base articles, audio, pictures or example answers**. No student progress data is packaged in the ZIP archive.
 
-- `index.html` — главная, индивидуальная статистика, быстрые ссылки
-- `homework.html`, `lesson.html` — домашние задания; опубликовано первое авторское ДЗ `1A Hello` (6 интерактивных упражнений; 24 проверяемых ответа и 2 письменных ответа для учителя)
-- `grammar.html`, `grammar-topic.html`, `data/grammar-data.js` — подробный разбор `be: I am / you are` на русском языке + таблицы, ошибки, упражнения
-- `vocabulary-hub.html`, `vocabulary.html`, `data/vocabulary-data.js` — 10 новых слов, карточки, режим повторения, тест
-- `knowledge-base.html` — фразы для урока, числа 0–10, представление себя
-- `diagnostics.html` — чтение настроек и проверка доступа к облаку/функции **без изменения данных и без отправки Telegram**
-- `data/lessons/lesson-2.json` — черновик будущего 1B, ученик его не видит
+On first opening, the website displays zero everywhere:
+- Homework: **0 of 0**
+- Vocabulary: **0 words, 0 topics**
+- Grammar: **0 of 0**
+- Knowledge Base: empty-state screen
 
-Оригинальные упражнения учебника *не копировались*. В архиве нет аудио Speakout: нужные аудиофайлы добавляются преподавателем при наличии разрешённой копии.
+The site retains its layout, interactive exercise engine, local progress saving, and configuration for Supabase and Telegram. The first real homework will be `data/lessons/lesson-1.json` once you create it. There is currently **no** `lesson-1.json` or `lesson-2.json` — on purpose.
 
-## Как открыть
+### Main files
 
-Сайт статический. Разместите всю папку `Alfiya` в отдельном репозитории GitHub и включите GitHub Pages (или другой статический хостинг). Не открывайте HTML через `file://`: JSON домашних заданий загружается через `fetch`, нужен веб-сервер.
+- `index.html` — home, progress dashboard
+- `homework.html`, `lesson.html` — homework list and interactive assignment pages
+- `vocabulary-hub.html`, `vocabulary.html` — vocabulary hub and cards
+- `grammar.html`, `grammar-topic.html` — grammar list and explanations
+- `knowledge-base.html` — currently empty, ready for future lesson notes
+- `data/lessons/` — empty; add `lesson-1.json` to publish the first assignment
+- `data/vocabulary-data.js` — `window.VOCABULARY_DATA = [];` (no words)
+- `data/grammar-data.js` — `window.GRAMMAR_DATA = [];` (no topics)
+- `config.js` — `student.id = alfiya`, level A1, Speakout 3rd Edition
+- `diagnostics.html` — service diagnostics (read-only)
 
-Для локального просмотра можно запустить в папке с сайтом:
+### Adding new lessons later
 
-```bash
-python3 -m http.server 8000
-```
+1. Create `data/lessons/lesson-1.json` with id `lesson-1`, `number: 1`, `status: "available"` and interactive `blocks`. If not ready, set `status: "draft"`.
+2. Add a vocabulary topic to `window.VOCABULARY_DATA` only after you have selected the vocabulary from the lesson. Connect it using `vocabularyId` and `linkedLessonId`.
+3. Add grammar topics to `window.GRAMMAR_DATA` only after the topic has been taught. Connect using `grammarIds` and `linkedLessonId`.
+4. Add lesson notes to `knowledge-base.html` when you have real content. There is no prefabricated syllabus or content in these three sections.
+5. If Telegram notifications are configured, you can set `notification.enabled=true` for a published lesson and run the corresponding GitHub Action with `lesson_id=lesson-1`.
 
-Потом открыть `http://localhost:8000/`.
+The site searches sequential `lesson-N.json` files starting at `lesson-1.json`. Do not skip numbers at the beginning of the sequence.
 
-## Важное про Supabase
+### Preview / publication
 
-В `config.js` перенесены **URL и публичный anon key** из загруженного сайта Кристины, поскольку это предположительно общий Supabase-проект для учеников. `student.id` заменён на `alfiya`, а локальные ключи прогресса тоже используют `alfiya`. **Фактическое подключение к Supabase и права этого студента не проверялись.**
+Upload the whole `Alfiya` folder to a **separate** GitHub repository for the student, or serve it on a static host. When previewing locally, run `python3 -m http.server 8000` in the site folder; open `http://localhost:8000/` (not an HTML `file://` URL).
 
-1. Убедитесь в панели Supabase, что URL именно того проекта, куда вы планируете добавлять Альфию. В ZIP Кристины конфигурация сайта и `supabase/config.toml` содержали *разные* project_id. В этом архиве `config.toml` приведён к URL из сайта, но окончательное соответствие нужно проверить в панели проекта.
-2. Проверьте существование таблиц `homework_progress`, `vocabulary_progress`, `vocabulary_topic_progress`, `grammar_progress`, `telegram_recipients`, `material_publications`.
-3. Перед выкладкой новой версии запустите `supabase/alfiya-setup.sql` в нужном проекте. Файл добавляет `grammar_progress.answers`, `telegram_recipients.message_thread_id` и таблицу логирования доставки. Он **не** создаёт таблицы прогресса и не перенастраивает политики RLS автоматически.
-4. Убедитесь, что текущая схема и RLS **разрешают работу с `student_id='alfiya'`**. Без авторизации и кода доступа нельзя обеспечить приватную изоляцию персональных ответов только по `student_id`: это **не секрет** и не средство доступа. Открытая запись/чтение через `anon` требует отдельной оценки безопасности. Для полноценной приватности нужна аутентификация, например Supabase Auth.
-5. Откройте `diagnostics.html` на опубликованном сайте и проверьте реальные результаты. Только успешная проверка и пробный тест с двух устройств подтверждают облачное сохранение.
+### Supabase and Telegram — IMPORTANT
 
-**Грамматика:** В этом сайте вместе с баллами в `grammar_progress` синхронизируются ответы (`answers` JSONB). Для этого нужен соответствующий SQL выше. **Домашние задания:** ответы сохраняются при `Check answers`, затем передаются в облако; нажатие `Submit to teacher` помечает выполненное ДЗ и отправляет отчёт, если Telegram настроен. **Словарь:** прогресс слова обновляется после карточки/теста.
+`config.js` contains a **public anon key** and Supabase URL originally copied from the user-provided Kristina project. This setup is **not verified** against the actual student's database. All local progress keys use the unique student ID `alfiya`. No previous student's data has been copied into the ZIP, and no external Supabase rows have been deleted or modified.
 
-## Telegram: отдельная функция для Альфии
+If any progress already exists remotely for `student_id='alfiya'`, it may be restored when the site connects. **A clean ZIP is not a remote database reset.** Confirm actual records in Supabase before using the site, and remove only the records for this student if you intentionally want to reset them. Do not use broad SQL deletions.
 
-В отличие от исходного архива Кристины, здесь выделена функция `notify-alfiya-telegram` — она не перезаписывает `notify-telegram` других учеников и **не использует тему №39**.
+The included file `supabase/alfiya-setup.sql` contains optional schema changes for grammar answer storage, Telegram topics, and notification delivery logging, but it does not run automatically. Before using cloud sync check the existence and row-level security of `homework_progress`, `vocabulary_progress`, `vocabulary_topic_progress`, and `grammar_progress`. `student_id` alone is not authentication or private access control.
 
-Перед отправкой Telegram-сообщений требуется:
+### Telegram destination for Alfiya
 
-1. В `telegram_recipients` создать серверную запись `student_id='alfiya'`, указать настоящий `chat_id`, и `message_thread_id` при использовании форумной темы. Пример **закомментирован** в `supabase/alfiya-setup.sql`. Telegram ID намеренно не угадан.
-2. Если чат общий с другими учениками, прежнее ограничение `UNIQUE(chat_id)` может мешать добавить второго получателя. В SQL есть закомментированная команда для снятия **только этого ограничения** после проверки.
-3. Установить Supabase secrets `TELEGRAM_BOT_TOKEN` и `NOTIFY_WEBHOOK_SECRET`, убедиться, что `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, `SUPABASE_ANON_KEY` доступны серверной функции. **Не добавлять токен бота или service_role ключ в `config.js`, git или публичные файлы!**
-4. Развернуть `notify-alfiya-telegram`: через Supabase CLI `supabase functions deploy notify-alfiya-telegram --project-ref <правильный_project_ref> --no-verify-jwt`; либо через GitHub Action `1 - Setup Telegram notifications` после настройки Secrets и Variables.
-5. После настройки выполните проверку через `diagnostics.html`, затем тестовую отправку **на тестовом ДЗ**. Диагностика специально не отправляет сообщения.
+You supplied this link: **https://t.me/c/4473831246/5**. It maps to the Telegram supergroup **chat_id `-1004473831246`**. For a forum-topic link, **`message_thread_id = 5`**; this assumes the link points to the topic starter, rather than an unrelated individual message. Confirm that it opens the intended topic before enabling delivery.
 
-Если Telegram ещё не готов, для спокойного старта можно поменять `features.telegramNotifications` на `false` в `config.js`. Сайт, ДЗ, словарь и грамматика от этого не пропадают. Без настройки реальная отправка Telegram не гарантируется.
+**To activate notifications:**
+1. Open your existing Supabase project (the one used in `config.js`). Run `supabase/set-alfiya-telegram-topic.sql` in **SQL Editor**. This saves the destination for **student_id `alfiya`**; it does not overwrite Kristina's row. The SQL also adapts the old chat-ID uniqueness constraint for multiple student topics in one group.
+2. If the base tables and delivery log have not been created, first review/apply `supabase/alfiya-setup.sql`. It expects the existing shared student progress and Telegram tables.
+3. Confirm the Telegram bot is a member of that supergroup and can post to the intended topic. Store `TELEGRAM_BOT_TOKEN` and `NOTIFY_WEBHOOK_SECRET` as **Supabase secrets** (not in the public site). Deploy the separate `notify-alfiya-telegram` Edge Function using the supplied GitHub Actions setup workflow or Supabase CLI.
+4. To receive **submitted-homework reports**, the live site must save progress successfully in Supabase and invoke the function. To receive **new-material alerts**, supply the GitHub Actions repository variables/secrets described below and run `2 - Notify about new materials` for a published lesson with `notification.enabled = true`.
+5. Send a controlled test after deployment and check that it appears in the correct Telegram topic, not in the general chat. The ZIP does **not** send any messages by itself.
 
-### Уведомление о новом домашнем задании
+Repository Actions variables: `SUPABASE_PROJECT_ID`, `STUDENT_ID=alfiya`, `SITE_BASE_URL` and `TELEGRAM_NOTIFICATIONS_ENABLED=true`; secrets: `SUPABASE_ACCESS_TOKEN`, `TELEGRAM_BOT_TOKEN` and `NOTIFY_WEBHOOK_SECRET`. Do not publish secret values.
 
-Для GitHub Actions подготовлен `2 - Notify about new materials` (ручной запуск `workflow_dispatch`). Репозиторий должен содержать:
+`diagnostics.html` checks connectivity but does **not** send Telegram messages. Avoid sending tests with real submitted-homework payloads if you do not want them recorded as delivered.
 
-- Variables: `SITE_BASE_URL`, `STUDENT_ID=alfiya`, `SUPABASE_PROJECT_ID=zqzgarvmpqqqaobeicpc`, `TELEGRAM_NOTIFICATIONS_ENABLED=true`
-- Secret: `NOTIFY_WEBHOOK_SECRET`
+### Audio filenames (Speakout A1 workbook)
 
-При публикации нового ДЗ задайте `notification.enabled=true`, установите `status=available`, затем запустите Workflow с `lesson_id=lesson-N`. Получится одно сообщение с темой, словарём, грамматикой и ссылкой, без отправки повторов для той же `notification.version`.
+The teacher's example is **`SO3_A1_WB_1A_Audio_1_01.mp3`**. Place that file unchanged in `Alfiya/audio/` when a lesson needs it. Reference it exactly as `"audio": "audio/SO3_A1_WB_1A_Audio_1_01.mp3"` in the future homework JSON. There is currently **no audio** in the ZIP; no lesson has been published and no placeholder exercise has been added. See `audio/README.txt`.
 
-## Добавление нового ДЗ
+Do not put Telegram bot tokens or Supabase service-role keys into publicly accessible files.
 
-1. Использовать следующий свободный номер `lesson-N.json` в `data/lessons/`. `lesson-2.json` — уже готовый **черновик-заготовка**, его содержимое пока пустое.
-2. В `data/vocabulary-data.js` добавить словарь урока с уникальным `id`, максимум 10–15 полезных новых слов. Следить, чтобы `linkedLessonId` совпадал с `lesson-N`, `vocabularyId` в ДЗ — с id словаря.
-3. В `data/grammar-data.js` добавить действительно пройденную грамматику; объяснять структуру, случаи употребления и исключения, приводить таблицы/сравнения и проверочные упражнения.
-4. Написать авторские задания, которые закрепляют Speakout без копирования учебника. Рекомендуется 6 основных интерактивных блоков, разметка `select` для подходящих задач, хотя бы один ясный пример.
-5. Пока материал не готов, хранить его с `status: "draft"`. После финальной проверки выставлять `available`.
+### Validation scope
 
-## Проверки и границы готовности
-
-- Статическая проверка JSON/JS и локальный тест в браузере могут быть выполнены перед публикацией.
-- Настройки **боевого Supabase, RLS, Telegram, GitHub Pages и реальная доставка сообщений не проверялись** при сборке архива. Ни одна серверная функция и SQL-миграция не были развёрнуты автоматически.
+ZIP integrity, empty curriculum arrays, absence of homework JSON files, internal links and JavaScript syntax can be checked locally. The real Supabase database, live Telegram delivery, and hosted GitHub Pages deployment are **not** confirmed by packaging.

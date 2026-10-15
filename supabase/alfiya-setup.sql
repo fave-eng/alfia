@@ -10,11 +10,9 @@ alter table public.grammar_progress
 alter table public.telegram_recipients
   add column if not exists message_thread_id bigint;
 
--- Existing Kristina SQL declared chat_id UNIQUE. If the new student shares the
--- same Telegram supergroup, different students need the same chat_id but
--- different message_thread_id values. Review the constraint before running:
--- alter table public.telegram_recipients
---   drop constraint if exists telegram_recipients_chat_id_key;
+-- Chat ID was UNIQUE in Kristina's original schema. Allow each learner
+-- to have their own forum topic within the same group.
+-- See set-alfiya-telegram-topic.sql for the exact repeatable setup and actual ID.
 
 create table if not exists public.alfiya_homework_deliveries (
   student_id text not null,
@@ -30,16 +28,11 @@ alter table public.alfiya_homework_deliveries enable row level security;
 revoke all on public.alfiya_homework_deliveries from anon, authenticated;
 grant all on public.alfiya_homework_deliveries to service_role;
 
--- Existing material_publications and telegram_recipients tables are used
--- without changing the older student's records. Add recipient manually only
--- after you know the Telegram chat ID and topic ID:
--- insert into public.telegram_recipients
---   (student_id, chat_id, message_thread_id, enabled)
--- values ('alfiya', -1000000000000, 1234, true)
--- on conflict (student_id) do update
--- set chat_id = excluded.chat_id,
---     message_thread_id = excluded.message_thread_id,
---     enabled = excluded.enabled;
+-- Telegram target has been supplied:
+--   https://t.me/c/4473831246/5
+--   chat_id = -1004473831246, presumed message_thread_id = 5
+-- Run set-alfiya-telegram-topic.sql separately to register it. Do not modify
+-- other students' destination records.
 
 -- Confirm existing project tables and rows are ready (read-only):
 select table_name from information_schema.tables

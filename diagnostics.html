@@ -18,9 +18,13 @@ document.addEventListener('DOMContentLoaded',()=>{
  const config=window.APP_CONFIG||{},sid=config.student?.id,url=config.supabase?.url,key=config.supabase?.anonKey;
  add('config.js',sid==='alfiya'?'ok':'bad',sid==='alfiya'?'student_id = alfiya':'Ожидается student_id = alfiya');
  add('Курс',config.student?.level==='A1'?'ok':'bad',`${config.student?.level||'?'} · ${config.student?.textbook||'?'}`);
- for(const path of ['data/lessons/lesson-1.json','data/grammar-data.js','data/vocabulary-data.js']){
+ for(const path of ['data/grammar-data.js','data/vocabulary-data.js']){
   try{const r=await fetch(path,{cache:'no-store'});add(path,r.ok?'ok':'bad',`HTTP ${r.status}`)}catch(e){add(path,'bad',String(e))}
  }
+ try{
+  const r=await fetch('data/lessons/lesson-1.json',{cache:'no-store'});
+  add('Первое домашнее задание',r.status===404?'ok':r.ok?'ok':'bad',r.status===404?'Пока не создано — это нормально для нового сайта.':`HTTP ${r.status}`);
+ }catch(e){add('Первое домашнее задание','warn',String(e))}
  if(!window.supabase?.createClient) add('Supabase SDK','warn','Библиотека не загрузилась. Проверь интернет/CDN.');
  else if(!url||!key) add('Supabase config','bad','Нет URL или публичного ключа');
  else{
