@@ -45,7 +45,25 @@ function isNotifiable(lesson) {
 }
 
 const siteBaseUrl = requiredEnv('SITE_BASE_URL').replace(/\/+$/, '')
-const studentId = requiredEnv('STUDENT_ID')
+// Read the canonical student ID from the deployed site's configuration.
+// GitHub repository variables may contain a spelling variation (alfia vs alfiya).
+function configuredStudentId() {
+  const configPath = path.join(root, 'config.js')
+  const source = fs.readFileSync(configPath, 'utf8')
+  const sandbox = { window: {} }
+  vm.createContext(sandbox)
+  vm.runInContext(source, sandbox, { filename: 'config.js', timeout: 2000 })
+  const id = sandbox.window.APP_CONFIG?.student?.id
+  if (typeof id !== 'string' || !id.trim()) {
+    throw new Error('Missing student.id in config.js')
+  }
+  return id.trim()
+}
+
+const studentId = configuredStudentId()
+if (process.env.STUDENT_ID?.trim() && process.env.STUDENT_ID.trim() !== studentId) {
+  console.warn('GitHub STUDENT_ID differs from config.js. Using canonical config.js student ID.')
+}
 const projectId = requiredEnv('SUPABASE_PROJECT_ID')
 const notifySecret = requiredEnv('NOTIFY_WEBHOOK_SECRET')
 const selectedLessonId = requiredEnv('LESSON_ID')

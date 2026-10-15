@@ -1,0 +1,816 @@
+{
+  "id": "lesson-2",
+  "number": 2,
+  "title": "1B–1C · Jobs and questions",
+  "subtitle": "Speakout A1 · Workbook · Jobs, be (he/she/it), articles, reading and personal information",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-2",
+  "grammarIds": [
+    "grammar-be-he-she-it",
+    "grammar-a-an"
+  ],
+  "publishedAt": "2026-10-15",
+  "totalPoints": 51,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "eyebrow": "Speakout A1 · Unit 1 · Lesson 1B",
+      "title": "Vocabulary · Jobs"
+    },
+    {
+      "type": "exercise",
+      "id": "jobs-match",
+      "title": "1 · Jobs",
+      "instructions": "Match the jobs (1–6) with the photos (A–F).",
+      "layout": "jobs-photo-match",
+      "photos": [
+        {
+          "label": "A",
+          "src": "images/lesson-2/job-a.png"
+        },
+        {
+          "label": "B",
+          "src": "images/lesson-2/job-b.png"
+        },
+        {
+          "label": "C",
+          "src": "images/lesson-2/job-c.png"
+        },
+        {
+          "label": "D",
+          "src": "images/lesson-2/job-d.png"
+        },
+        {
+          "label": "E",
+          "src": "images/lesson-2/job-e.png"
+        },
+        {
+          "label": "F",
+          "src": "images/lesson-2/job-f.png"
+        }
+      ],
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "prompt": "doctor",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "nurse",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "singer",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "taxi driver",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "teacher",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "waiter",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F"
+          ],
+          "answer": 3
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "articles-in-chat",
+      "title": "3 · a / an",
+      "instructions": "Choose the correct word to complete the messages.",
+      "layout": "job-messages",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "segments": [
+            "Hi! I’m Sylvie. I’m ",
+            " artist."
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "segments": [
+            "Hi, I’m Carol. I’m ",
+            " businessperson."
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "segments": [
+            "Hello everyone. I’m Miko. I’m ",
+            " office worker."
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "segments": [
+            "Hello, I’m Roberto. I’m ",
+            " nurse."
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "segments": [
+            "Hello, I’m Seo. I’m ",
+            " police officer."
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "segments": [
+            "Hi, I’m Maddi. I’m ",
+            " taxi driver."
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "eyebrow": "Lesson 1B · Grammar",
+      "title": "Grammar · Present simple be: he, she, it"
+    },
+    {
+      "type": "exercise",
+      "id": "be-he-she-it-choice",
+      "title": "4 · be: he, she, it",
+      "instructions": "Choose the correct word to complete the sentences.",
+      "inlineNumberedItems": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "segments": [
+            "Elsa ",
+            " French. She’s from Italy."
+          ],
+          "options": [
+            "is",
+            "isn’t",
+            "aren’t"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "segments": [
+            "The Taj Mahal ",
+            " in India."
+          ],
+          "options": [
+            "are",
+            "am",
+            "is"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "segments": [
+            "David isn’t an actor. ",
+            " an artist."
+          ],
+          "options": [
+            "It’s",
+            "He’s",
+            "Is"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "segments": [
+            "",
+            " Shola an office worker?"
+          ],
+          "options": [
+            "Is",
+            "Are",
+            "What"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "segments": [
+            "",
+            " livre in English?"
+          ],
+          "options": [
+            "Where",
+            "What",
+            "What’s"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "segments": [
+            "Machu Picchu isn’t in Argentina. ",
+            " in Peru."
+          ],
+          "options": [
+            "He’s",
+            "It’s",
+            "She’s"
+          ],
+          "answer": 1
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "be-correct-mistakes",
+      "title": "5 · Correct the mistakes",
+      "instructions": "Correct the mistakes.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "prompt": "Elena isn’t a police officer. She a businesswoman.",
+          "answer": "Elena isn’t a police officer. She’s a businesswoman.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "Elena isn’t a police officer. She’s a businesswoman.",
+            "Elena isn't a police officer. She is a businesswoman."
+          ]
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "A: Is Anya a nurse? B: Yes, she’s.",
+          "answer": "A: Is Anya a nurse? B: Yes, she is.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "A: Is Anya a nurse? B: Yes, she is.",
+            "Yes, she is."
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "The Eiffel Tower isn’t in Rome. She’s in Paris.",
+          "answer": "The Eiffel Tower isn’t in Rome. It’s in Paris.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "The Eiffel Tower isn’t in Rome. It’s in Paris.",
+            "The Eiffel Tower isn't in Rome. It is in Paris."
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "He is a taxi driver?",
+          "answer": "Is he a taxi driver?",
+          "placeholder": "Write your answer"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "Where Diego is from?",
+          "answer": "Where is Diego from?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "Where is Diego from?",
+            "Where’s Diego from?"
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "He are from South Korea.",
+          "answer": "He’s from South Korea.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "He’s from South Korea.",
+            "He is from South Korea."
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "prompt": "A: Is Laura a digital designer? B: Yes, she are.",
+          "answer": "A: Is Laura a digital designer? B: Yes, she is.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "A: Is Laura a digital designer? B: Yes, she is.",
+            "Yes, she is."
+          ]
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "prompt": "What lapiz in English?",
+          "answer": "What’s lapiz in English?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "What’s lapiz in English?",
+            "What is lapiz in English?"
+          ]
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "be-sentence-building",
+      "title": "6 · Make sentences",
+      "instructions": "Use the prompts and be to write sentences. Use contractions where possible.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "example": true,
+          "exampleTextOnly": true,
+          "prompt": "she / from / Beijing. → She’s from Beijing."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "he / a businessperson.",
+          "answer": "He’s a businessperson.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "He’s a businessperson.",
+            "He is a businessperson."
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "it / not / in London.",
+          "answer": "It isn’t in London.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "It isn’t in London.",
+            "It’s not in London.",
+            "It is not in London."
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "where / Sophie / from?",
+          "answer": "Where’s Sophie from?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "Where’s Sophie from?",
+            "Where is Sophie from?"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "he / a teacher?",
+          "answer": "Is he a teacher?",
+          "placeholder": "Write your answer"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "what / Jack’s job?",
+          "answer": "What’s Jack’s job?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "What’s Jack’s job?",
+            "What is Jack’s job?"
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "prompt": "she / not / an office worker. She / a shop assistant.",
+          "answer": "She isn’t an office worker. She’s a shop assistant.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "She isn’t an office worker. She’s a shop assistant.",
+            "She’s not an office worker. She’s a shop assistant.",
+            "She is not an office worker. She is a shop assistant."
+          ]
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "prompt": "the Colosseum / not / in Milan. It / in Rome.",
+          "answer": "The Colosseum isn’t in Milan. It’s in Rome.",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "The Colosseum isn’t in Milan. It’s in Rome.",
+            "The Colosseum is not in Milan. It is in Rome.",
+            "The Colosseum’s not in Milan. It’s in Rome."
+          ]
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "eyebrow": "Lesson 1B · Reading",
+      "title": "Reading · Jobs and people"
+    },
+    {
+      "type": "exercise",
+      "id": "read-the-blog-table",
+      "title": "8B · Jobs and nationalities",
+      "instructions": "Complete the table with information from the blog.",
+      "layout": "blog-table",
+      "blogTitle": "The question of the day: What’s your job?",
+      "blogByline": "Sarah Taylor | Oxford Street, London",
+      "blogProfiles": [
+        {
+          "name": "Sandra Martínez",
+          "heading": "Sandra Martínez is from Bogotá in Colombia.",
+          "image": "images/lesson-2/sandra.png",
+          "text": "I’m a student at Cambridge University. It’s a great university. At the weekend, I’m a waiter in a French restaurant. I’m very happy in Cambridge."
+        },
+        {
+          "name": "Rob Marshall",
+          "heading": "Rob Marshall is from Birmingham in the UK.",
+          "image": "images/lesson-2/rob.png",
+          "text": "From Monday to Friday, I’m an office worker. It’s not difficult, but the money isn’t very good."
+        },
+        {
+          "name": "Kasia Wójcik",
+          "heading": "Kasia Wójcik is from Kraków in Poland.",
+          "image": "images/lesson-2/kasia.png",
+          "text": "I’m a doctor at a big hospital here in London. My job is very difficult, but it’s great!"
+        },
+        {
+          "name": "Charlie Cox",
+          "heading": "Charlie Cox is from New York in the USA.",
+          "image": "images/lesson-2/charlie.png",
+          "text": "I’m a digital designer for an Italian company and I’m also an artist. London is a great city and I’m very happy with my jobs!"
+        }
+      ],
+      "tableHeaders": [
+        "name",
+        "nationality",
+        "job or jobs"
+      ],
+      "tableRows": [
+        [
+          {
+            "itemId": "1"
+          },
+          {
+            "itemId": "2"
+          },
+          {
+            "itemId": "3"
+          }
+        ],
+        [
+          {
+            "itemId": "4"
+          },
+          {
+            "itemId": "5"
+          },
+          {
+            "itemId": "6"
+          }
+        ],
+        [
+          {
+            "itemId": "7"
+          },
+          {
+            "itemId": "8"
+          },
+          {
+            "itemId": "9"
+          }
+        ],
+        [
+          {
+            "itemId": "10"
+          },
+          {
+            "itemId": "11"
+          },
+          {
+            "itemId": "12"
+          }
+        ]
+      ],
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "answer": "Sandra Martínez"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "answer": "Colombian"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "answer": "student / waiter",
+          "acceptedAnswers": [
+            "student / waiter",
+            "student and waiter",
+            "student, waiter",
+            "student/waiter"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "answer": "Rob Marshall"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "answer": "British"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "answer": "office worker"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "answer": "Kasia Wójcik"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "answer": "Polish"
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "input": "text",
+          "answer": "doctor"
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "input": "text",
+          "answer": "Charlie Cox"
+        },
+        {
+          "id": "11",
+          "number": 11,
+          "input": "text",
+          "answer": "American"
+        },
+        {
+          "id": "12",
+          "number": 12,
+          "input": "text",
+          "answer": "digital designer / artist",
+          "acceptedAnswers": [
+            "digital designer / artist",
+            "digital designer and artist",
+            "digital designer, artist",
+            "digital designer/artist"
+          ]
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "eyebrow": "Speakout A1 · Unit 1 · Lesson 1C",
+      "title": "How to · Ask and answer simple questions"
+    },
+    {
+      "type": "exercise",
+      "id": "questions-about-details",
+      "title": "3C · Personal details",
+      "instructions": "Write the questions for the answers below. Then listen and check.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "prompt": "It’s Tanaka.",
+          "answer": "What’s your surname?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "What’s your surname?",
+            "What is your surname?"
+          ]
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "T-A-N-A-K-A.",
+          "answer": "How do you spell your surname?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "How do you spell your surname?",
+            "How do you spell that?"
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "Maika.",
+          "answer": "What’s your first name?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "What’s your first name?",
+            "What is your first name?"
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "It’s 2 Park Street.",
+          "answer": "What’s your address?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "What’s your address?",
+            "What is your address?"
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "It’s 629 3301.",
+          "answer": "What’s your phone number?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "What’s your phone number?",
+            "What is your phone number?"
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "Yes. It’s 629 3301.",
+          "answer": "Can you repeat that please?",
+          "placeholder": "Write your answer",
+          "acceptedAnswers": [
+            "Can you repeat that please?",
+            "Can you repeat that, please?"
+          ]
+        }
+      ],
+      "hideAnswersOnError": true,
+      "audio": "audio/SO3_A1_WB_1C_Audio_1_09.mp3"
+    }
+  ]
+}
