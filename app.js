@@ -897,8 +897,8 @@
       const text = escapeHtml(block.text || '').replaceAll('\n', '<br>');
       return `<div class="reading-copy-wrap"><p class="reading-copy">${text}</p></div>`;
     }
-    return `<div class="reading-sections">${sections.map((section) => `<section class="reading-section">
-      <div class="reading-section-heading"><span class="reading-number">${escapeHtml(section.number || '')}</span><h4>${escapeHtml(section.heading || '')}</h4></div>
+    return `<div class="reading-sections">${sections.map((section) => `<section class="reading-section${section.number ? '' : ' reading-section-no-number'}">
+      <div class="reading-section-heading">${section.number ? `<span class="reading-number">${escapeHtml(section.number)}</span>` : ''}<h4>${escapeHtml(section.heading || '')}</h4></div>
       <p class="reading-section-copy">${escapeHtml(section.text || '')}</p>
     </section>`).join('')}</div>`;
   }
@@ -1498,6 +1498,135 @@
     });
   }
 
+  // A1 word-order task: one movable piece for each original word/phrase.
+  // The same control supports mouse dragging, touch dragging, keyboard and tap-to-order.
+  function renderWordOrderItem(item, blockId, index, compact = false) {
+    const itemId = safeText(item.id, `${index + 1}`);
+    const number = item.number === undefined ? index + 1 : item.number;
+    const words = Array.isArray(item.words) ? item.words : [];
+    const pieces = words.map((word, tokenIndex) => `<button type="button" class="order-piece" data-order-token="${tokenIndex}" aria-label="${escapeHtml(word)}" draggable="false">${escapeHtml(word)}</button>`).join('');
+    const control = `<div class="word-order-workspace" data-word-order data-punctuation="${escapeHtml(item.ending || '.')}" aria-label="Arrange the words into a sentence">
+      <div class="word-order-answer" data-order-answer aria-label="Your sentence; drag words here or tap them"><span class="order-placeholder" data-order-placeholder>Place the words here in the correct order</span></div>
+      <div class="word-order-bank" data-order-bank aria-label="Words to arrange">${pieces}</div>
+      <p class="order-instructions">Drag the words, or tap them in the correct order. Tap a word in your sentence to remove it.</p>
+      <input type="hidden" data-order-value value="">
+    </div>`;
+    if (compact) {
+      return `<div class="exercise-item word-order-item word-order-compact" data-exercise-item="${escapeHtml(itemId)}" data-input-type="word-order">${control}<div class="feedback" aria-live="polite"></div></div>`;
+    }
+    return `<div class="exercise-item word-order-item" data-exercise-item="${escapeHtml(itemId)}" data-input-type="word-order"><div class="exercise-item-header"><span class="exercise-number">${escapeHtml(number)}</span></div><div class="exercise-control">${control}</div><div class="feedback" aria-live="polite"></div></div>`;
+  }
+
+  function orderSentence(itemNode) {
+    const node = itemNode?.querySelector('[data-word-order]');
+    if (!node) return '';
+    const words = [...node.querySelectorAll('[data-order-answer] [data-order-token]')].map((chip) => chip.textContent.trim());
+    if (!words.length) return '';
+    let sentence = words.join(' ');
+    if (/^(yes|no)$/i.test(words[0]) && words.length > 1) sentence = words[0] + ', ' + words.slice(1).join(' ');
+    return sentence + (node.dataset.punctuation || '.');
+  }
+
+  function setWordOrder(itemNode, indices) {
+    const workspace=itemNode?.querySelector('[data-word-order]');
+    if (!workspace) return;
+    const answer=workspace.querySelector('[data-order-answer]');
+    const bank=workspace.querySelector('[data-order-bank]');
+    const chips=[...workspace.querySelectorAll('[data-order-token]')];
+    const map=new Map(chips.map(chip=>[Number(chip.dataset.orderToken),chip]));
+    const used=new Set();
+    (Array.isArray(indices)?indices:[]).forEach((value)=>{
+      const index=Number(value),chip=map.get(index);
+      if (!Number.isInteger(index) || used.has(index) || !chip) return;
+      answer.appendChild(chip);used.add(index);
+    });
+    [...map.entries()].forEach(([i,chip])=>{if(!used.has(i))bank.appendChild(chip)});
+    const placeholder=answer.querySelector('[data-order-placeholder]');
+    if (placeholder) placeholder.hidden=used.size>0;
+    const hidden=workspace.querySelector('[data-order-value]');
+    if(hidden)hidden.value=JSON.stringify([...answer.querySelectorAll('[data-order-token]')].map(x=>Number(x.dataset.orderToken)));
+    answer.setAttribute('aria-label',used.size?`Your sentence: ${orderSentence(itemNode)}`:'Your sentence. Empty.');
+  }
+
+  function wireWordOrderControls(root) {
+    root.querySelectorAll('[data-word-order]').forEach((workspace)=>{
+      const item=workspace.closest('[data-exercise-item]');
+      const answer=workspace.querySelector('[data-order-answer]'),bank=workspace.querySelector('[data-order-bank]');
+      setWordOrder(item,[]);
+      const transfer=(chip,zone,before=null)=>{
+        if(!chip||!zone)return;
+        if(before&&before!==chip)zone.insertBefore(chip,before);
+        else zone.appendChild(chip);
+        setWordOrder(item,[...answer.querySelectorAll('[data-order-token]')].map(x=>Number(x.dataset.orderToken)));
+      };
+      let dragging=null,ghost=null,dropTarget=null,downX=0,downY=0,moved=false,suppressClick=false;
+      workspace.addEventListener('pointerdown',(event)=>{
+        const chip=event.target.closest('[data-order-token]');
+        if(!chip||event.button!==0)return;
+        dragging=chip;downX=event.clientX;downY=event.clientY;moved=false;
+        try {chip.setPointerCapture(event.pointerId)}catch{}
+      });
+      workspace.addEventListener('pointermove',(event)=>{
+        if(!dragging)return;
+        const dx=event.clientX-downX,dy=event.clientY-downY;
+        if(!moved&&Math.hypot(dx,dy)<9)return;
+        if(!moved){
+          moved=true;ghost=dragging.cloneNode(true);ghost.classList.add('order-ghost');ghost.setAttribute('aria-hidden','true');
+          document.body.appendChild(ghost);dragging.classList.add('is-dragging');
+        }
+        if(ghost){ghost.style.left=`${event.clientX}px`;ghost.style.top=`${event.clientY}px`;}
+        const near=document.elementFromPoint(event.clientX,event.clientY);
+        dropTarget=near?.closest('[data-order-answer], [data-order-bank]');
+        answer.classList.toggle('is-drop-target',dropTarget===answer);
+        bank.classList.toggle('is-drop-target',dropTarget===bank);
+      });
+      const end=(event)=>{
+        if(!dragging)return;
+        const chip=dragging;dragging=null;
+        const wasMoved=moved;moved=false;
+        chip.classList.remove('is-dragging');
+        if(ghost){ghost.remove();ghost=null;}
+        answer.classList.remove('is-drop-target');bank.classList.remove('is-drop-target');
+        if(wasMoved){
+          suppressClick=true;
+          const near=document.elementFromPoint(event.clientX,event.clientY);
+          const target=near?.closest('[data-order-answer], [data-order-bank]') || dropTarget;
+          if(target===answer||target===bank){
+            const sibling=near?.closest('[data-order-token]');
+            transfer(chip,target,sibling&&sibling.parentElement===target?sibling:null);
+          }
+          window.setTimeout(()=>{suppressClick=false},0);
+        }
+        dropTarget=null;
+      };
+      workspace.addEventListener('pointerup',end);
+      workspace.addEventListener('pointercancel',()=>{
+        if(ghost){ghost.remove();ghost=null;}
+        dragging?.classList.remove('is-dragging');dragging=null;moved=false;
+        answer.classList.remove('is-drop-target');bank.classList.remove('is-drop-target');
+      });
+      workspace.addEventListener('click',(event)=>{
+        if(suppressClick)return;
+        const chip=event.target.closest('[data-order-token]');
+        if(!chip)return;
+        transfer(chip,chip.parentElement===bank?answer:bank);
+      });
+      workspace.addEventListener('keydown',(event)=>{
+        const chip=event.target.closest('[data-order-token]');
+        if(!chip||chip.parentElement!==answer)return;
+        if(event.key!=='ArrowLeft'&&event.key!=='ArrowRight')return;
+        event.preventDefault();
+        const sibling=event.key==='ArrowLeft'?chip.previousElementSibling:chip.nextElementSibling;
+        if(sibling?.matches('[data-order-token]')){
+          if(event.key==='ArrowLeft')answer.insertBefore(chip,sibling);
+          else answer.insertBefore(sibling,chip);
+          setWordOrder(item,[...answer.querySelectorAll('[data-order-token]')].map(x=>Number(x.dataset.orderToken)));
+          chip.focus();
+        }
+      });
+    });
+  }
+
   function renderExerciseItem(item, blockId, index, inlineNumberedItems = false) {
     const itemId = safeText(item.id, `${index + 1}`);
     const number = item.number === undefined ? index + 1 : item.number;
@@ -1509,6 +1638,8 @@
       ? `${item.showExampleNumber === true ? baseNumberMarkup : ''}<span class="exercise-example-label">${escapeHtml(exampleLabel)}</span>`
       : baseNumberMarkup;
     const context = renderExerciseContext(item);
+
+    if (item.input === 'word-order') return renderWordOrderItem(item, blockId, index);
 
     if (item.displayOnly) {
       const className = item.displayStyle === 'heading' ? 'exercise-display-heading' : 'exercise-display-copy';
@@ -1824,6 +1955,128 @@
     }).join('')}</div>`;
   }
 
+  // Drag the original workbook number words onto separate numbered slots.
+  // 'eleven' is the given example and is deliberately not an answer.
+  function renderNumberWordOrder(block,blockId) {
+    const items=Array.isArray(block.items)?block.items:[];
+    const words=(Array.isArray(block.wordBank)?block.wordBank:[]).filter(w=>safeText(w).toLowerCase()!=='eleven');
+    const source=words.map(w=>`<button type="button" class="order-piece" data-number-token="${escapeHtml(w)}">${escapeHtml(w)}</button>`).join('');
+    const rows=items.map((item,index)=>{
+      if(item.example)return `<div class="number-order-row number-order-example"><span class="number-order-value">11</span><strong class="number-order-example-word">eleven</strong><span class="exercise-example-label">Example</span></div>`;
+      return `<div class="number-order-row" data-exercise-item="${escapeHtml(item.id)}" data-input-type="number-slot"><span class="number-order-value">${escapeHtml(item.prompt)}</span><div class="number-order-slot" data-number-slot aria-label="Word for ${escapeHtml(item.prompt)}"></div><div class="feedback" aria-live="polite"></div></div>`;
+    }).join('');
+    return `<div class="number-word-order" data-number-word-order>
+      <div class="number-order-bank" data-number-bank aria-label="Words from the box">${source}</div>
+      <p class="order-instructions">Drag each word to the correct number, or tap a word and then its place. Tap a placed word to return it.</p>
+      <div class="number-order-rows">${rows}</div>
+    </div>`;
+  }
+
+  function wireNumberWordOrder(root) {
+    root.querySelectorAll('[data-number-word-order]').forEach((workspace)=>{
+      const bank=workspace.querySelector('[data-number-bank]');
+      const slots=[...workspace.querySelectorAll('[data-number-slot]')];
+      let dragging=null,ghost=null,moved=false,suppressClick=false,startX=0,startY=0;
+      const insert=(chip,target)=>{
+        if(!chip||!target)return;
+        if(target!==bank){
+          const other=target.querySelector('[data-number-token]');
+          if(other && other!==chip)bank.appendChild(other);
+        }
+        target.appendChild(chip);
+      };
+      // Tap-to-place: first select a word, then choose its numbered slot.
+      // A placed word can be tapped to return it to the bank.
+      let selected=null;
+      const select=(chip)=>{
+        workspace.querySelectorAll('[data-number-token]').forEach(el=>{
+          el.classList.toggle('is-selected',el===chip);
+          el.setAttribute('aria-pressed',el===chip?'true':'false');
+        });
+        selected=chip;
+      };
+      workspace.addEventListener('click',(event)=>{
+        if(suppressClick)return;
+        const chip=event.target.closest('[data-number-token]');
+        if(chip){
+          if(chip.parentElement!==bank){insert(chip,bank);select(null);}
+          else select(chip===selected?null:chip);
+          return;
+        }
+        const slot=event.target.closest('[data-number-slot]');
+        if(slot&&selected){insert(selected,slot);select(null);}
+      });
+      slots.forEach((slot)=>{
+        slot.tabIndex=0;
+        slot.setAttribute('role','button');
+        slot.addEventListener('keydown',(event)=>{
+          if((event.key==='Enter'||event.key===' ')&&selected){
+            event.preventDefault();insert(selected,slot);select(null);
+          }
+        });
+      });
+      workspace.addEventListener('pointerdown',(event)=>{
+        const chip=event.target.closest('[data-number-token]');
+        if(!chip||event.button!==0)return;
+        dragging=chip;moved=false;startX=event.clientX;startY=event.clientY;
+        try{chip.setPointerCapture(event.pointerId)}catch{}
+      });
+      workspace.addEventListener('pointermove',(event)=>{
+        if(!dragging)return;
+        if(!moved && Math.hypot(event.clientX-startX,event.clientY-startY)<9)return;
+        if(!moved){
+          moved=true;ghost=dragging.cloneNode(true);ghost.classList.add('order-ghost');ghost.setAttribute('aria-hidden','true');document.body.appendChild(ghost);
+          dragging.classList.add('is-dragging');
+        }
+        ghost.style.left=`${event.clientX}px`;ghost.style.top=`${event.clientY}px`;
+        const target=document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-number-slot], [data-number-bank]');
+        slots.forEach(s=>s.classList.toggle('is-drop-target',s===target));
+        bank.classList.toggle('is-drop-target',bank===target);
+      });
+      workspace.addEventListener('pointerup',(event)=>{
+        if(!dragging)return;
+        const chip=dragging,wasMoved=moved;dragging=null;moved=false;
+        chip.classList.remove('is-dragging');
+        if(ghost){ghost.remove();ghost=null;}
+        slots.forEach(s=>s.classList.remove('is-drop-target'));
+        bank.classList.remove('is-drop-target');
+        if(wasMoved){
+          const target=document.elementFromPoint(event.clientX,event.clientY)?.closest('[data-number-slot], [data-number-bank]');
+          if(target && workspace.contains(target))insert(chip,target);
+          select(null);
+          suppressClick=true;setTimeout(()=>{suppressClick=false;},0);
+        }
+      });
+      workspace.addEventListener('pointercancel',()=>{
+        if(ghost){ghost.remove();ghost=null;}
+        dragging?.classList.remove('is-dragging');dragging=null;moved=false;
+        slots.forEach(s=>s.classList.remove('is-drop-target'));bank.classList.remove('is-drop-target');
+      });
+      // Keyboard: focused word can be moved to the next empty slot using Enter,
+      // or returned using Enter when it has already been placed.
+    });
+  }
+
+  // A/B pairs are visually grouped as a conversation, not a list of fields.
+  function renderConversationWordOrder(block, blockId) {
+    const items=new Map((block.items||[]).map((item,i)=>[safeText(item.id),{item,index:i}]));
+    const lines=Array.isArray(block.dialogueLines)?block.dialogueLines:[];
+    const pairs=[];
+    for(let idx=0;idx<lines.length;idx+=2){
+      const batch=lines.slice(idx,idx+2);
+      pairs.push(`<section class="conversation-pair" aria-label="Conversation ${Math.floor(idx/2)+1}">
+        <span class="conversation-pair-number">${Math.floor(idx/2)+1}</span>
+        ${batch.map((line,lineIndex)=>{
+          const entry=items.get(safeText(line.itemIds?.[0]));
+          if(!entry)return '';
+          const who=lineIndex===0?'A':'B';
+          return `<div class="conversation-turn conversation-turn-${who.toLowerCase()}"><span class="conversation-avatar">${who}</span><div class="conversation-bubble">${renderWordOrderItem(entry.item,blockId,entry.index,true)}</div></div>`;
+        }).join('')}
+      </section>`);
+    }
+    return `<div class="conversation-word-order" role="group" aria-label="Questions and answers">${pairs.join('')}</div>`;
+  }
+
   // Lesson 1A: preserve the original textbook layouts (four picture scenes,
   // continuous dialogue, chat/table and personal profile cards).
   function renderGreetingScenesExercise(block, blockId) {
@@ -1865,6 +2118,29 @@
     return `<div class="a1-profile-grid">${profiles}</div><div class="a1-chat-writing">${(block.items || []).map((item, i) => renderExerciseItem(item, blockId, i)).join('')}</div>`;
   }
 
+  // Lesson 1B: keep each original photo and the matching task together.
+  function renderJobsPhotoMatch(block, blockId) {
+    const photos = (block.photos || []).map((photo) => `<figure class="a1b-job-figure"><a href="${escapeHtml(photo.src)}" target="_blank" rel="noopener"><img src="${escapeHtml(photo.src)}" alt="Original workbook job photo ${escapeHtml(photo.label)}" loading="lazy"></a><figcaption>Photo ${escapeHtml(photo.label)}</figcaption></figure>`).join('');
+    const items = (block.items || []).map((item, i) => renderExerciseItem(item, blockId, i)).join('');
+    return `<div class="a1b-jobs-layout"><div class="a1b-jobs-photos" aria-label="Six original workbook photographs">${photos}</div><div class="a1b-jobs-answers exercise-items">${items}</div></div>`;
+  }
+
+  function renderJobMessages(block, blockId) {
+    return `<div class="a1b-job-chat"><div class="a1b-job-chat-bar">Chat</div><div class="a1b-job-chat-list">${(block.items || []).map((item, i) => `<div class="a1b-job-chat-bubble">${renderExerciseItem(item, blockId, i, true)}</div>`).join('')}</div></div>`;
+  }
+
+  function renderBlogTable(block) {
+    const itemMap = new Map((block.items || []).map((item) => [String(item.id), item]));
+    const people=(block.blogProfiles||[]).map((person) => `<article class="a1b-blog-person"><div class="a1b-blog-text"><h4>${escapeHtml(person.heading)}</h4><p>${escapeHtml(person.text)}</p></div><a href="${escapeHtml(person.image)}" target="_blank" rel="noopener"><img src="${escapeHtml(person.image)}" alt="Original workbook portrait of ${escapeHtml(person.name)}" loading="lazy"></a></article>`).join('');
+    const rows=(block.tableRows||[]).map((row)=>`<tr>${row.map((cell)=>{
+      const item=itemMap.get(String(cell.itemId));
+      if(!item)return '<td></td>';
+      const n=escapeHtml(item.number||item.id);
+      return `<td><div class="a1b-blog-gap" data-exercise-item="${escapeHtml(item.id)}" data-input-type="text"><label class="a1b-blog-gap-label">${n}<input type="text" class="text-field" autocomplete="off" aria-label="Blog table answer ${n}"></label><span class="feedback" aria-live="polite"></span></div></td>`;
+    }).join('')}</tr>`).join('');
+    return `<div class="a1b-blog-layout"><div class="a1b-blog" aria-label="Original jobs blog"><div class="a1b-blog-title"><strong>${escapeHtml(block.blogTitle)}</strong><span>${escapeHtml(block.blogByline)}</span></div><div class="a1b-blog-people">${people}</div></div><div class="a1b-blog-table"><div class="table-wrap"><table><thead><tr>${(block.tableHeaders||[]).map((x)=>`<th>${escapeHtml(x)}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div></div></div>`;
+  }
+
   function renderLessonBlock(block, index) {
     const id = safeText(block.id, `task-${index}`);
     const title = escapeHtml(block.title || block.prompt || `Task ${index + 1}`);
@@ -1895,7 +2171,7 @@
     if (block.type === 'exercise') {
       const items = Array.isArray(block.items) ? block.items : [];
       const wordBankLabel = Object.prototype.hasOwnProperty.call(block, 'wordBankLabel') ? safeText(block.wordBankLabel) : 'Word bank';
-      const wordBank = Array.isArray(block.wordBank) && block.wordBank.length
+      const wordBank = block.layout !== 'number-word-order' && Array.isArray(block.wordBank) && block.wordBank.length
         ? `<div class="word-bank" aria-label="${escapeHtml(wordBankLabel || 'Word list')}">${wordBankLabel ? `<strong class="word-bank-label">${escapeHtml(wordBankLabel)}</strong>` : ''}${block.wordBank.map((word) => `<span>${escapeHtml(word)}</span>`).join('')}</div>`
         : '';
       const wordBanks = Array.isArray(block.wordBanks) && block.wordBanks.length
@@ -1917,7 +2193,17 @@
           }).join('')}</div>`
         : '';
       const intro = block.introTitle || block.introText ? `<div class="exercise-source"><h4>${escapeHtml(block.introTitle || '')}</h4>${block.introText ? `<p>${escapeHtml(block.introText)}</p>` : ''}</div>` : '';
-      const exerciseContent = block.layout === 'greeting-scenes'
+      const exerciseContent = block.layout === 'number-word-order'
+        ? renderNumberWordOrder(block,id)
+        : block.layout === 'conversation-word-order'
+        ? renderConversationWordOrder(block,id)
+        : block.layout === 'jobs-photo-match'
+        ? renderJobsPhotoMatch(block, id)
+        : block.layout === 'job-messages'
+          ? renderJobMessages(block, id)
+          : block.layout === 'blog-table'
+            ? renderBlogTable(block)
+            : block.layout === 'greeting-scenes'
         ? renderGreetingScenesExercise(block, id)
         : block.layout === 'inline-dialogue'
           ? renderInlineDialogueExercise(block, id)
@@ -2004,7 +2290,13 @@
     let actual;
     let correct = false;
 
-    if (inputType === 'example-gap') {
+    if (inputType === 'number-slot') {
+      actual=itemNode.querySelector('[data-number-token]')?.dataset.numberToken || '';
+      correct=normalizeAnswer(actual)!=='' && normalizeAnswer(actual)===normalizeAnswer(item.answer);
+    } else if (inputType === 'word-order') {
+      actual = [...itemNode.querySelectorAll('[data-order-answer] [data-order-token]')].map((chip)=>Number(chip.dataset.orderToken));
+      correct = actual.length === (item.words || []).length && textAnswerMatches(item,orderSentence(itemNode));
+    } else if (inputType === 'example-gap') {
       actual = itemNode.querySelector('[data-example-gap]')?.value ?? '';
       correct = textAnswerMatches(item, actual);
     } else if (inputType === 'r-circle') {
@@ -2155,7 +2447,31 @@
       const itemNode = node.querySelector(`[data-exercise-item="${CSS.escape(itemId)}"]`);
       if (!itemNode) return;
       const inputType = item.input || 'text';
-      if (inputType === 'example-gap') {
+      if (inputType === 'number-slot') {
+        const workspace=node.querySelector('[data-number-word-order]');
+        const chip=[...workspace?.querySelectorAll('[data-number-token]')||[]].find(el=>normalizeAnswer(el.dataset.numberToken)===normalizeAnswer(value));
+        const slot=itemNode.querySelector('[data-number-slot]');
+        if(chip&&slot){
+          const existing=slot.querySelector('[data-number-token]');
+          if(existing && existing!==chip)workspace.querySelector('[data-number-bank]').appendChild(existing);
+          slot.appendChild(chip);
+        }
+      } else if (inputType === 'word-order') {
+        if(Array.isArray(value))setWordOrder(itemNode,value);
+        else if (typeof value==='string') {
+          // Backward compatibility with answers previously typed as full sentences.
+          const words=Array.isArray(item.words)?item.words:[];
+          const oldWords=safeText(value).replace(/[.!?]$/,'').replace(/^((?:yes|no)),/i,'$1').split(/\s+/);
+          const used=new Set(),ordered=[];
+          let cursor=0;
+          while(cursor<oldWords.length){
+            const match=words.findIndex((part,i)=>!used.has(i)&&oldWords.slice(cursor,cursor+part.trim().split(/\s+/).length).join(' ').toLocaleLowerCase('en').replace(/[’‘]/g,"'")===part.toLocaleLowerCase('en').replace(/[’‘]/g,"'"));
+            if(match<0)break;
+            ordered.push(match);used.add(match);cursor+=words[match].trim().split(/\s+/).length;
+          }
+          setWordOrder(itemNode,ordered);
+        }
+      } else if (inputType === 'example-gap') {
         const input = itemNode.querySelector('[data-example-gap]');
         if (input) input.value = safeText(value);
       } else if (inputType === 'r-circle') {
@@ -2278,8 +2594,10 @@
       <div id="lesson-blocks">${renderedBlocks}</div>
       <div class="card section lesson-actions"><div id="lesson-result" aria-live="polite"></div><div class="button-row"><button class="btn btn-primary" id="check-lesson" type="button">Check answers</button><button class="btn btn-secondary" id="submit-lesson" type="button" ${savedResult ? '' : 'disabled'}>Submit to teacher</button></div><p class="muted save-note">After checking, answers are saved on this device. Cloud sync works when Supabase access is configured.</p></div>`;
 
-    restoreLessonAnswers(root, blocks, savedResult?.answers);
     wireLessonInteractiveInputs(root);
+    wireWordOrderControls(root);
+    wireNumberWordOrder(root);
+    restoreLessonAnswers(root, blocks, savedResult?.answers);
 
     root.querySelectorAll('[data-reorder-source]').forEach((source) => {
       source.addEventListener('click', (event) => {
@@ -2593,11 +2911,37 @@
     byId('vocab-hero-subtitle').textContent = `${safeText(topic.label, 'Vocabulary topic')} · ${topic.words.length} unique words`;
     const progress = window.ProgressService.loadVocabularyProgress();
     const topicProgress = getTopicProgress(progress, topic.id);
+    const sections = Array.isArray(topic.sections) ? topic.sections.filter((section) => section?.id && topic.words.some((word) => word.section === section.id)) : [];
+    const hasSections = sections.length > 0;
+    const requestedSection = safeText(queryParam('section'), '').toLowerCase();
+    let selectedSection = hasSections && sections.some((section) => section.id === requestedSection)
+      ? requestedSection : (hasSections ? sections[0].id : 'all');
+    const sectionWords = () => selectedSection === 'all' ? topic.words : topic.words.filter((word) => word.section === selectedSection);
+    // A previous version displayed the sections as separate topics. Retain any
+    // completed tests from those topic IDs, without duplicating them on reload.
+    let testsMigrated = false;
+    if (topic.id === 'vocab-lesson-1') {
+      [['vocab-lesson-1-countries','countries'],['vocab-lesson-1-nationalities','nationalities']].forEach(([legacyId, section]) => {
+        (progress.topics?.[legacyId]?.tests || []).forEach((test) => {
+          if (topicProgress.tests.some((saved) => saved.migratedFrom === legacyId && saved.completedAt === test.completedAt)) return;
+          topicProgress.tests.push({ ...test, section, migratedFrom: legacyId });
+          testsMigrated = true;
+        });
+      });
+    }
     let mode = 'cards';
     let cardQueue = [];
     let testState = null;
 
-    root.innerHTML = `<div class="mode-tabs" id="vocab-modes" aria-label="Practice mode">
+    const sectionNav = hasSections ? `<section class="vocab-section-panel" aria-label="Lesson vocabulary sections">
+      <div class="vocab-section-heading"><div><span class="eyebrow">Lesson 1A · One vocabulary lesson</span><h2>Choose what to study</h2></div><p>Learn each group separately. Your results are saved together for this lesson.</p></div>
+      <div class="vocab-section-tabs" id="vocab-sections" role="group" aria-label="Vocabulary categories">
+        ${sections.map((section) => `<button type="button" class="vocab-section-button ${selectedSection===section.id?'is-selected':''}" data-section="${escapeHtml(section.id)}" aria-pressed="${selectedSection===section.id}"><strong>${escapeHtml(section.title)}</strong><span>${topic.words.filter((w)=>w.section===section.id).length} words</span></button>`).join('')}
+        <button type="button" class="vocab-section-button ${selectedSection==='all'?'is-selected':''}" data-section="all" aria-pressed="${selectedSection==='all'}"><strong>All of Lesson 1A</strong><span>${topic.words.length} words</span></button>
+      </div>
+      <p class="vocab-section-progress" id="vocab-section-progress" aria-live="polite"></p>
+    </section>` : '';
+    root.innerHTML = `${sectionNav}<div class="mode-tabs" id="vocab-modes" aria-label="Practice mode">
       <button class="mode-btn active" type="button" data-mode="cards">New words</button>
       <button class="mode-btn" type="button" data-mode="test">Test</button>
       <button class="mode-btn" type="button" data-mode="all">All words</button>
@@ -2606,8 +2950,17 @@
     const modeRoot = byId('vocab-mode-root');
 
     const save = () => window.ProgressService.saveVocabularyProgress(progress);
+    if (testsMigrated) save();
+    const updateSectionProgress = () => {
+      const el = byId('vocab-section-progress');
+      if (!el) return;
+      const scoped = sectionWords();
+      const learned = scoped.filter((word) => progress.words[word.__wordKey]?.status === 'known').length;
+      const selected = selectedSection === 'all' ? 'All of Lesson 1A' : safeText(sections.find((s) => s.id === selectedSection)?.title, 'Section');
+      el.textContent = `${selected}: ${learned} / ${scoped.length} learned · Words count as learned after a correct test answer.`;
+    };
     const resetCardQueue = () => {
-      cardQueue = shuffled(topic.words.filter((word) => {
+      cardQueue = shuffled(sectionWords().filter((word) => {
         const status = progress.words[word.__wordKey]?.status;
         return mode === 'difficult'
           ? status === 'difficult'
@@ -2639,22 +2992,24 @@
         setWordStatus(progress, word, topic.id, 'reviewed');
         cardQueue.shift();
         save();
+        updateSectionProgress();
         drawCard();
       });
       byId('word-difficult').addEventListener('click', () => {
         setWordStatus(progress, word, topic.id, 'difficult');
         cardQueue.shift();
         save();
+        updateSectionProgress();
         drawCard();
       });
     };
 
     const startTest = () => {
-      if (topic.words.length < 4) {
+      if (sectionWords().length < 4) {
         modeRoot.innerHTML = emptyState('🧩', 'At least 4 words are needed for the test', 'Add more unique words to the topic to create four answer options.');
         return;
       }
-      testState = { words: shuffled(topic.words), index: 0, firstTryCorrect: 0, answered: false, firstAnswers: {} };
+      testState = { words: shuffled(sectionWords()), section: selectedSection, index: 0, firstTryCorrect: 0, answered: false, firstAnswers: {} };
       drawQuestion();
     };
 
@@ -2664,7 +3019,8 @@
         total: testState.words.length,
         percent: safePercent(testState.firstTryCorrect, testState.words.length),
         answers: testState.firstAnswers,
-        completedAt: new Date().toISOString()
+        completedAt: new Date().toISOString(),
+        section: testState.section
       };
       topicProgress.tests.push(result);
       save();
@@ -2675,7 +3031,7 @@
     const drawQuestion = () => {
       if (testState.index >= testState.words.length) { finishTest(); return; }
       const word = testState.words[testState.index];
-      const distractors = shuffled(topic.words.filter((item) => item.__wordKey !== word.__wordKey)).slice(0, 3);
+      const distractors = shuffled(sectionWords().filter((item) => item.__wordKey !== word.__wordKey)).slice(0, 3);
       const options = shuffled([word, ...distractors]);
       testState.answered = false;
       modeRoot.innerHTML = `<div class="flash-counter">Question ${testState.index + 1} of ${testState.words.length}</div><article class="card"><span class="eyebrow">Choose the translation</span><h2 class="flash-word">${escapeHtml(word.en)}</h2>${word.transcription ? `<p class="muted">${escapeHtml(word.transcription)}</p>` : ''}<div class="option-list section">${options.map((option) => `<button class="quiz-option" type="button" data-answer-key="${escapeHtml(option.__wordKey)}">${escapeHtml(option.ru)}</button>`).join('')}</div><div id="vocab-test-feedback" class="feedback"></div><div class="button-row"><button class="btn btn-primary" id="next-vocab-question" type="button" disabled>Next word</button></div></article>`;
@@ -2692,6 +3048,7 @@
             setWordStatus(progress, word, topic.id, 'difficult');
           }
           save();
+          updateSectionProgress();
           modeRoot.querySelectorAll('[data-answer-key]').forEach((optionButton) => {
             optionButton.disabled = true;
             if (optionButton.dataset.answerKey === word.__wordKey) optionButton.classList.add('correct');
@@ -2707,13 +3064,19 @@
     };
 
     const drawAllWords = () => {
-      modeRoot.innerHTML = `<div class="words-grid">${topic.words.map((word) => {
+      const wordCard = (word) => {
         const status = progress.words[word.__wordKey]?.status;
         return `<article class="card word-card ${status === 'known' ? 'known' : ''} ${status === 'difficult' ? 'difficult' : ''}"><strong>${escapeHtml(word.en)}</strong><span>${escapeHtml(word.ru)}</span>${word.transcription ? `<span>${escapeHtml(word.transcription)}</span>` : ''}</article>`;
-      }).join('')}</div>`;
+      };
+      if (hasSections && selectedSection === 'all') {
+        modeRoot.innerHTML = sections.map((section) => `<section class="vocab-words-section"><div class="vocab-words-heading"><h3>${escapeHtml(section.title)}</h3><span>${topic.words.filter((word) => word.section === section.id).length} words</span></div><div class="words-grid">${topic.words.filter((word) => word.section === section.id).map(wordCard).join('')}</div></section>`).join('');
+      } else {
+        modeRoot.innerHTML = `<div class="words-grid">${sectionWords().map(wordCard).join('')}</div>`;
+      }
     };
 
     const drawMode = () => {
+      updateSectionProgress();
       if (mode === 'cards' || mode === 'difficult') {
         resetCardQueue();
         drawCard();
@@ -2727,6 +3090,19 @@
       byId('vocab-modes').querySelectorAll('[data-mode]').forEach((item) => item.classList.toggle('active', item === button));
       drawMode();
     });
+    if (hasSections) {
+      byId('vocab-sections').addEventListener('click', (event) => {
+        const button = event.target.closest('[data-section]');
+        if (!button || !['all', ...sections.map((section) => section.id)].includes(button.dataset.section)) return;
+        selectedSection = button.dataset.section;
+        byId('vocab-sections').querySelectorAll('[data-section]').forEach((item) => {
+          const active = item === button;
+          item.classList.toggle('is-selected', active);
+          item.setAttribute('aria-pressed', String(active));
+        });
+        drawMode();
+      });
+    }
     drawMode();
   }
 
