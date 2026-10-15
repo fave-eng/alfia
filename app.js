@@ -2593,11 +2593,37 @@
     byId('vocab-hero-subtitle').textContent = `${safeText(topic.label, 'Vocabulary topic')} · ${topic.words.length} unique words`;
     const progress = window.ProgressService.loadVocabularyProgress();
     const topicProgress = getTopicProgress(progress, topic.id);
+    const sections = Array.isArray(topic.sections) ? topic.sections.filter((section) => section?.id && topic.words.some((word) => word.section === section.id)) : [];
+    const hasSections = sections.length > 0;
+    const requestedSection = safeText(queryParam('section'), '').toLowerCase();
+    let selectedSection = hasSections && sections.some((section) => section.id === requestedSection)
+      ? requestedSection : (hasSections ? sections[0].id : 'all');
+    const sectionWords = () => selectedSection === 'all' ? topic.words : topic.words.filter((word) => word.section === selectedSection);
+    // A previous version displayed the sections as separate topics. Retain any
+    // completed tests from those topic IDs, without duplicating them on reload.
+    let testsMigrated = false;
+    if (topic.id === 'vocab-lesson-1') {
+      [['vocab-lesson-1-countries','countries'],['vocab-lesson-1-nationalities','nationalities']].forEach(([legacyId, section]) => {
+        (progress.topics?.[legacyId]?.tests || []).forEach((test) => {
+          if (topicProgress.tests.some((saved) => saved.migratedFrom === legacyId && saved.completedAt === test.completedAt)) return;
+          topicProgress.tests.push({ ...test, section, migratedFrom: legacyId });
+          testsMigrated = true;
+        });
+      });
+    }
     let mode = 'cards';
     let cardQueue = [];
     let testState = null;
 
-    root.innerHTML = `<div class="mode-tabs" id="vocab-modes" aria-label="Practice mode">
+    const sectionNav = hasSections ? `<section class="vocab-section-panel" aria-label="Lesson vocabulary sections">
+      <div class="vocab-section-heading"><div><span class="eyebrow">Lesson 1A · One vocabulary lesson</span><h2>Choose what to study</h2></div><p>Learn each group separately. Your results are saved together for this lesson.</p></div>
+      <div class="vocab-section-tabs" id="vocab-sections" role="group" aria-label="Vocabulary categories">
+        ${sections.map((section) => `<button type="button" class="vocab-section-button ${selectedSection===section.id?'is-selected':''}" data-section="${escapeHtml(section.id)}" aria-pressed="${selectedSection===section.id}"><strong>${escapeHtml(section.title)}</strong><span>${topic.words.filter((w)=>w.section===section.id).length} words</span></button>`).join('')}
+        <button type="button" class="vocab-section-button ${selectedSection==='all'?'is-selected':''}" data-section="all" aria-pressed="${selectedSection==='all'}"><strong>All of Lesson 1A</strong><span>${topic.words.length} words</span></button>
+      </div>
+      <p class="vocab-section-progress" id="vocab-section-progress" aria-live="polite"></p>
+    </section>` : '';
+    root.innerHTML = `${sectionNav}<div class="mode-tabs" id="vocab-modes" aria-label="Practice mode">
       <button class="mode-btn active" type="button" data-mode="cards">New words</button>
       <button class="mode-btn" type="button" data-mode="test">Test</button>
       <button class="mode-btn" type="button" data-mode="all">All words</button>
@@ -2606,8 +2632,17 @@
     const modeRoot = byId('vocab-mode-root');
 
     const save = () => window.ProgressService.saveVocabularyProgress(progress);
+    if (testsMigrated) save();
+    const updateSectionProgress = () => {
+      const el = byId('vocab-section-progress');
+      if (!el) return;
+      const scoped = sectionWords();
+      const learned = scoped.filter((word) => progress.words[word.__wordKey]?.status === 'known').length;
+      const selected = selectedSection === 'all' ? 'All of Lesson 1A' : safeText(sections.find((s) => s.id === selectedSection)?.title, 'Section');
+      el.textContent = `${selected}: ${learned} / ${scoped.length} learned · Words count as learned after a correct test answer.`;
+    };
     const resetCardQueue = () => {
-      cardQueue = shuffled(topic.words.filter((word) => {
+      cardQueue = shuffled(sectionWords().filter((word) => {
         const status = progress.words[word.__wordKey]?.status;
         return mode === 'difficult'
           ? status === 'difficult'
@@ -2639,22 +2674,24 @@
         setWordStatus(progress, word, topic.id, 'reviewed');
         cardQueue.shift();
         save();
+        updateSectionProgress();
         drawCard();
       });
       byId('word-difficult').addEventListener('click', () => {
         setWordStatus(progress, word, topic.id, 'difficult');
         cardQueue.shift();
         save();
+        updateSectionProgress();
         drawCard();
       });
     };
 
     const startTest = () => {
-      if (topic.words.length < 4) {
+      if (sectionWords().length < 4) {
         modeRoot.innerHTML = emptyState('🧩', 'At least 4 words are needed for the test', 'Add more unique words to the topic to create four answer options.');
         return;
       }
-      testState = { words: shuffled(topic.words), index: 0, firstTryCorrect: 0, answered: false, firstAnswers: {} };
+      testState = { words: shuffled(sectionWords()), section: selectedSection, index: 0, firstTryCorrect: 0, answered: false, firstAnswers: {} };
       drawQuestion();
     };
 
@@ -2664,7 +2701,8 @@
         total: testState.words.length,
         percent: safePercent(testState.firstTryCorrect, testState.words.length),
         answers: testState.firstAnswers,
-        completedAt: new Date().toISOString()
+        completedAt: new Date().toISOString(),
+        section: testState.section
       };
       topicProgress.tests.push(result);
       save();
@@ -2675,7 +2713,7 @@
     const drawQuestion = () => {
       if (testState.index >= testState.words.length) { finishTest(); return; }
       const word = testState.words[testState.index];
-      const distractors = shuffled(topic.words.filter((item) => item.__wordKey !== word.__wordKey)).slice(0, 3);
+      const distractors = shuffled(sectionWords().filter((item) => item.__wordKey !== word.__wordKey)).slice(0, 3);
       const options = shuffled([word, ...distractors]);
       testState.answered = false;
       modeRoot.innerHTML = `<div class="flash-counter">Question ${testState.index + 1} of ${testState.words.length}</div><article class="card"><span class="eyebrow">Choose the translation</span><h2 class="flash-word">${escapeHtml(word.en)}</h2>${word.transcription ? `<p class="muted">${escapeHtml(word.transcription)}</p>` : ''}<div class="option-list section">${options.map((option) => `<button class="quiz-option" type="button" data-answer-key="${escapeHtml(option.__wordKey)}">${escapeHtml(option.ru)}</button>`).join('')}</div><div id="vocab-test-feedback" class="feedback"></div><div class="button-row"><button class="btn btn-primary" id="next-vocab-question" type="button" disabled>Next word</button></div></article>`;
@@ -2692,6 +2730,7 @@
             setWordStatus(progress, word, topic.id, 'difficult');
           }
           save();
+          updateSectionProgress();
           modeRoot.querySelectorAll('[data-answer-key]').forEach((optionButton) => {
             optionButton.disabled = true;
             if (optionButton.dataset.answerKey === word.__wordKey) optionButton.classList.add('correct');
@@ -2707,13 +2746,19 @@
     };
 
     const drawAllWords = () => {
-      modeRoot.innerHTML = `<div class="words-grid">${topic.words.map((word) => {
+      const wordCard = (word) => {
         const status = progress.words[word.__wordKey]?.status;
         return `<article class="card word-card ${status === 'known' ? 'known' : ''} ${status === 'difficult' ? 'difficult' : ''}"><strong>${escapeHtml(word.en)}</strong><span>${escapeHtml(word.ru)}</span>${word.transcription ? `<span>${escapeHtml(word.transcription)}</span>` : ''}</article>`;
-      }).join('')}</div>`;
+      };
+      if (hasSections && selectedSection === 'all') {
+        modeRoot.innerHTML = sections.map((section) => `<section class="vocab-words-section"><div class="vocab-words-heading"><h3>${escapeHtml(section.title)}</h3><span>${topic.words.filter((word) => word.section === section.id).length} words</span></div><div class="words-grid">${topic.words.filter((word) => word.section === section.id).map(wordCard).join('')}</div></section>`).join('');
+      } else {
+        modeRoot.innerHTML = `<div class="words-grid">${sectionWords().map(wordCard).join('')}</div>`;
+      }
     };
 
     const drawMode = () => {
+      updateSectionProgress();
       if (mode === 'cards' || mode === 'difficult') {
         resetCardQueue();
         drawCard();
@@ -2727,6 +2772,19 @@
       byId('vocab-modes').querySelectorAll('[data-mode]').forEach((item) => item.classList.toggle('active', item === button));
       drawMode();
     });
+    if (hasSections) {
+      byId('vocab-sections').addEventListener('click', (event) => {
+        const button = event.target.closest('[data-section]');
+        if (!button || !['all', ...sections.map((section) => section.id)].includes(button.dataset.section)) return;
+        selectedSection = button.dataset.section;
+        byId('vocab-sections').querySelectorAll('[data-section]').forEach((item) => {
+          const active = item === button;
+          item.classList.toggle('is-selected', active);
+          item.setAttribute('aria-pressed', String(active));
+        });
+        drawMode();
+      });
+    }
     drawMode();
   }
 

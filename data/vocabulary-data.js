@@ -1,15 +1,33 @@
-/* Speakout A1 · Lesson 1A: greetings + countries and nationalities. */
+/* Speakout A1 · One vocabulary lesson with three internal study sections. */
 window.VOCABULARY_DATA = [
   {
     "id": "vocab-lesson-1",
-    "title": "Greetings · Countries and nationalities",
-    "label": "Speakout A1 · Lesson 1A",
+    "title": "1A · Hello",
+    "label": "Speakout A1 · Unit 1 · Lesson 1A",
     "type": "lesson",
     "linkedLessonId": "lesson-1",
     "page": "vocabulary.html?id=vocab-lesson-1",
     "icon": "👋",
+    "sections": [
+      {
+        "id": "greetings",
+        "title": "Greetings & introductions",
+        "description": "Hello, goodbye and useful phrases"
+      },
+      {
+        "id": "countries",
+        "title": "Countries",
+        "description": "Place names and where people are from"
+      },
+      {
+        "id": "nationalities",
+        "title": "Nationalities",
+        "description": "Describing where a person is from"
+      }
+    ],
     "words": [
       {
+        "section": "greetings",
         "id": "1a-hello",
         "en": "hello",
         "ru": "здравствуйте, привет",
@@ -18,6 +36,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Здравствуйте, Мария!"
       },
       {
+        "section": "greetings",
         "id": "1a-hi",
         "en": "hi",
         "ru": "привет (неформально)",
@@ -26,6 +45,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Привет, Бен!"
       },
       {
+        "section": "greetings",
         "id": "1a-hey",
         "en": "hey",
         "ru": "привет (разговорное)",
@@ -34,6 +54,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Привет, Адам!"
       },
       {
+        "section": "greetings",
         "id": "1a-good-morning",
         "en": "good morning",
         "ru": "доброе утро",
@@ -42,6 +63,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Доброе утро, учитель!"
       },
       {
+        "section": "greetings",
         "id": "1a-good-afternoon",
         "en": "good afternoon",
         "ru": "добрый день",
@@ -50,6 +72,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Добрый день, всем."
       },
       {
+        "section": "greetings",
         "id": "1a-good-evening",
         "en": "good evening",
         "ru": "добрый вечер",
@@ -58,6 +81,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Добрый вечер, Лаура."
       },
       {
+        "section": "greetings",
         "id": "1a-good-night",
         "en": "good night",
         "ru": "спокойной ночи",
@@ -66,6 +90,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Спокойной ночи, Салли."
       },
       {
+        "section": "greetings",
         "id": "1a-bye",
         "en": "bye",
         "ru": "пока",
@@ -74,6 +99,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Пока, Питер!"
       },
       {
+        "section": "greetings",
         "id": "1a-goodbye",
         "en": "goodbye",
         "ru": "до свидания",
@@ -82,6 +108,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "До свидания, учитель."
       },
       {
+        "section": "greetings",
         "id": "1a-see-you",
         "en": "see you",
         "ru": "увидимся",
@@ -90,6 +117,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Увидимся, Эмма!"
       },
       {
+        "section": "greetings",
         "id": "1a-nice-to-meet-you",
         "en": "nice to meet you",
         "ru": "приятно познакомиться",
@@ -98,6 +126,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Приятно познакомиться, Ноэми."
       },
       {
+        "section": "greetings",
         "id": "1a-student",
         "en": "student",
         "ru": "ученик, студент",
@@ -106,6 +135,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Я студент."
       },
       {
+        "section": "greetings",
         "id": "1a-teacher",
         "en": "teacher",
         "ru": "учитель, преподаватель",
@@ -114,6 +144,7 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Ты учитель?"
       },
       {
+        "section": "greetings",
         "id": "1a-nationality",
         "en": "nationality",
         "ru": "национальность",
@@ -122,132 +153,292 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Какая у тебя национальность?"
       },
       {
-        "id": "1a-country-nationality-01",
-        "en": "the US / American",
-        "ru": "США / американец, американка; американский",
-        "transcription": "/ðiː ˌjuː ˈes/ · /əˈmerɪkən/",
-        "exampleEn": "I’m from the US. I’m American.",
-        "exampleRu": "Я из США. Я американец."
+        "section": "countries",
+        "id": "1a-country-01",
+        "en": "the US",
+        "ru": "США",
+        "transcription": "/ðiː ˌjuː ˈes/",
+        "exampleEn": "I’m from the US.",
+        "exampleRu": "Я из США."
       },
       {
-        "id": "1a-country-nationality-02",
-        "en": "Turkey / Turkish",
-        "ru": "Турция / турецкий; турок, турчанка",
-        "transcription": "/ˈtɜːki/ · /ˈtɜːkɪʃ/",
-        "exampleEn": "Are you from Turkey? Are you Turkish?",
-        "exampleRu": "Ты из Турции? Ты турок?"
+        "section": "countries",
+        "id": "1a-country-02",
+        "en": "Turkey",
+        "ru": "Турция",
+        "transcription": "/ˈtɜːki/",
+        "exampleEn": "I’m from Turkey.",
+        "exampleRu": "Я из Турции."
       },
       {
-        "id": "1a-country-nationality-03",
-        "en": "France / French",
-        "ru": "Франция / французский; француз, француженка",
-        "transcription": "/frɑːns/ · /frentʃ/",
-        "exampleEn": "I’m from France. I’m French.",
-        "exampleRu": "Я из Франции. Я француз."
+        "section": "countries",
+        "id": "1a-country-03",
+        "en": "France",
+        "ru": "Франция",
+        "transcription": "/frɑːns/",
+        "exampleEn": "I’m from France.",
+        "exampleRu": "Я из Франции."
       },
       {
-        "id": "1a-country-nationality-04",
-        "en": "Australia / Australian",
-        "ru": "Австралия / австралийский; австралиец",
-        "transcription": "/ɒˈstreɪliə/ · /ɒˈstreɪliən/",
-        "exampleEn": "I’m from Australia. I’m Australian.",
-        "exampleRu": "Я из Австралии. Я австралиец."
+        "section": "countries",
+        "id": "1a-country-04",
+        "en": "Australia",
+        "ru": "Австралия",
+        "transcription": "/ɒˈstreɪliə/",
+        "exampleEn": "I’m from Australia.",
+        "exampleRu": "Я из Австралии."
       },
       {
-        "id": "1a-country-nationality-05",
-        "en": "Brazil / Brazilian",
-        "ru": "Бразилия / бразильский; бразилец",
-        "transcription": "/brəˈzɪl/ · /brəˈzɪliən/",
-        "exampleEn": "I’m from Brazil. I’m Brazilian.",
-        "exampleRu": "Я из Бразилии. Я бразилец."
+        "section": "countries",
+        "id": "1a-country-05",
+        "en": "Brazil",
+        "ru": "Бразилия",
+        "transcription": "/brəˈzɪl/",
+        "exampleEn": "I’m from Brazil.",
+        "exampleRu": "Я из Бразилии."
       },
       {
-        "id": "1a-country-nationality-06",
-        "en": "Mexico / Mexican",
-        "ru": "Мексика / мексиканский; мексиканец",
-        "transcription": "/ˈmeksɪkəʊ/ · /ˈmeksɪkən/",
-        "exampleEn": "I’m from Mexico. I’m Mexican.",
-        "exampleRu": "Я из Мексики. Я мексиканец."
+        "section": "countries",
+        "id": "1a-country-06",
+        "en": "Mexico",
+        "ru": "Мексика",
+        "transcription": "/ˈmeksɪkəʊ/",
+        "exampleEn": "I’m from Mexico.",
+        "exampleRu": "Я из Мексики."
       },
       {
-        "id": "1a-country-nationality-07",
-        "en": "India / Indian",
-        "ru": "Индия / индийский; индиец, индианка",
-        "transcription": "/ˈɪndiə/ · /ˈɪndiən/",
-        "exampleEn": "I’m from India. I’m Indian.",
-        "exampleRu": "Я из Индии. Я индиец."
+        "section": "countries",
+        "id": "1a-country-07",
+        "en": "India",
+        "ru": "Индия",
+        "transcription": "/ˈɪndiə/",
+        "exampleEn": "I’m from India.",
+        "exampleRu": "Я из Индии."
       },
       {
-        "id": "1a-country-nationality-08",
-        "en": "Poland / Polish",
-        "ru": "Польша / польский; поляк, полька",
-        "transcription": "/ˈpəʊlənd/ · /ˈpəʊlɪʃ/",
-        "exampleEn": "I’m from Poland. I’m Polish.",
-        "exampleRu": "Я из Польши. Я поляк."
+        "section": "countries",
+        "id": "1a-country-08",
+        "en": "Poland",
+        "ru": "Польша",
+        "transcription": "/ˈpəʊlənd/",
+        "exampleEn": "I’m from Poland.",
+        "exampleRu": "Я из Польши."
       },
       {
-        "id": "1a-country-nationality-09",
-        "en": "South Korea / South Korean",
-        "ru": "Южная Корея / южнокорейский; южнокореец",
-        "transcription": "/ˌsaʊθ kəˈriːə/ · /ˌsaʊθ kəˈriːən/",
-        "exampleEn": "Are you South Korean?",
-        "exampleRu": "Ты из Южной Кореи?"
+        "section": "countries",
+        "id": "1a-country-09",
+        "en": "South Korea",
+        "ru": "Южная Корея",
+        "transcription": "/ˌsaʊθ kəˈriːə/",
+        "exampleEn": "I’m from South Korea.",
+        "exampleRu": "Я из Южной Кореи."
       },
       {
-        "id": "1a-country-nationality-10",
-        "en": "Vietnam / Vietnamese",
-        "ru": "Вьетнам / вьетнамский; вьетнамец",
-        "transcription": "/ˌvjetˈnæm/ · /ˌvjetnəˈmiːz/",
-        "exampleEn": "You aren’t Vietnamese.",
-        "exampleRu": "Ты не вьетнамец."
+        "section": "countries",
+        "id": "1a-country-10",
+        "en": "Vietnam",
+        "ru": "Вьетнам",
+        "transcription": "/ˌvjetˈnæm/",
+        "exampleEn": "I’m from Vietnam.",
+        "exampleRu": "Я из Вьетнама."
       },
       {
-        "id": "1a-country-nationality-11",
-        "en": "Japan / Japanese",
-        "ru": "Япония / японский; японец, японка",
-        "transcription": "/dʒəˈpæn/ · /ˌdʒæpəˈniːz/",
-        "exampleEn": "I’m from Japan. I’m Japanese.",
-        "exampleRu": "Я из Японии. Я японец."
+        "section": "countries",
+        "id": "1a-country-11",
+        "en": "Japan",
+        "ru": "Япония",
+        "transcription": "/dʒəˈpæn/",
+        "exampleEn": "I’m from Japan.",
+        "exampleRu": "Я из Японии."
       },
       {
-        "id": "1a-country-nationality-12",
-        "en": "Portugal / Portuguese",
-        "ru": "Португалия / португальский; португалец",
-        "transcription": "/ˈpɔːtʃʊɡəl/ · /ˌpɔːtʃʊˈɡiːz/",
-        "exampleEn": "Are you Portuguese?",
-        "exampleRu": "Ты португалец?"
+        "section": "countries",
+        "id": "1a-country-12",
+        "en": "Portugal",
+        "ru": "Португалия",
+        "transcription": "/ˈpɔːtʃʊɡəl/",
+        "exampleEn": "I’m from Portugal.",
+        "exampleRu": "Я из Португалии."
       },
       {
-        "id": "1a-country-nationality-13",
-        "en": "Switzerland / Swiss",
-        "ru": "Швейцария / швейцарский; швейцарец",
-        "transcription": "/ˈswɪtsələnd/ · /swɪs/",
-        "exampleEn": "I’m from Switzerland. I’m Swiss.",
-        "exampleRu": "Я из Швейцарии. Я швейцарец."
+        "section": "countries",
+        "id": "1a-country-13",
+        "en": "Switzerland",
+        "ru": "Швейцария",
+        "transcription": "/ˈswɪtsələnd/",
+        "exampleEn": "I’m from Switzerland.",
+        "exampleRu": "Я из Швейцарии."
       },
       {
-        "id": "1a-country-nationality-14",
-        "en": "China / Chinese",
-        "ru": "Китай / китайский; китаец, китаянка",
-        "transcription": "/ˈtʃaɪnə/ · /ˌtʃaɪˈniːz/",
-        "exampleEn": "I’m from China. I’m Chinese.",
-        "exampleRu": "Я из Китая. Я китаец."
+        "section": "countries",
+        "id": "1a-country-14",
+        "en": "China",
+        "ru": "Китай",
+        "transcription": "/ˈtʃaɪnə/",
+        "exampleEn": "I’m from China.",
+        "exampleRu": "Я из Китая."
       },
       {
-        "id": "1a-country-nationality-15",
-        "en": "the UK / British",
-        "ru": "Великобритания / британский; британец",
-        "transcription": "/ðə ˌjuː ˈkeɪ/ · /ˈbrɪtɪʃ/",
-        "exampleEn": "Are you from the UK? Are you British?",
-        "exampleRu": "Ты из Великобритании? Ты британец?"
+        "section": "countries",
+        "id": "1a-country-15",
+        "en": "the UK",
+        "ru": "Великобритания",
+        "transcription": "/ðə ˌjuː ˈkeɪ/",
+        "exampleEn": "I’m from the UK.",
+        "exampleRu": "Я из Великобритании."
       },
       {
-        "id": "1a-country-nationality-16",
-        "en": "Spain / Spanish",
-        "ru": "Испания / испанский; испанец, испанка",
-        "transcription": "/speɪn/ · /ˈspænɪʃ/",
-        "exampleEn": "Are you from Spain? Are you Spanish?",
-        "exampleRu": "Ты из Испании? Ты испанец?"
+        "section": "countries",
+        "id": "1a-country-16",
+        "en": "Spain",
+        "ru": "Испания",
+        "transcription": "/speɪn/",
+        "exampleEn": "I’m from Spain.",
+        "exampleRu": "Я из Испании."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-01",
+        "en": "American",
+        "ru": "американец, американка; американский",
+        "transcription": "/əˈmerɪkən/",
+        "exampleEn": "I’m American.",
+        "exampleRu": "Я американец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-02",
+        "en": "Turkish",
+        "ru": "турок, турчанка; турецкий",
+        "transcription": "/ˈtɜːkɪʃ/",
+        "exampleEn": "I’m Turkish.",
+        "exampleRu": "Я турок."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-03",
+        "en": "French",
+        "ru": "француз, француженка; французский",
+        "transcription": "/frentʃ/",
+        "exampleEn": "I’m French.",
+        "exampleRu": "Я француз."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-04",
+        "en": "Australian",
+        "ru": "австралиец, австралийка; австралийский",
+        "transcription": "/ɒˈstreɪliən/",
+        "exampleEn": "I’m Australian.",
+        "exampleRu": "Я австралиец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-05",
+        "en": "Brazilian",
+        "ru": "бразилец, бразильянка; бразильский",
+        "transcription": "/brəˈzɪliən/",
+        "exampleEn": "I’m Brazilian.",
+        "exampleRu": "Я бразилец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-06",
+        "en": "Mexican",
+        "ru": "мексиканец, мексиканка; мексиканский",
+        "transcription": "/ˈmeksɪkən/",
+        "exampleEn": "I’m Mexican.",
+        "exampleRu": "Я мексиканец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-07",
+        "en": "Indian",
+        "ru": "индиец, индийка; индийский",
+        "transcription": "/ˈɪndiən/",
+        "exampleEn": "I’m Indian.",
+        "exampleRu": "Я индиец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-08",
+        "en": "Polish",
+        "ru": "поляк, полька; польский",
+        "transcription": "/ˈpəʊlɪʃ/",
+        "exampleEn": "I’m Polish.",
+        "exampleRu": "Я поляк."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-09",
+        "en": "South Korean",
+        "ru": "южнокореец, южнокореянка; южнокорейский",
+        "transcription": "/ˌsaʊθ kəˈriːən/",
+        "exampleEn": "I’m South Korean.",
+        "exampleRu": "Я южнокореец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-10",
+        "en": "Vietnamese",
+        "ru": "вьетнамец, вьетнамка; вьетнамский",
+        "transcription": "/ˌvjetnəˈmiːz/",
+        "exampleEn": "I’m Vietnamese.",
+        "exampleRu": "Я вьетнамец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-11",
+        "en": "Japanese",
+        "ru": "японец, японка; японский",
+        "transcription": "/ˌdʒæpəˈniːz/",
+        "exampleEn": "I’m Japanese.",
+        "exampleRu": "Я японец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-12",
+        "en": "Portuguese",
+        "ru": "португалец, португалка; португальский",
+        "transcription": "/ˌpɔːtʃʊˈɡiːz/",
+        "exampleEn": "I’m Portuguese.",
+        "exampleRu": "Я португалец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-13",
+        "en": "Swiss",
+        "ru": "швейцарец, швейцарка; швейцарский",
+        "transcription": "/swɪs/",
+        "exampleEn": "I’m Swiss.",
+        "exampleRu": "Я швейцарец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-14",
+        "en": "Chinese",
+        "ru": "китаец, китаянка; китайский",
+        "transcription": "/ˌtʃaɪˈniːz/",
+        "exampleEn": "I’m Chinese.",
+        "exampleRu": "Я китаец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-15",
+        "en": "British",
+        "ru": "британец, британка; британский",
+        "transcription": "/ˈbrɪtɪʃ/",
+        "exampleEn": "I’m British.",
+        "exampleRu": "Я британец."
+      },
+      {
+        "section": "nationalities",
+        "id": "1a-nationality-16",
+        "en": "Spanish",
+        "ru": "испанец, испанка; испанский",
+        "transcription": "/ˈspænɪʃ/",
+        "exampleEn": "I’m Spanish.",
+        "exampleRu": "Я испанец."
       }
     ]
   }
