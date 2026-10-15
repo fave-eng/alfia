@@ -1,0 +1,4 @@
+Alfiya · Homework #3 · Speakout A1 (Lessons 1D and 2A)
+Copy four files into the existing project root, preserving directory paths.
+No audio added because selected tasks require no audio.
+Homework 1 and 2 are unchanged. Telegram notification has not been sent.

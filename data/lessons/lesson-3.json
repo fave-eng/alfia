@@ -1,0 +1,895 @@
+{
+  "id": "lesson-3",
+  "number": 3,
+  "title": "1D–2A · Things and people",
+  "subtitle": "Speakout A1 · Workbook · Articles, have/has, numbers, adjectives, be (we/you/they) and reading",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-3",
+  "grammarIds": [
+    "grammar-a-an",
+    "grammar-plural-nouns",
+    "grammar-have-has",
+    "grammar-be-we-you-they"
+  ],
+  "publishedAt": "2026-10-15",
+  "totalPoints": 56,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "title": "Grammar · a/an, have/has and plural nouns",
+      "eyebrow": "Speakout A1 · Lesson 1D"
+    },
+    {
+      "type": "exercise",
+      "id": "1d-1a-articles",
+      "title": "1A · a / an",
+      "instructions": "Choose the correct alternative.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "segments": [
+            "",
+            " purse"
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "segments": [
+            "",
+            " wallet"
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "segments": [
+            "",
+            " umbrella"
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "segments": [
+            "",
+            " laptop"
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "segments": [
+            "",
+            " apple"
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "segments": [
+            "",
+            " American passport"
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "single",
+          "segments": [
+            "",
+            " mobile phone"
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "single",
+          "segments": [
+            "",
+            " country"
+          ],
+          "options": [
+            "a",
+            "an"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true,
+      "inlineNumberedItems": true
+    },
+    {
+      "type": "exercise",
+      "id": "1d-2-word-order",
+      "title": "2 · Make sentences",
+      "instructions": "Put the words in the correct order to make sentences.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "prompt": "have / I / mobile phones / two .",
+          "answer": "I have two mobile phones.",
+          "placeholder": "Write your answer"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "We / umbrella / have / an .",
+          "answer": "We have an umbrella.",
+          "placeholder": "Write your answer"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "has / Teri / bottle of water / a .",
+          "answer": "Teri has a bottle of water.",
+          "placeholder": "Write your answer"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "apple / I / in / bag / have / my / an .",
+          "answer": "I have an apple in my bag.",
+          "placeholder": "Write your answer"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "has / three / My / supermarkets / city .",
+          "answer": "My city has three supermarkets.",
+          "placeholder": "Write your answer"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "have / I / keys / my / in / bag .",
+          "answer": "I have keys in my bag.",
+          "placeholder": "Write your answer"
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "title": "Vocabulary · Numbers and adjectives",
+      "eyebrow": "Speakout A1 · Lesson 2A"
+    },
+    {
+      "type": "exercise",
+      "id": "2a-1a-number-order",
+      "title": "1A · Numbers 11–19",
+      "instructions": "Put the words from the box in the correct order, from 11 to 19. The first answer is an example.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "example": true,
+          "exampleLabel": "Example",
+          "input": "select",
+          "prompt": "eleven (11)",
+          "answer": "eleven",
+          "exampleAnswer": "eleven",
+          "exampleTextOnly": false
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "12",
+          "options": [
+            "nineteen",
+            "twelve",
+            "eighteen",
+            "fourteen",
+            "thirteen",
+            "sixteen",
+            "fifteen",
+            "seventeen"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "13",
+          "options": [
+            "nineteen",
+            "twelve",
+            "eighteen",
+            "fourteen",
+            "thirteen",
+            "sixteen",
+            "fifteen",
+            "seventeen"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "14",
+          "options": [
+            "nineteen",
+            "twelve",
+            "eighteen",
+            "fourteen",
+            "thirteen",
+            "sixteen",
+            "fifteen",
+            "seventeen"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "15",
+          "options": [
+            "nineteen",
+            "twelve",
+            "eighteen",
+            "fourteen",
+            "thirteen",
+            "sixteen",
+            "fifteen",
+            "seventeen"
+          ],
+          "answer": 6
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "16",
+          "options": [
+            "nineteen",
+            "twelve",
+            "eighteen",
+            "fourteen",
+            "thirteen",
+            "sixteen",
+            "fifteen",
+            "seventeen"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "select",
+          "prompt": "17",
+          "options": [
+            "nineteen",
+            "twelve",
+            "eighteen",
+            "fourteen",
+            "thirteen",
+            "sixteen",
+            "fifteen",
+            "seventeen"
+          ],
+          "answer": 7
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "select",
+          "prompt": "18",
+          "options": [
+            "nineteen",
+            "twelve",
+            "eighteen",
+            "fourteen",
+            "thirteen",
+            "sixteen",
+            "fifteen",
+            "seventeen"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "input": "select",
+          "prompt": "19",
+          "options": [
+            "nineteen",
+            "twelve",
+            "eighteen",
+            "fourteen",
+            "thirteen",
+            "sixteen",
+            "fifteen",
+            "seventeen"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true,
+      "wordBank": [
+        "nineteen",
+        "twelve",
+        "eighteen",
+        "fourteen",
+        "eleven",
+        "thirteen",
+        "sixteen",
+        "fifteen",
+        "seventeen"
+      ],
+      "wordBankLabel": "Number words"
+    },
+    {
+      "type": "exercise",
+      "id": "2a-3a-adjectives",
+      "title": "3A · common adjectives (1)",
+      "instructions": "Write the missing vowels (a, e, i, o, u) to make adjectives.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "prompt": "n_w",
+          "answer": "new",
+          "placeholder": "Complete the word"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "t_r_d",
+          "answer": "tired",
+          "placeholder": "Complete the word"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "g__d",
+          "answer": "good",
+          "placeholder": "Complete the word"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "y__ng",
+          "answer": "young",
+          "placeholder": "Complete the word"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "d_ff_c_lt",
+          "answer": "difficult",
+          "placeholder": "Complete the word"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "fr__ndly",
+          "answer": "friendly",
+          "placeholder": "Complete the word"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "prompt": "f_v__r_t_",
+          "answer": "favourite",
+          "placeholder": "Complete the word"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "prompt": "b__t_f_l",
+          "answer": "beautiful",
+          "placeholder": "Complete the word"
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "title": "Grammar · Present simple be: we, you, they",
+      "eyebrow": "Speakout A1 · Lesson 2A"
+    },
+    {
+      "type": "exercise",
+      "id": "2a-4b-conversation",
+      "title": "4B · Complete the conversation",
+      "instructions": "Complete the conversation with the words in the box.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "answer": "Who",
+          "placeholder": "…"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "answer": "They’re",
+          "placeholder": "…"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "answer": "Where",
+          "placeholder": "…"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "answer": "from",
+          "placeholder": "…"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "answer": "Are",
+          "placeholder": "…"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "answer": "not",
+          "placeholder": "…"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "answer": "they",
+          "placeholder": "…"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "answer": "Yes",
+          "placeholder": "…"
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "inline-dialogue",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "1"
+            },
+            " are they?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            {
+              "itemId": "2"
+            },
+            " my friends, Jaime and Beatriz."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            {
+              "itemId": "3"
+            },
+            " are they from?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "They’re ",
+            {
+              "itemId": "4"
+            },
+            " Mexico."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            {
+              "itemId": "5"
+            },
+            " they from Mexico City?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "No, they’re ",
+            {
+              "itemId": "6"
+            },
+            ". They’re from Mérida."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "Are ",
+            {
+              "itemId": "7"
+            },
+            " students?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            {
+              "itemId": "8"
+            },
+            ", they are."
+          ]
+        }
+      ],
+      "wordBank": [
+        "are",
+        "from",
+        "not",
+        "they",
+        "they’re",
+        "where",
+        "who",
+        "yes"
+      ],
+      "wordBankLabel": "Words in the box"
+    },
+    {
+      "type": "exercise",
+      "id": "2a-4d-dialogue",
+      "title": "4D · Make sentences",
+      "instructions": "Put the words in the correct order to make sentences.",
+      "items": [
+        {
+          "id": "1a",
+          "number": 1,
+          "input": "text",
+          "answer": "Where are you and Zeynep from?",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "1b",
+          "number": "",
+          "input": "text",
+          "answer": "We are from Turkey.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "2a",
+          "number": 2,
+          "input": "text",
+          "answer": "Are Jane and Andy doctors?",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "2b",
+          "number": "",
+          "input": "text",
+          "answer": "No, they’re not.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "3a",
+          "number": 3,
+          "input": "text",
+          "answer": "Are the bikes new?",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "3b",
+          "number": "",
+          "input": "text",
+          "answer": "No, they’re old.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "4a",
+          "number": 4,
+          "input": "text",
+          "answer": "Are John and Simon cold?",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "4b",
+          "number": "",
+          "input": "text",
+          "answer": "Yes, they are.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "5a",
+          "number": 5,
+          "input": "text",
+          "answer": "Who are they?",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "5b",
+          "number": "",
+          "input": "text",
+          "answer": "They’re my friends.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "6a",
+          "number": 6,
+          "input": "text",
+          "answer": "Are your parents Australian?",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "6b",
+          "number": "",
+          "input": "text",
+          "answer": "Yes, they are.",
+          "placeholder": "Write the sentence"
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "dialogue",
+      "dialogueLines": [
+        {
+          "speaker": "1 · A",
+          "text": "from / are / Where / you and Zeynep ?",
+          "itemIds": [
+            "1a"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "Turkey / We / are / from .",
+          "itemIds": [
+            "1b"
+          ]
+        },
+        {
+          "speaker": "2 · A",
+          "text": "doctors / Jane and Andy / Are ?",
+          "itemIds": [
+            "2a"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "they’re / No / not .",
+          "itemIds": [
+            "2b"
+          ]
+        },
+        {
+          "speaker": "3 · A",
+          "text": "the bikes / new / Are ?",
+          "itemIds": [
+            "3a"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "they’re / No / old .",
+          "itemIds": [
+            "3b"
+          ]
+        },
+        {
+          "speaker": "4 · A",
+          "text": "John and Simon / cold / are ?",
+          "itemIds": [
+            "4a"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "are / they / Yes .",
+          "itemIds": [
+            "4b"
+          ]
+        },
+        {
+          "speaker": "5 · A",
+          "text": "they / are / Who ?",
+          "itemIds": [
+            "5a"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "my friends / They’re .",
+          "itemIds": [
+            "5b"
+          ]
+        },
+        {
+          "speaker": "6 · A",
+          "text": "your parents / Are / Australian ?",
+          "itemIds": [
+            "6a"
+          ]
+        },
+        {
+          "speaker": "B",
+          "text": "they / are / Yes .",
+          "itemIds": [
+            "6b"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "title": "Reading · The Secret Garden",
+      "eyebrow": "Speakout A1 · Lesson 2A"
+    },
+    {
+      "type": "reading",
+      "id": "2a-secret-garden-article",
+      "title": "5 · The Secret Garden (read before 5C)",
+      "sections": [
+        {
+          "number": "ABOUT US",
+          "heading": "The Secret Garden · About us",
+          "text": "Hi! Welcome to the Secret Garden. We’re Becky and John and this is our hotel! It’s in Gimmelwald. Gimmelwald is a small village (only 130 people) in the mountains. The hotel is in an old house with eight rooms."
+        },
+        {
+          "number": "BECKY",
+          "heading": "Becky",
+          "text": "Hello, I’m Becky. I’m 35 and I’m from Glasgow in the UK. I’m very happy here in Switzerland. The people are friendly, and the food is good. In the winter it’s very cold, but the mountains are beautiful. My favourite things in Gimmelwald are the cows on the mountains. They’re very happy!"
+        },
+        {
+          "number": "JOHN",
+          "heading": "John",
+          "text": "Hi, I’m John. I’m 34 and I’m married to Becky. I’m British too, but now Switzerland is our home. Our jobs aren’t easy – French and German are difficult for me. We’re very tired at night, but we’re happy. My favourite thing in Switzerland is the chocolate. It’s very good!"
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "2a-5c-reading",
+      "title": "5C · Reading: True or False",
+      "instructions": "Read the webpage again. Are the statements True (T) or False (F)?",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "prompt": "The Secret Garden hotel is in a small village.",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "prompt": "The hotel has six rooms.",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "prompt": "Becky says the mountains are very cold.",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "prompt": "Becky is married to John.",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "prompt": "John is from the UK.",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "prompt": "John says his favourite thing in Switzerland is the friendly people.",
+          "options": [
+            "T",
+            "F"
+          ],
+          "answer": 1
+        }
+      ],
+      "hideAnswersOnError": true,
+      "inlineNumberedItems": true
+    }
+  ]
+}

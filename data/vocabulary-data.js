@@ -1,4 +1,4 @@
-/* Speakout A1 · Vocabulary topics grouped by lesson. */
+/* Speakout A1 · Vocabulary topics organised by lesson. */
 window.VOCABULARY_DATA = [
   {
     "id": "vocab-lesson-1",
@@ -669,6 +669,385 @@ window.VOCABULARY_DATA = [
         "transcription": "/rɪˈpiːt/",
         "exampleEn": "Can you repeat that, please?",
         "exampleRu": "Можешь повторить, пожалуйста?"
+      }
+    ]
+  },
+  {
+    "id": "vocab-lesson-3",
+    "title": "1D–2A · Things and people",
+    "label": "Speakout A1 · Unit 1D and 2A",
+    "type": "lesson",
+    "linkedLessonId": "lesson-3",
+    "page": "vocabulary.html?id=vocab-lesson-3",
+    "icon": "📚",
+    "sections": [
+      {
+        "id": "objects",
+        "title": "Everyday objects",
+        "description": "Objects, one or more things"
+      },
+      {
+        "id": "numbers",
+        "title": "Numbers 11–100",
+        "description": "11–19, tens and a hundred"
+      },
+      {
+        "id": "adjectives",
+        "title": "Common adjectives",
+        "description": "Describe people and things"
+      }
+    ],
+    "words": [
+      {
+        "section": "numbers",
+        "id": "1d2a-eleven",
+        "en": "eleven",
+        "ru": "одиннадцать",
+        "transcription": "/ɪˈlevən/",
+        "exampleEn": "I’m eleven.",
+        "exampleRu": "Мне одиннадцать."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-twelve",
+        "en": "twelve",
+        "ru": "двенадцать",
+        "transcription": "/twelv/",
+        "exampleEn": "I’m twelve.",
+        "exampleRu": "Мне двенадцать."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-thirteen",
+        "en": "thirteen",
+        "ru": "тринадцать",
+        "transcription": "/ˌθɜːˈtiːn/",
+        "exampleEn": "I’m thirteen.",
+        "exampleRu": "Мне тринадцать."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-fourteen",
+        "en": "fourteen",
+        "ru": "четырнадцать",
+        "transcription": "/ˌfɔːˈtiːn/",
+        "exampleEn": "I’m fourteen.",
+        "exampleRu": "Мне четырнадцать."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-fifteen",
+        "en": "fifteen",
+        "ru": "пятнадцать",
+        "transcription": "/ˌfɪfˈtiːn/",
+        "exampleEn": "I’m fifteen.",
+        "exampleRu": "Мне пятнадцать."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-sixteen",
+        "en": "sixteen",
+        "ru": "шестнадцать",
+        "transcription": "/ˌsɪksˈtiːn/",
+        "exampleEn": "I’m sixteen.",
+        "exampleRu": "Мне шестнадцать."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-seventeen",
+        "en": "seventeen",
+        "ru": "семнадцать",
+        "transcription": "/ˌsevənˈtiːn/",
+        "exampleEn": "I’m seventeen.",
+        "exampleRu": "Мне семнадцать."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-eighteen",
+        "en": "eighteen",
+        "ru": "восемнадцать",
+        "transcription": "/ˌeɪˈtiːn/",
+        "exampleEn": "I’m eighteen.",
+        "exampleRu": "Мне восемнадцать."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-nineteen",
+        "en": "nineteen",
+        "ru": "девятнадцать",
+        "transcription": "/ˌnaɪnˈtiːn/",
+        "exampleEn": "I’m nineteen.",
+        "exampleRu": "Мне девятнадцать."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-new",
+        "en": "new",
+        "ru": "новый",
+        "transcription": "/njuː/",
+        "exampleEn": "The bikes are new.",
+        "exampleRu": "Велосипеды новые."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-tired",
+        "en": "tired",
+        "ru": "уставший",
+        "transcription": "/ˈtaɪəd/",
+        "exampleEn": "We’re tired.",
+        "exampleRu": "Мы устали."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-good",
+        "en": "good",
+        "ru": "хороший",
+        "transcription": "/ɡʊd/",
+        "exampleEn": "The food is good.",
+        "exampleRu": "Еда хорошая."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-young",
+        "en": "young",
+        "ru": "молодой",
+        "transcription": "/jʌŋ/",
+        "exampleEn": "They are young.",
+        "exampleRu": "Они молодые."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-difficult",
+        "en": "difficult",
+        "ru": "трудный",
+        "transcription": "/ˈdɪfɪkəlt/",
+        "exampleEn": "French is difficult for me.",
+        "exampleRu": "Французский для меня трудный."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-friendly",
+        "en": "friendly",
+        "ru": "дружелюбный",
+        "transcription": "/ˈfrendli/",
+        "exampleEn": "The people are friendly.",
+        "exampleRu": "Люди дружелюбные."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-favourite",
+        "en": "favourite",
+        "ru": "любимый",
+        "transcription": "/ˈfeɪvərɪt/",
+        "exampleEn": "Chocolate is my favourite thing.",
+        "exampleRu": "Шоколад — моя любимая вещь."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-beautiful",
+        "en": "beautiful",
+        "ru": "красивый",
+        "transcription": "/ˈbjuːtɪfl/",
+        "exampleEn": "The mountains are beautiful.",
+        "exampleRu": "Горы красивые."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-sad",
+        "en": "sad",
+        "ru": "грустный",
+        "transcription": "/sæd/",
+        "exampleEn": "The people are sad.",
+        "exampleRu": "Люди грустные."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-happy",
+        "en": "happy",
+        "ru": "счастливый",
+        "transcription": "/ˈhæpi/",
+        "exampleEn": "They’re happy.",
+        "exampleRu": "Они счастливы."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-easy",
+        "en": "easy",
+        "ru": "лёгкий, простой",
+        "transcription": "/ˈiːzi/",
+        "exampleEn": "My job is easy.",
+        "exampleRu": "Моя работа лёгкая."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-small",
+        "en": "small",
+        "ru": "маленький",
+        "transcription": "/smɔːl/",
+        "exampleEn": "It’s a small village.",
+        "exampleRu": "Это маленькая деревня."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-big",
+        "en": "big",
+        "ru": "большой",
+        "transcription": "/bɪɡ/",
+        "exampleEn": "It’s a big hotel.",
+        "exampleRu": "Это большой отель."
+      },
+      {
+        "section": "adjectives",
+        "id": "1d2a-old",
+        "en": "old",
+        "ru": "старый",
+        "transcription": "/əʊld/",
+        "exampleEn": "It’s an old house.",
+        "exampleRu": "Это старый дом."
+      },
+      {
+        "section": "objects",
+        "id": "1d2a-purse",
+        "en": "purse",
+        "ru": "кошелёк (обычно небольшой)",
+        "transcription": "/pɜːs/",
+        "exampleEn": "I have a purse.",
+        "exampleRu": "У меня есть кошелёк."
+      },
+      {
+        "section": "objects",
+        "id": "1d2a-wallet",
+        "en": "wallet",
+        "ru": "бумажник",
+        "transcription": "/ˈwɒlɪt/",
+        "exampleEn": "He has a wallet.",
+        "exampleRu": "У него есть бумажник."
+      },
+      {
+        "section": "objects",
+        "id": "1d2a-umbrella",
+        "en": "umbrella",
+        "ru": "зонт",
+        "transcription": "/ʌmˈbrelə/",
+        "exampleEn": "We have an umbrella.",
+        "exampleRu": "У нас есть зонт."
+      },
+      {
+        "section": "objects",
+        "id": "1d2a-laptop",
+        "en": "laptop",
+        "ru": "ноутбук",
+        "transcription": "/ˈlæptɒp/",
+        "exampleEn": "She has a laptop.",
+        "exampleRu": "У неё есть ноутбук."
+      },
+      {
+        "section": "objects",
+        "id": "1d2a-passport",
+        "en": "passport",
+        "ru": "паспорт",
+        "transcription": "/ˈpɑːspɔːt/",
+        "exampleEn": "I have a passport.",
+        "exampleRu": "У меня есть паспорт."
+      },
+      {
+        "section": "objects",
+        "id": "1d2a-mobile-phone",
+        "en": "mobile phone",
+        "ru": "мобильный телефон",
+        "transcription": "/ˌməʊbaɪl ˈfəʊn/",
+        "exampleEn": "I have two mobile phones.",
+        "exampleRu": "У меня два мобильных телефона."
+      },
+      {
+        "section": "objects",
+        "id": "1d2a-bottle-of-water",
+        "en": "bottle of water",
+        "ru": "бутылка воды",
+        "transcription": "/ˌbɒtl əv ˈwɔːtə/",
+        "exampleEn": "Teri has a bottle of water.",
+        "exampleRu": "У Тери есть бутылка воды."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-twenty",
+        "en": "twenty",
+        "ru": "двадцать",
+        "transcription": "/ˈtwenti/",
+        "exampleEn": "There are twenty people.",
+        "exampleRu": "Там двадцать человек."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-thirty",
+        "en": "thirty",
+        "ru": "тридцать",
+        "transcription": "/ˈθɜːti/",
+        "exampleEn": "There are thirty people.",
+        "exampleRu": "Там тридцать человек."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-forty",
+        "en": "forty",
+        "ru": "сорок",
+        "transcription": "/ˈfɔːti/",
+        "exampleEn": "There are forty people.",
+        "exampleRu": "Там сорок человек."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-fifty",
+        "en": "fifty",
+        "ru": "пятьдесят",
+        "transcription": "/ˈfɪfti/",
+        "exampleEn": "There are fifty people.",
+        "exampleRu": "Там пятьдесят человек."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-sixty",
+        "en": "sixty",
+        "ru": "шестьдесят",
+        "transcription": "/ˈsɪksti/",
+        "exampleEn": "There are sixty people.",
+        "exampleRu": "Там шестьдесят человек."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-seventy",
+        "en": "seventy",
+        "ru": "семьдесят",
+        "transcription": "/ˈsevənti/",
+        "exampleEn": "There are seventy people.",
+        "exampleRu": "Там семьдесят человек."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-eighty",
+        "en": "eighty",
+        "ru": "восемьдесят",
+        "transcription": "/ˈeɪti/",
+        "exampleEn": "There are eighty people.",
+        "exampleRu": "Там восемьдесят человек."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-ninety",
+        "en": "ninety",
+        "ru": "девяносто",
+        "transcription": "/ˈnaɪnti/",
+        "exampleEn": "There are ninety people.",
+        "exampleRu": "Там девяносто человек."
+      },
+      {
+        "section": "numbers",
+        "id": "1d2a-a-hundred",
+        "en": "a hundred",
+        "ru": "сто",
+        "transcription": "/ə ˈhʌndrəd/",
+        "exampleEn": "There are a hundred people.",
+        "exampleRu": "Там сто человек."
       }
     ]
   }

@@ -1,4 +1,4 @@
-/* Speakout A1 · Individually structured grammar explanations by lesson. */
+/* Speakout A1 · Independent grammar topics and guided practice. */
 window.GRAMMAR_DATA = [
   {
     "id": "grammar-be-i-you",
@@ -684,5 +684,660 @@ window.GRAMMAR_DATA = [
       }
     ],
     "guideHtml": "<div class=\"g1-course\">\n<article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Unit 1B · Grammar 2</span>\n<h2>Articles: a / an</h2>\n<p>В английском мы часто говорим не просто <strong>doctor</strong>, а <strong>a doctor</strong> — «врач». Артикль показывает, что речь об <strong>одном человеке или предмете</strong>, названном исчисляемым существительным в единственном числе. Это отдельное правило: форма глагола <em>is</em> сама по себе не определяет выбор <em>a/an</em>.</p></article>\n<nav class=\"g1-navigation\" aria-label=\"Разделы объяснения\"><a href=\"#art-why\">01 · Зачем</a><a href=\"#art-sound\">02 · Как выбрать</a><a href=\"#art-jobs\">03 · Профессии</a><a href=\"#art-no\">04 · Без артикля</a><a href=\"#art-compare\">05 · Сравнения</a><a href=\"#art-errors\">06 · Ошибки</a><a href=\"#grammar-practice-section\">Практика</a></nav>\n<section class=\"g1-section\" id=\"art-why\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Зачем нужны a и an?</h3></div>\n<p>Слова <strong>a</strong> и <strong>an</strong> — варианты <strong>неопределённого артикля</strong>. Мы используем их перед исчисляемым существительным в единственном числе, когда говорим об одном человеке или предмете без указания, какой именно это человек или предмет.</p>\n<div class=\"g1-scheme\"><span class=\"g1-token g1-subject\">a / an</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">singular countable noun</span></div>\n<div class=\"g1-grid\"><div class=\"g1-sentence\"><span class=\"g1-name\">Профессия</span><div class=\"g1-english\">She’s <strong>a nurse.</strong></div><small>Она медсестра.</small></div><div class=\"g1-sentence\"><span class=\"g1-name\">Предмет</span><div class=\"g1-english\">It’s <strong>an umbrella.</strong></div><small>Это зонт.</small></div></div>\n<p>В русском мы не произносим отдельного слова, соответствующего этому артиклю, поэтому его легко пропустить. В обычном утвердительном предложении про одну профессию <span class=\"g1-wrong\">She’s doctor.</span> неправильно, а <span class=\"g1-right\">She’s a doctor.</span> правильно.</p></section>\n<section class=\"g1-section\" id=\"art-sound\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>A или an? Слушаем первый звук</h3></div>\n<p>Выбор зависит от <strong>первого звука следующего слова</strong>, а не только от первой буквы. Если слово начинается с согласного звука, выбираем <strong>a</strong>. Если с гласного — <strong>an</strong>.</p>\n<div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Следующий звук</th><th>Артикль</th><th>Примеры</th></tr></thead><tbody>\n<tr><td>Согласный</td><td><strong>a</strong></td><td><strong>a</strong> nurse · <strong>a</strong> doctor · <strong>a</strong> taxi driver</td></tr>\n<tr><td>Гласный</td><td><strong>an</strong></td><td><strong>an</strong> actor · <strong>an</strong> artist · <strong>an</strong> office worker</td></tr></tbody></table></div>\n<div class=\"g1-note\"><strong>Почему именно звук?</strong> Например, в <em>an hour</em> буква <em>h</em> не произносится, а в <em>a university</em> первое звучание — /j/. Поэтому смотрим на произношение. Для нашего урока достаточно уверенно различать <em>a nurse</em> и <em>an artist</em>.</div></section>\n<section class=\"g1-section\" id=\"art-jobs\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Описываем профессию</h3></div>\n<div class=\"g1-scheme\"><span class=\"g1-token g1-subject\">He / She</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">is</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-n\">a / an</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">job</span></div>\n<div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Предложение</th><th>Почему?</th></tr></thead><tbody>\n<tr><td>He’s <strong>a</strong> waiter.</td><td><em>waiter</em> начинается с согласного звука /w/.</td></tr>\n<tr><td>She’s <strong>an</strong> assistant.</td><td><em>assistant</em> начинается с гласного звука.</td></tr>\n<tr><td>Rob is <strong>an</strong> office worker.</td><td><em>office</em> начинается с гласного звука.</td></tr>\n<tr><td>Charlie is <strong>a</strong> digital designer.</td><td>Первое слово после артикля — <em>digital</em> со звуком /d/.</td></tr></tbody></table></div>\n<p>Если перед профессией стоит описывающее прилагательное, выбираем артикль по звуку <strong>прилагательного</strong>: <strong>an</strong> American doctor, но <strong>a</strong> British doctor.</p></section>\n<section class=\"g1-section\" id=\"art-no\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Когда a / an НЕ нужны?</h3></div>\n<p>Артикль <em>a/an</em> используется не в каждом предложении с <em>is</em>. Посмотрим на роль следующего слова.</p>\n<div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Что после be?</th><th>Пример</th><th>Почему?</th></tr></thead><tbody>\n<tr><td>Профессия в единственном числе</td><td>She’s <strong>a</strong> doctor.</td><td><em>doctor</em> — исчисляемое существительное.</td></tr>\n<tr><td>Национальность как прилагательное</td><td>She’s <strong>British.</strong></td><td><em>British</em> — прилагательное; артикль не нужен.</td></tr>\n<tr><td>Имя собственное</td><td>She’s <strong>Anna.</strong></td><td>Имя не требует <em>a/an</em>.</td></tr>\n<tr><td>Профессии во множественном числе</td><td>They’re <strong>doctors.</strong></td><td><em>a/an</em> означают единственное число.</td></tr>\n<tr><td>Место происхождения</td><td>She’s <strong>from Italy.</strong></td><td>После <em>from</em> стоит название страны.</td></tr></tbody></table></div>\n<p>Обратите внимание: <em>She’s American</em> (прилагательное) и <em>She’s an American</em> (существительное) обе возможны, но по-разному построены. В упражнениях данного урока отрабатываем прежде всего профессию и национальность-прилагательное.</p></section>\n<section class=\"g1-section\" id=\"art-compare\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Один человек, разные сведения</h3></div>\n<div class=\"g1-compare\"><div class=\"g1-compare-item\"><h4>Кем работает?</h4><span class=\"g1-english\">Sandra is <strong>a student.</strong></span><p>«Студентка» — существительное в единственном числе, нужен <em>a</em>.</p></div>\n<div class=\"g1-compare-item\"><h4>Какой национальности?</h4><span class=\"g1-english\">Sandra is <strong>Colombian.</strong></span><p>«Колумбийка» здесь выражена прилагательным. Артикль не ставим.</p></div></div>\n<div class=\"g1-example-flow\"><div><small>Говорим об одном человеке</small><span class=\"g1-english\">He is <strong>an artist.</strong></span></div><div><small>Говорим о нескольких людях</small><span class=\"g1-english\">They are <strong>artists.</strong></span></div></div></section>\n<section class=\"g1-section\" id=\"art-errors\"><div class=\"g1-section-head\"><span class=\"g1-num\">06</span><h3>Типичные ошибки</h3></div>\n<ul class=\"g1-contrast\">\n<li><span class=\"g1-wrong\">She is nurse.</span> → <span class=\"g1-right\">She is a nurse.</span> <small>Перед профессией в единственном числе нужен артикль.</small></li>\n<li><span class=\"g1-wrong\">He’s a actor.</span> → <span class=\"g1-right\">He’s an actor.</span> <small>Следующий звук гласный.</small></li>\n<li><span class=\"g1-wrong\">Rob is an waiter.</span> → <span class=\"g1-right\">Rob is a waiter.</span> <small>Следующий звук согласный.</small></li>\n<li><span class=\"g1-wrong\">She’s a British.</span> → <span class=\"g1-right\">She’s British.</span> <small>В данном значении <em>British</em> — прилагательное.</small></li>\n<li><span class=\"g1-wrong\">They are a doctors.</span> → <span class=\"g1-right\">They are doctors.</span> <small>Во множественном числе a/an не используются.</small></li>\n</ul></section></div>"
+  },
+  {
+    "id": "grammar-plural-nouns",
+    "order": 4,
+    "title": "Singular and plural nouns",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-15",
+    "linkedLessonId": "lesson-3",
+    "page": "grammar-topic.html?id=grammar-plural-nouns",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Как сказать об одном предмете и о нескольких: -s, -es, -ies и отсутствие a/an перед множественным числом.",
+    "formula": "one phone → two phones · one country → two countries",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "exercises": [
+      {
+        "id": "plural-basic",
+        "type": "exercise",
+        "title": "Add -s",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "one wallet → two ...",
+            "answer": "wallets"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "one umbrella → three ...",
+            "answer": "umbrellas"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "one laptop → two ...",
+            "answer": "laptops"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "one apple → five ...",
+            "answer": "apples"
+          }
+        ]
+      },
+      {
+        "id": "plural-endings",
+        "type": "exercise",
+        "title": "Choose the correct plural",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "one country → two ...",
+            "options": [
+              "countrys",
+              "countries",
+              "countryes"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "one bus → two ...",
+            "options": [
+              "buss",
+              "buses",
+              "bus"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "one boy → two ...",
+            "options": [
+              "boys",
+              "boies",
+              "boyes"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "one box → two ...",
+            "options": [
+              "boxs",
+              "boxes",
+              "boxies"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "plural-article",
+        "type": "exercise",
+        "title": "One or many?",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "I have ___ umbrella.",
+            "options": [
+              "an",
+              "a",
+              "—"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "I have ___ umbrellas.",
+            "options": [
+              "an",
+              "a",
+              "—"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "These are two ___.",
+            "options": [
+              "country",
+              "countries",
+              "countrys"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "She has three ___.",
+            "options": [
+              "wallet",
+              "wallets",
+              "a wallet"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "plural-write",
+        "type": "exercise",
+        "title": "Rewrite the sentences",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "One mobile phone → Two ...",
+            "answer": "Two mobile phones."
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "One American passport → Three ...",
+            "answer": "Three American passports."
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "One country → Five ...",
+            "answer": "Five countries."
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "One apple → Four ...",
+            "answer": "Four apples."
+          }
+        ]
+      }
+    ],
+    "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 3 · самостоятельная тема</span><h2>Singular & plural nouns</h2><p>Мы уже знаем <strong>a/an</strong>. Теперь научимся правильно менять существительное, когда предметов несколько.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#pl-01\">01 · Один предмет или несколько?</a><a href=\"#pl-02\">02 · Основное правило: -s</a><a href=\"#pl-03\">03 · Когда пишем -es и -ies</a><a href=\"#pl-04\">04 · В предложении</a><a href=\"#pl-05\">05 · Типичные ошибки</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"pl-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Один предмет или несколько?</h3></div><p>Счётное существительное можно посчитать: <strong>one wallet</strong>, <strong>two wallets</strong>. В английском форма обычно меняется, если предметов больше одного.</p><div class=\"g1-scheme\"><span class=\"g1-token \">a wallet</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">→</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">two wallets</span></div><p>Для <strong>одного</strong> предмета используем <strong>a/an + существительное в единственном числе</strong>. Перед множественным числом не ставим a/an: <span class=\"g1-wrong\">a wallets</span> → <span class=\"g1-right\">wallets</span>.</p></section><section class=\"g1-section\" id=\"pl-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Основное правило: -s</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Единственное число</th><th>Множественное число</th></tr></thead><tbody><tr><td>a wallet</td><td>two <strong>wallets</strong></td></tr><tr><td>an umbrella</td><td>three <strong>umbrellas</strong></td></tr><tr><td>a laptop</td><td>two <strong>laptops</strong></td></tr><tr><td>a mobile phone</td><td>two mobile <strong>phones</strong></td></tr></tbody></table></div><p>Прибавляем <strong>-s</strong> к существительному (обычно к главному слову словосочетания): <em>an American passport → American passports</em>.</p></section><section class=\"g1-section\" id=\"pl-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Когда пишем -es и -ies</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Окончание слова</th><th>Что происходит</th><th>Пример</th></tr></thead><tbody><tr><td>-s, -sh, -ch, -x, -z</td><td>обычно добавляем <strong>-es</strong></td><td>a bus → two <strong>buses</strong></td></tr><tr><td>согласная + y</td><td>заменяем <strong>y → ies</strong></td><td>a country → two <strong>countries</strong></td></tr><tr><td>гласная + y</td><td>оставляем y и добавляем <strong>-s</strong></td><td>a boy → two <strong>boys</strong></td></tr></tbody></table></div><p>Формы некоторых существительных особенные (например, <em>person → people</em>), их нужно запоминать отдельно.</p></section><section class=\"g1-section\" id=\"pl-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>В предложении</h3></div><div class=\"g1-scheme\"><span class=\"g1-token \">I</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">have</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">two phones</span></div><p><strong>I have a phone.</strong> → У меня есть телефон.</p><p><strong>I have two phones.</strong> → У меня два телефона.</p><p>Числительное два и больше требует формы множественного числа: <span class=\"g1-wrong\">three supermarket</span> → <span class=\"g1-right\">three supermarkets</span>.</p></section><section class=\"g1-section\" id=\"pl-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Типичные ошибки</h3></div><div class=\"g1-grid\"><div class=\"g1-sentence\"><span class=\"g1-wrong\">two country</span><div class=\"g1-right\">two countries</div><small>После согласной + y: -ies.</small></div><div class=\"g1-sentence\"><span class=\"g1-wrong\">an umbrellas</span><div class=\"g1-right\">umbrellas</div><small>Артикль a/an бывает только перед единственным числом.</small></div></div></section></div>"
+  },
+  {
+    "id": "grammar-have-has",
+    "order": 5,
+    "title": "Present simple: have / has",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-15",
+    "linkedLessonId": "lesson-3",
+    "page": "grammar-topic.html?id=grammar-have-has",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Как сказать, что у кого-то что-то есть, не смешивая have/has с am/is/are.",
+    "formula": "I / you / we / they have · he / she / it has",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "exercises": [
+      {
+        "id": "have-select",
+        "type": "exercise",
+        "title": "Choose have or has",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "I ___ two mobile phones.",
+            "options": [
+              "have",
+              "has"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Teri ___ a bottle of water.",
+            "options": [
+              "have",
+              "has"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "We ___ an umbrella.",
+            "options": [
+              "have",
+              "has"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "My city ___ three supermarkets.",
+            "options": [
+              "have",
+              "has"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "have-subject",
+        "type": "exercise",
+        "title": "Find the subject",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "___ has an apple.",
+            "options": [
+              "I",
+              "He",
+              "We"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "___ have a laptop.",
+            "options": [
+              "She",
+              "It",
+              "They"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "___ has keys.",
+            "options": [
+              "My father",
+              "My friends",
+              "You"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "___ have a bottle of water.",
+            "options": [
+              "John",
+              "My parents",
+              "Mina"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "have-order",
+        "type": "exercise",
+        "title": "Make full sentences",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "we / have / an umbrella",
+            "answer": "We have an umbrella."
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "my city / has / three supermarkets",
+            "answer": "My city has three supermarkets."
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "I / have / two mobile phones",
+            "answer": "I have two mobile phones."
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "she / has / a laptop",
+            "answer": "She has a laptop."
+          }
+        ]
+      },
+      {
+        "id": "have-negative",
+        "type": "exercise",
+        "title": "Choose the correct sentence",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "He: no wallet",
+            "options": [
+              "He doesn’t have a wallet.",
+              "He doesn’t has a wallet."
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "I: no umbrella",
+            "options": [
+              "I don’t have an umbrella.",
+              "I doesn’t have an umbrella."
+            ],
+            "answer": 0
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "She: question",
+            "options": [
+              "Does she have a phone?",
+              "Does she has a phone?"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "They: question",
+            "options": [
+              "Do they have keys?",
+              "Does they have keys?"
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ],
+    "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 3 · самостоятельная тема</span><h2>Have / has</h2><p>Вы уже умеете говорить, <em>кто человек и откуда он</em> с <strong>be</strong>. Глагол <strong>have</strong> нужен для другого значения — <em>что у кого-то есть</em>.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#hv-01\">01 · Что значит have / has?</a><a href=\"#hv-02\">02 · Кто + have, а кто + has?</a><a href=\"#hv-03\">03 · Порядок слов и количество</a><a href=\"#hv-04\">04 · Отрицания и вопросы: сравнение (дополнительно)</a><a href=\"#hv-05\">05 · Типичные ошибки</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"hv-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Что значит have / has?</h3></div><p><strong>have / has</strong> говорит о том, что у человека или места <strong>что-то есть</strong>. По-русски мы часто говорим «у меня есть», а в английском подлежащее ставим перед глаголом: <em>I have a phone.</em></p><div class=\"g1-scheme\"><span class=\"g1-token \">I</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">have</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">a phone</span></div><p>Это <strong>обычный глагол</strong>, а не форма <em>be</em>. Нельзя сказать <span class=\"g1-wrong\">I am have a phone</span>.</p></section><section class=\"g1-section\" id=\"hv-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Кто + have, а кто + has?</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Подлежащее</th><th>Глагол</th><th>Пример</th></tr></thead><tbody><tr><td>I / you / we / they</td><td><strong>have</strong></td><td>We <strong>have</strong> an umbrella.</td></tr><tr><td>he / she / it</td><td><strong>has</strong></td><td>She <strong>has</strong> a bottle of water.</td></tr><tr><td>один человек / один предмет</td><td><strong>has</strong></td><td>My city <strong>has</strong> three supermarkets.</td></tr><tr><td>несколько людей / вещей</td><td><strong>have</strong></td><td>My friends <strong>have</strong> phones.</td></tr></tbody></table></div><p><em>My city</em> = <em>it</em>, поэтому <strong>has</strong>. <em>My friends</em> = <em>they</em>, поэтому <strong>have</strong>.</p></section><section class=\"g1-section\" id=\"hv-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Порядок слов и количество</h3></div><div class=\"g1-scheme\"><span class=\"g1-token \">My city</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">has</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">three supermarkets</span></div><p><em>She has <strong>a</strong> phone</em> — одна вещь; <em>She has <strong>two phones</strong></em> — несколько. Множественное число у существительного зависит от количества.</p><p>Не забываем глагол между подлежащим и предметом: <span class=\"g1-wrong\">She a laptop</span> → <span class=\"g1-right\">She has a laptop</span>.</p></section><section class=\"g1-section\" id=\"hv-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Отрицания и вопросы: сравнение (дополнительно)</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Утверждение</th><th>Отрицание</th><th>Вопрос</th></tr></thead><tbody><tr><td>I <strong>have</strong> a wallet.</td><td>I <strong>don’t have</strong> a wallet.</td><td><strong>Do</strong> you <strong>have</strong> a wallet?</td></tr><tr><td>She <strong>has</strong> a wallet.</td><td>She <strong>doesn’t have</strong> a wallet.</td><td><strong>Does</strong> she <strong>have</strong> a wallet?</td></tr></tbody></table></div><p>В этом уроке главное — утвердительные формы. Отрицания и вопросы показаны для сравнения: после <strong>does / doesn’t</strong> используем <strong>have</strong>, не <em>has</em>.</p></section><section class=\"g1-section\" id=\"hv-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Типичные ошибки</h3></div><div class=\"g1-grid\"><div class=\"g1-sentence\"><span class=\"g1-wrong\">Teri have a bottle of water.</span><div class=\"g1-right\">Teri has a bottle of water.</div><small>Teri = she.</small></div><div class=\"g1-sentence\"><span class=\"g1-wrong\">I has two mobile phones.</span><div class=\"g1-right\">I have two mobile phones.</div><small>I всегда с have.</small></div></div></section></div>"
+  },
+  {
+    "id": "grammar-be-we-you-they",
+    "order": 6,
+    "title": "Present simple be: we / you / they",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-15",
+    "linkedLessonId": "lesson-3",
+    "page": "grammar-topic.html?id=grammar-be-we-you-they",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Полные и сокращённые формы are, отрицания, вопросы и краткие ответы для we, you и they.",
+    "formula": "We / You / They are · are not · Are they ...?",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "exercises": [
+      {
+        "id": "be-plural-select",
+        "type": "exercise",
+        "title": "Choose the form of be",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "We ___ from Turkey.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "They ___ students.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "John ___ cold.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "I ___ from India.",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "be-plural-negative",
+        "type": "exercise",
+        "title": "Complete the negative sentence",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "We ___ from Mexico.",
+            "options": [
+              "isn’t",
+              "aren’t",
+              "am not"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "They ___ doctors.",
+            "options": [
+              "isn’t",
+              "aren’t",
+              "not are"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "You ___ late.",
+            "options": [
+              "aren’t",
+              "isn’t",
+              "am not"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "My friends ___ from Spain.",
+            "options": [
+              "isn’t",
+              "aren’t",
+              "am not"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "be-plural-questions",
+        "type": "exercise",
+        "title": "Build questions",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "are / who / they ?",
+            "answer": "Who are they?"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "are / where / they / from ?",
+            "answer": "Where are they from?"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "your parents / are / Australian ?",
+            "answer": "Are your parents Australian?"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "the bikes / new / are ?",
+            "answer": "Are the bikes new?"
+          }
+        ]
+      },
+      {
+        "id": "be-plural-answers",
+        "type": "exercise",
+        "title": "Choose the short answer",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "Are they doctors? (no)",
+            "options": [
+              "No, they’re not.",
+              "No, they is not."
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Are your parents Australian? (yes)",
+            "options": [
+              "Yes, they are.",
+              "Yes, they’re."
+            ],
+            "answer": 0
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "Are you cold? (no)",
+            "options": [
+              "No, I’m not.",
+              "No, I aren’t."
+            ],
+            "answer": 0
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "Are we late? (yes)",
+            "options": [
+              "Yes, we are.",
+              "Yes, we’re."
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ],
+    "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 3 · самостоятельная тема</span><h2>Be: we / you / they</h2><p>Вы уже знаете <em>I am</em> и <em>he/she/it is</em>. Теперь научимся говорить о <strong>нескольких людях</strong> и задавать о них вопросы.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#bt-01\">01 · Когда говорим we / you / they?</a><a href=\"#bt-02\">02 · Утверждения и сокращения</a><a href=\"#bt-03\">03 · Отрицания</a><a href=\"#bt-04\">04 · Вопросы и короткие ответы</a><a href=\"#bt-05\">05 · Вопросительные слова</a><a href=\"#bt-06\">06 · Сравните все формы be</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"bt-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Когда говорим we / you / they?</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Местоимение</th><th>Значение</th><th>Пример</th></tr></thead><tbody><tr><td><strong>we</strong></td><td>мы — я и другие люди</td><td>We <strong>are</strong> from Turkey.</td></tr><tr><td><strong>you</strong></td><td>ты или вы</td><td>You <strong>are</strong> Australian.</td></tr><tr><td><strong>they</strong></td><td>они — несколько людей или предметов</td><td>They <strong>are</strong> students.</td></tr></tbody></table></div><p>Сравните: <strong>he is</strong> (один человек), но <strong>they are</strong> (несколько человек).</p></section><section class=\"g1-section\" id=\"bt-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Утверждения и сокращения</h3></div><div class=\"g1-scheme\"><span class=\"g1-token \">We / You / They</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">are</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">...</span></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Полная форма</th><th>Сокращение</th></tr></thead><tbody><tr><td>We <strong>are</strong> friends.</td><td><strong>We’re</strong> friends.</td></tr><tr><td>You <strong>are</strong> British.</td><td><strong>You’re</strong> British.</td></tr><tr><td>They <strong>are</strong> from Mexico.</td><td><strong>They’re</strong> from Mexico.</td></tr></tbody></table></div><p>Существительное во множественном числе: <em>They’re <strong>students</strong></em>, а не <em>a students</em>.</p></section><section class=\"g1-section\" id=\"bt-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Отрицания</h3></div><div class=\"g1-scheme\"><span class=\"g1-token \">They</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">are not</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">students</span></div><p><strong>They are not students.</strong> = <strong>They aren’t students.</strong> = <strong>They’re not students.</strong> — все три правильные.</p><p><span class=\"g1-wrong\">They not doctors.</span> → <span class=\"g1-right\">They aren’t doctors.</span> Форму <strong>are</strong> нельзя пропускать.</p></section><section class=\"g1-section\" id=\"bt-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Вопросы и короткие ответы</h3></div><div class=\"g1-scheme\"><span class=\"g1-token g1-token-v\">Are</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">they</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">friends?</span></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Вопрос</th><th>Да</th><th>Нет</th></tr></thead><tbody><tr><td><strong>Are</strong> they doctors?</td><td>Yes, they <strong>are</strong>.</td><td>No, they <strong>aren’t</strong>.</td></tr><tr><td><strong>Are</strong> your parents Australian?</td><td>Yes, they <strong>are</strong>.</td><td>No, they <strong>aren’t</strong>.</td></tr></tbody></table></div><p>В коротком утвердительном ответе не сокращаем: <span class=\"g1-wrong\">Yes, they’re.</span> → <span class=\"g1-right\">Yes, they are.</span>.</p></section><section class=\"g1-section\" id=\"bt-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Вопросительные слова</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Слово</th><th>Порядок слов</th><th>Пример</th></tr></thead><tbody><tr><td><strong>Who</strong></td><td>Who + are + they?</td><td><strong>Who are they?</strong></td></tr><tr><td><strong>Where</strong></td><td>Where + are + they + from?</td><td><strong>Where are they from?</strong></td></tr></tbody></table></div><p><em>Who are they?</em> спрашивает, кто эти люди. <em>Where are they from?</em> — из какой они страны или города. Не путайте эти вопросы.</p></section><section class=\"g1-section\" id=\"bt-06\"><div class=\"g1-section-head\"><span class=\"g1-num\">06</span><h3>Сравните все формы be</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто?</th><th>Утверждение</th><th>Вопрос</th></tr></thead><tbody><tr><td>I</td><td>I <strong>am</strong> a student.</td><td><strong>Am</strong> I late?</td></tr><tr><td>he / she / it</td><td>She <strong>is</strong> a teacher.</td><td><strong>Is</strong> she a teacher?</td></tr><tr><td>we / you / they</td><td>They <strong>are</strong> teachers.</td><td><strong>Are</strong> they teachers?</td></tr></tbody></table></div><p>Это три формы одного глагола <strong>be</strong>, но каждая зависит от подлежащего.</p></section></div>"
   }
 ];
