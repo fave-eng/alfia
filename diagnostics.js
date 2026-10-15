@@ -12,6 +12,7 @@
     config: $('config-info'), telegram: $('telegram-info'),
     db: $('db-write-result'), send: $('send-result'),
     run: $('run-all'), dbBtn: $('test-db-write'), sendBtn: $('send-test-report'),
+    secret: $('teacher-secret'),
   };
   let client;
   const checks = [];
@@ -59,7 +60,7 @@
   }
   function edgeError(response){
     if(response.status===404) return 'Функция notify-alfiya-telegram не развёрнута (HTTP 404).';
-    if(response.status===401 || response.status===403) return `Авторизация отклонена (HTTP ${response.status}). Проверь verify_jwt и функцию.`;
+    if(response.status===401 || response.status===403) return `HTTP ${response.status}: ${redact(response.data?.error || 'Доступ отклонён')}. Это может быть проверка ключа внутри Edge Function, а не verify_jwt.`;
     return `HTTP ${response.status}: ${redact(response.data?.error || response.data?.message || 'нет данных')}`;
   }
   async function fileCheck(title,path,kind='file'){
