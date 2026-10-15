@@ -1,0 +1,745 @@
+{
+  "id": "lesson-1",
+  "number": 1,
+  "title": "1A · Hello",
+  "subtitle": "Speakout A1 · Workbook · Greetings, countries, be (I/you), writing",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-1",
+  "grammarIds": [
+    "grammar-be-i-you"
+  ],
+  "publishedAt": "2026-10-15",
+  "totalPoints": 40,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "eyebrow": "Speakout A1 · Unit 1 · Lesson 1A",
+      "title": "Vocabulary · Hello and goodbye"
+    },
+    {
+      "type": "exercise",
+      "id": "vocabulary-greetings",
+      "title": "1 · hello and goodbye",
+      "instructions": "Listen. Choose the correct words to complete the sentences.",
+      "audio": "audio/SO3_A1_WB_1A_Audio_1_01.mp3",
+      "layout": "greeting-scenes",
+      "scenes": [
+        {
+          "image": "images/lesson-1/greeting-1.png",
+          "alt": "Original workbook greeting scene 1",
+          "itemIds": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "image": "images/lesson-1/greeting-2.png",
+          "alt": "Original workbook greeting scene 2",
+          "itemIds": [
+            "3",
+            "4"
+          ]
+        },
+        {
+          "image": "images/lesson-1/greeting-3.png",
+          "alt": "Original workbook greeting scene 3",
+          "itemIds": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "image": "images/lesson-1/greeting-4.png",
+          "alt": "Original workbook greeting scene 4",
+          "itemIds": [
+            "7",
+            "8"
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "segments": [
+            "",
+            ". I’m Ben."
+          ],
+          "options": [
+            "Good morning",
+            "Good afternoon"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "segments": [
+            "",
+            " Ben. I’m Edward."
+          ],
+          "options": [
+            "Hi",
+            "Hello"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "segments": [
+            "",
+            " Sally!"
+          ],
+          "options": [
+            "Goodbye",
+            "Bye"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "segments": [
+            "",
+            "!"
+          ],
+          "options": [
+            "Goodbye",
+            "See you"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "segments": [
+            "",
+            ". I’m Adam."
+          ],
+          "options": [
+            "Hi",
+            "Hey"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "segments": [
+            "",
+            " Adam. I’m Jodie. Nice to meet you."
+          ],
+          "options": [
+            "Hello",
+            "Hey"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "single",
+          "segments": [
+            "",
+            " Yasmin!"
+          ],
+          "options": [
+            "Good evening",
+            "Good night"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "single",
+          "segments": [
+            "",
+            " Laura!"
+          ],
+          "options": [
+            "Bye",
+            "See you"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "countries-nationalities",
+      "title": "2 · countries and nationalities",
+      "instructions": "Choose the correct word to complete the sentences.",
+      "inlineNumberedItems": true,
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "segments": [
+            "Hi, I’m Tom. I’m ",
+            "."
+          ],
+          "options": [
+            "the US",
+            "American"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "segments": [
+            "Are you from ",
+            "?"
+          ],
+          "options": [
+            "Turkey",
+            "Turkish"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "segments": [
+            "Good morning. I’m Maxime. I’m from ",
+            "."
+          ],
+          "options": [
+            "France",
+            "French"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "segments": [
+            "I’m not British, I’m ",
+            "."
+          ],
+          "options": [
+            "Australia",
+            "Australian"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "segments": [
+            "Are you ",
+            "?"
+          ],
+          "options": [
+            "Brazilian",
+            "Brazil"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "segments": [
+            "Hey, I’m Ximena. I’m ",
+            "."
+          ],
+          "options": [
+            "Mexican",
+            "Mexico"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "eyebrow": "Grammar · present simple be: I, you",
+      "title": "Grammar · Statements and questions"
+    },
+    {
+      "type": "exercise",
+      "id": "word-order",
+      "title": "3 · Word order",
+      "instructions": "Put the words in the correct order to make sentences.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "prompt": "from / I’m / India .",
+          "answer": "I’m from India.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "not / from / Poland / I’m .",
+          "answer": "I’m not from Poland.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "you / are / student / a ?",
+          "answer": "Are you a student?",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "are / you / South Korean .",
+          "answer": "You are South Korean.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "aren’t / Vietnamese / you .",
+          "answer": "You aren’t Vietnamese.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "the / you / are / US / from ?",
+          "answer": "Are you from the US?",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "prompt": "not / teacher / a / I’m .",
+          "answer": "I’m not a teacher.",
+          "placeholder": "Write the sentence"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "prompt": "from / you / are / where ?",
+          "answer": "Where are you from?",
+          "placeholder": "Write the sentence"
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "correct-the-mistake",
+      "title": "4 · Correct the mistake",
+      "instructions": "The sentences below have a mistake. Choose the best option to correct the mistake.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "prompt": "Hello, I Pablo. Nice to meet you.",
+          "options": [
+            "I’m",
+            "I are",
+            "am I"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "prompt": "You not from Japan.",
+          "options": [
+            "You no",
+            "You aren’t",
+            "You am not"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "prompt": "You are from Ankara?",
+          "options": [
+            "You",
+            "Are you",
+            "Be you"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "prompt": "Where you from?",
+          "options": [
+            "You are",
+            "Where you are",
+            "Where are you"
+          ],
+          "answer": 2
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "missing-dialogue",
+      "title": "5A · Complete the conversation",
+      "instructions": "Complete the conversation with the missing words. Use contractions where possible.",
+      "layout": "inline-dialogue",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "parts": [
+            "Hello, ",
+            {
+              "itemId": "1"
+            },
+            " Mina. Nice to meet you."
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "Hi Mina. ",
+            {
+              "itemId": "2"
+            },
+            " Andressa. Nice to meet you, too. ",
+            {
+              "itemId": "3"
+            },
+            " you from?"
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            {
+              "itemId": "4"
+            },
+            " Yokohama in Japan. ",
+            {
+              "itemId": "5"
+            },
+            " Portuguese?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "No, ",
+            {
+              "itemId": "6"
+            },
+            ", I’m Brazilian."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "Wow! ",
+            {
+              "itemId": "7"
+            },
+            " from Rio de Janeiro?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            {
+              "itemId": "8"
+            },
+            ", I am."
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "answer": "I’m",
+          "acceptedAnswers": [
+            "I’m",
+            "I am"
+          ],
+          "placeholder": "…"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "answer": "I’m",
+          "acceptedAnswers": [
+            "I’m",
+            "I am"
+          ],
+          "placeholder": "…"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "answer": "Where are",
+          "acceptedAnswers": [
+            "Where are"
+          ],
+          "placeholder": "…"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "answer": "I’m from",
+          "acceptedAnswers": [
+            "I’m from"
+          ],
+          "placeholder": "…"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "answer": "Are you",
+          "acceptedAnswers": [
+            "Are you"
+          ],
+          "placeholder": "…"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "answer": "I’m not",
+          "acceptedAnswers": [
+            "I’m not"
+          ],
+          "placeholder": "…"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "answer": "Are you",
+          "acceptedAnswers": [
+            "Are you"
+          ],
+          "placeholder": "…"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "answer": "Yes",
+          "acceptedAnswers": [
+            "Yes"
+          ],
+          "placeholder": "…"
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "eyebrow": "Writing",
+      "title": "Writing · Chat messages"
+    },
+    {
+      "type": "exercise",
+      "id": "message-table",
+      "title": "8A · New students",
+      "instructions": "Read the chat messages. Complete the table.",
+      "layout": "chat-table",
+      "chatTitle": "New students",
+      "chatMessages": [
+        {
+          "author": "Ewa",
+          "text": "Hello everyone. I’m Ewa I’m from warsaw in Poland. Where are you from",
+          "side": "left"
+        },
+        {
+          "author": "Peter",
+          "text": "Hi Ewa, I’m Peter. I’m from Geneva in switzerland.",
+          "side": "right"
+        },
+        {
+          "author": "Noemi",
+          "text": "Hello everyone, I’m noemi. I’m also Swiss",
+          "side": "left"
+        },
+        {
+          "author": "Peter",
+          "text": "really? Where are you from Are you from geneva",
+          "side": "right"
+        },
+        {
+          "author": "Noemi",
+          "text": "No, I’m not I’m from Zurich.",
+          "side": "left"
+        },
+        {
+          "author": "Wang",
+          "text": "Hi, I’m Wang. I’m chinese. I’m from Shanghai.",
+          "side": "right"
+        },
+        {
+          "author": "Ewa",
+          "text": "Hi Wang. Are you in China now",
+          "side": "left"
+        },
+        {
+          "author": "Wang",
+          "text": "No, i’m not I’m in the UK.",
+          "side": "right"
+        }
+      ],
+      "tableHeaders": [
+        "name",
+        "city",
+        "country"
+      ],
+      "tableRows": [
+        [
+          "Ewa",
+          {
+            "itemId": "1"
+          },
+          "Poland"
+        ],
+        [
+          {
+            "itemId": "2"
+          },
+          "Geneva",
+          {
+            "itemId": "3"
+          }
+        ],
+        [
+          "Noemi",
+          {
+            "itemId": "4"
+          },
+          "Switzerland"
+        ],
+        [
+          {
+            "itemId": "5"
+          },
+          {
+            "itemId": "6"
+          },
+          "China"
+        ]
+      ],
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "answer": "Warsaw",
+          "placeholder": "…"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "answer": "Peter",
+          "placeholder": "…"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "answer": "Switzerland",
+          "placeholder": "…"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "answer": "Zurich",
+          "placeholder": "…"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "answer": "Wang",
+          "placeholder": "…"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "answer": "Shanghai",
+          "placeholder": "…"
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "profile-chat",
+      "title": "9 · Chat messages",
+      "instructions": "Read the personal profiles. Write chat messages between the three people. Use capital letters, full stops and question marks.",
+      "layout": "profile-writing",
+      "profiles": [
+        {
+          "name": "Meera",
+          "from": "Mumbai, India",
+          "now": "New York, USA",
+          "src": "images/lesson-1/profile-1.png"
+        },
+        {
+          "name": "Patrick",
+          "from": "Birmingham, UK",
+          "now": "Poznan, Poland",
+          "src": "images/lesson-1/profile-2.png"
+        },
+        {
+          "name": "Nina",
+          "from": "Paris, France",
+          "now": "Mexico City, Mexico",
+          "src": "images/lesson-1/profile-3.png"
+        }
+      ],
+      "items": [
+        {
+          "id": "chat",
+          "number": "",
+          "input": "textarea",
+          "prompt": "Write the chat messages.",
+          "scored": false
+        }
+      ]
+    }
+  ]
+}

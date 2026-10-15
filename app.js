@@ -1824,6 +1824,47 @@
     }).join('')}</div>`;
   }
 
+  // Lesson 1A: preserve the original textbook layouts (four picture scenes,
+  // continuous dialogue, chat/table and personal profile cards).
+  function renderGreetingScenesExercise(block, blockId) {
+    const entries = new Map((block.items || []).map((item, i) => [String(item.id), {item, i}]));
+    return `<div class="a1-greeting-scenes">${(block.scenes || []).map((scene, sceneIndex) => `<section class="a1-greeting-scene">
+      <div class="a1-greeting-media"><a href="${escapeHtml(scene.image)}" target="_blank" rel="noopener"><img src="${escapeHtml(scene.image)}" alt="${escapeHtml(scene.alt || `Greeting scene ${sceneIndex + 1}`)}" loading="lazy"></a></div>
+      <div class="a1-scene-lines">${(scene.itemIds || []).map((key) => {
+        const found = entries.get(String(key));
+        return found ? renderExerciseItem(found.item, blockId, found.i, true) : '';
+      }).join('')}</div>
+    </section>`).join('')}</div>`;
+  }
+
+  function renderInlineDialogueExercise(block, blockId) {
+    const items = new Map((block.items || []).map((item, i) => [String(item.id), {item, i}]));
+    return `<div class="a1-dialogue">${(block.dialogue || []).map((line) => `<div class="a1-dialogue-line"><strong class="a1-dialogue-speaker">${escapeHtml(line.speaker)}</strong><p>${(line.parts || []).map((part) => {
+      if (typeof part === 'string') return escapeHtml(part);
+      const record = items.get(String(part.itemId));
+      if (!record) return '';
+      const {item} = record;
+      return `<span class="a1-inline-gap" data-exercise-item="${escapeHtml(item.id)}" data-input-type="text"><sup>${escapeHtml(item.number || item.id)}</sup><input class="text-field" aria-label="Gap ${escapeHtml(item.number || item.id)}" autocomplete="off" placeholder="…"><span class="feedback" aria-live="polite"></span></span>`;
+    }).join('')}</p></div>`).join('')}</div>`;
+  }
+
+  function renderChatTableExercise(block) {
+    const itemMap = new Map((block.items || []).map((item) => [String(item.id), item]));
+    const rows = (block.tableRows || []).map((row) => `<tr>${row.map((cell) => {
+      if (typeof cell === 'string') return `<td>${escapeHtml(cell)}</td>`;
+      const item = itemMap.get(String(cell?.itemId));
+      if (!item) return '<td></td>';
+      return `<td><div class="a1-table-gap" data-exercise-item="${escapeHtml(item.id)}" data-input-type="text"><span class="a1-small-number">${escapeHtml(item.number || item.id)}</span><input type="text" class="text-field" autocomplete="off" aria-label="Table gap ${escapeHtml(item.id)}"><span class="feedback" aria-live="polite"></span></div></td>`;
+    }).join('')}</tr>`).join('');
+    const chat = (block.chatMessages || []).map((message) => `<div class="a1-chat-message ${message.side === 'right' ? 'is-right' : 'is-left'}"><span class="a1-chat-author">${escapeHtml(message.author)}</span><span>${escapeHtml(message.text)}</span></div>`).join('');
+    return `<div class="a1-writing-layout"><div class="a1-chat" role="group" aria-label="Original New students chat"><div class="a1-chat-top">${escapeHtml(block.chatTitle || 'New students')}</div><div class="a1-chat-body">${chat}</div></div><div class="a1-writing-table"><div class="table-wrap"><table><thead><tr>${(block.tableHeaders || []).map((label) => `<th>${escapeHtml(label)}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div></div></div>`;
+  }
+
+  function renderProfileWritingExercise(block, blockId) {
+    const profiles = (block.profiles || []).map((profile) => `<article class="a1-person-card"><img src="${escapeHtml(profile.src)}" alt="Original workbook photo of ${escapeHtml(profile.name)}" loading="lazy"><div><h4>${escapeHtml(profile.name)}</h4><p><strong>From:</strong> ${escapeHtml(profile.from)}</p><p><strong>Now in:</strong> ${escapeHtml(profile.now)}</p></div></article>`).join('');
+    return `<div class="a1-profile-grid">${profiles}</div><div class="a1-chat-writing">${(block.items || []).map((item, i) => renderExerciseItem(item, blockId, i)).join('')}</div>`;
+  }
+
   function renderLessonBlock(block, index) {
     const id = safeText(block.id, `task-${index}`);
     const title = escapeHtml(block.title || block.prompt || `Task ${index + 1}`);
@@ -1876,7 +1917,15 @@
           }).join('')}</div>`
         : '';
       const intro = block.introTitle || block.introText ? `<div class="exercise-source"><h4>${escapeHtml(block.introTitle || '')}</h4>${block.introText ? `<p>${escapeHtml(block.introText)}</p>` : ''}</div>` : '';
-      const exerciseContent = block.layout === 'dialogue'
+      const exerciseContent = block.layout === 'greeting-scenes'
+        ? renderGreetingScenesExercise(block, id)
+        : block.layout === 'inline-dialogue'
+          ? renderInlineDialogueExercise(block, id)
+          : block.layout === 'chat-table'
+            ? renderChatTableExercise(block)
+            : block.layout === 'profile-writing'
+              ? renderProfileWritingExercise(block, id)
+              : block.layout === 'dialogue'
         ? renderDialogueExercise(block, id)
         : block.layout === 'crossword'
           ? renderCrosswordExercise(block, id)

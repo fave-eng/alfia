@@ -3442,3 +3442,44 @@ label.odd-option {
 .reference-section{scroll-margin-top:20px}
 .reference-section .table-wrap{margin-top:16px}
 @media(max-width:650px){.knowledge-links,.reference-grid{grid-template-columns:1fr}.knowledge-card{padding:17px}}
+
+/* Speakout A1 · Unit 1A — original workbook scenes, real chat and profile writing */
+.a1-greeting-scenes {display:grid;gap:1rem}
+.a1-greeting-scene {display:grid;grid-template-columns:165px minmax(0,1fr);align-items:center;gap:1rem;padding:1rem;background:#f8fafc;border:1px solid #e0e7ef;border-radius:16px}
+.a1-greeting-media {text-align:center}
+.a1-greeting-media img {display:block;width:100%;max-width:165px;height:148px;object-fit:contain;object-position:center}
+.a1-scene-lines {min-width:0;display:grid;gap:.65rem}
+.a1-scene-lines .exercise-item {margin:0;padding:.4rem .3rem;border:0;background:transparent}
+.a1-scene-lines .exercise-number {flex:0 0 auto}
+.a1-scene-lines .inline-single-sentence {display:flex;flex-wrap:wrap;align-items:center;gap:.2rem}
+.a1-scene-lines .circle-choice {white-space:normal}
+.a1-dialogue {background:#f7faff;padding:1.2rem;border-radius:14px;display:grid;gap:.8rem}
+.a1-dialogue-line {display:grid;grid-template-columns:2rem minmax(0,1fr);align-items:start;gap:.5rem}
+.a1-dialogue-speaker {font-weight:800;color:#19456a;padding-top:.35rem}
+.a1-dialogue-line p {margin:0;line-height:2.8rem;overflow-wrap:anywhere}
+.a1-inline-gap {display:inline-flex;align-items:center;vertical-align:middle;gap:.2rem;white-space:nowrap;margin:0 .15rem}
+.a1-inline-gap .text-field {width:clamp(98px,16vw,145px);min-width:0;padding:.42rem .5rem;height:2.35rem}
+.a1-inline-gap sup {font-weight:700;color:#406282}
+.a1-inline-gap .feedback {font-size:.72rem;line-height:1.1;max-width:115px;white-space:normal}
+.a1-writing-layout {display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);align-items:start;gap:1rem}
+.a1-chat {border:1px solid #d7e2eb;border-radius:15px;overflow:hidden;background:#ecf0f6;min-width:0}
+.a1-chat-top {background:#355d83;color:white;padding:.8rem 1rem;font-weight:800}
+.a1-chat-body {padding:.9rem;display:flex;flex-direction:column;gap:.65rem}
+.a1-chat-message {display:flex;flex-direction:column;align-self:flex-start;gap:.25rem;max-width:94%;background:#d7e0ec;color:#26374b;border-radius:12px;padding:.65rem .8rem;line-height:1.4;overflow-wrap:anywhere}
+.a1-chat-message.is-right {align-self:flex-end;background:white}
+.a1-chat-author {font-weight:800;font-size:.78rem;color:#335977}
+.a1-writing-table .table-wrap {overflow:auto}
+.a1-writing-table table {width:100%;min-width:270px;table-layout:auto}
+.a1-writing-table th, .a1-writing-table td {padding:.7rem .4rem}
+.a1-table-gap {display:flex;flex-wrap:wrap;align-items:center;gap:.15rem;min-width:0}
+.a1-table-gap input {min-width:72px;max-width:100%;width:100%;padding:.4rem}
+.a1-small-number {font-size:.7rem;font-weight:800;color:#54728e}
+.a1-table-gap .feedback {font-size:.69rem;line-height:1.2}
+.a1-profile-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1.2rem 0}
+.a1-person-card {background:#edf3fb;border:1px solid #d7e2f0;padding:.8rem;border-radius:14px;display:flex;align-items:center;gap:.6rem;min-width:0}
+.a1-person-card img {width:76px;height:76px;object-fit:cover;border-radius:100%;flex:none}
+.a1-person-card h4 {margin:0 0 .3rem;color:#224565}
+.a1-person-card p {font-size:.79rem;line-height:1.4;margin:.16rem 0;overflow-wrap:anywhere}
+.a1-chat-writing textarea {min-height:200px;line-height:1.65;width:100%}
+@media (max-width:840px){.a1-writing-layout {grid-template-columns:1fr}.a1-profile-grid {grid-template-columns:1fr}.a1-person-card img {width:65px;height:65px}}
+@media (max-width:540px){.a1-greeting-scene {grid-template-columns:1fr;padding:.7rem}.a1-greeting-media img {height:160px;margin:auto}.a1-greeting-media {background:white;border-radius:9px}.a1-scene-lines .exercise-item {padding:.4rem .15rem}.a1-dialogue{padding:.7rem}.a1-dialogue-line{grid-template-columns:1.3rem minmax(0,1fr);gap:.2rem}.a1-inline-gap .text-field {width:97px}.a1-chat-body {padding:.6rem}.a1-chat-message{max-width:97%}}
