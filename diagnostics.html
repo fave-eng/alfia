@@ -1,46 +1,33 @@
-<!doctype html><html lang="ru"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Диагностика · Альфия</title>
-<style>
-:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#153246;background:#f4f8fa}*{box-sizing:border-box}body{margin:0}.wrap{max-width:960px;margin:0 auto;padding:24px 16px 60px}header{background:#0a4c5c;color:#fff;padding:28px;border-radius:24px;margin:12px 0 20px}h1{margin:6px 0 12px}p{line-height:1.55}.card{background:white;border:1px solid #d9e5e9;border-radius:18px;padding:20px;margin:12px 0;box-shadow:0 5px 20px #1032420b}.checks{display:grid;gap:10px}button{background:#126a80;color:white;border:0;border-radius:12px;padding:14px 20px;font-weight:700;cursor:pointer}button:disabled{opacity:.6}.item{border:1px solid #dde8ec;background:#f8fbfc;border-radius:12px;padding:13px}.item.ok{border-color:#b5e3d8}.item.bad{border-color:#ebc6c6}.item.warn{border-color:#f4dca5}.item strong{display:block;margin-bottom:5px}.status{color:#657884}.ok .status{color:#17654b}.bad .status{color:#a32e39}pre{padding:14px;background:#eaf3f6;border-radius:12px;overflow:auto;white-space:pre-wrap;font-size:13px}.tools{display:flex;flex-wrap:wrap;gap:12px}
-</style>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script><script src="config.js" defer></script></head>
-<body><main class="wrap"><header><p>Служебная страница · отдельная ученица</p><h1>Диагностика Альфии</h1><p>Проверяет файлы и доступ к облачному хранилищу. Не удаляет данные и не отправляет сообщения в Telegram.</p></header>
-<div class="tools"><button id="run">Запустить проверку</button><button id="copy" type="button">Скопировать отчёт</button><a href="index.html" style="align-self:center;color:#136a82">Открыть сайт</a></div>
-<section class="card"><h2>Результаты</h2><div class="checks" id="checks"><p>Нажми «Запустить проверку».</p></div></section>
-<section class="card"><h2>Технический отчёт</h2><pre id="report">Проверка не запускалась.</pre></section></main>
-<script>
-document.addEventListener('DOMContentLoaded',()=>{
- const output=document.getElementById('checks'), report=document.getElementById('report'), run=document.getElementById('run');
- let items=[];
- const add=(name,status,detail)=>{items.push({name,status,detail});const e=document.createElement('div');e.className='item '+status;const title=document.createElement('strong');title.textContent=({ok:'✓ ',bad:'✗ ',warn:'! '})[status]+name;const d=document.createElement('div');d.className='status';d.textContent=detail;e.append(title,d);output.append(e)};
- run.onclick=async()=>{
- run.disabled=true;output.textContent='';items=[];
- const config=window.APP_CONFIG||{},sid=config.student?.id,url=config.supabase?.url,key=config.supabase?.anonKey;
- add('config.js',sid==='alfiya'?'ok':'bad',sid==='alfiya'?'student_id = alfiya':'Ожидается student_id = alfiya');
- add('Курс',config.student?.level==='A1'?'ok':'bad',`${config.student?.level||'?'} · ${config.student?.textbook||'?'}`);
- for(const path of ['data/grammar-data.js','data/vocabulary-data.js']){
-  try{const r=await fetch(path,{cache:'no-store'});add(path,r.ok?'ok':'bad',`HTTP ${r.status}`)}catch(e){add(path,'bad',String(e))}
- }
- try{
-  const r=await fetch('data/lessons/lesson-1.json',{cache:'no-store'});
-  add('Первое домашнее задание',r.status===404?'ok':r.ok?'ok':'bad',r.status===404?'Пока не создано — это нормально для нового сайта.':`HTTP ${r.status}`);
- }catch(e){add('Первое домашнее задание','warn',String(e))}
- if(!window.supabase?.createClient) add('Supabase SDK','warn','Библиотека не загрузилась. Проверь интернет/CDN.');
- else if(!url||!key) add('Supabase config','bad','Нет URL или публичного ключа');
- else{
-  try{
-   const db=window.supabase.createClient(url,key,{auth:{persistSession:false,autoRefreshToken:false,detectSessionInUrl:false}});
-   for(const [name,table] of Object.entries(config.supabase.tables||{})){
-    const {data,error}=await db.from(table).select('*').eq('student_id','alfiya').limit(1);
-    add('Supabase / '+name,error?'bad':'ok',error?`${error.code||'ERROR'} · ${error.message}`:`Доступно. Записей в выборке: ${(data||[]).length}`);
-   }
-   const func=config.features?.telegramFunction||'notify-alfiya-telegram';
-   try{const response=await fetch(url.replace(/\/$/,'')+'/functions/v1/'+func,{method:'POST',headers:{'content-type':'application/json',apikey:key,authorization:'Bearer '+key},body:JSON.stringify({eventType:'diagnostics',studentId:'alfiya'})}); const json=await response.json().catch(()=>({})); add('Edge Function / '+func,response.ok&&json.ok?'ok':'warn',`HTTP ${response.status}; версия ${json.version||'недоступна'}; бот ${json.telegramConfigured===true?'configured':json.telegramConfigured===false?'not configured':'unknown'}`)}catch(e){add('Edge Function','warn',String(e))}
-  }catch(e){add('Supabase','bad',String(e))}
- }
- report.textContent=JSON.stringify({studentId:'alfiya',runAt:new Date().toISOString(),checks:items},null,2);
- run.disabled=false;
- };
- document.getElementById('copy').onclick=async()=>{try{await navigator.clipboard.writeText(report.textContent);document.getElementById('copy').textContent='Скопировано'}catch{document.getElementById('copy').textContent='Не удалось скопировать'}};
-});
-</script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Полная диагностика · Альфия · Speakout A1</title>
+  <style>
+    :root{color-scheme:light;--bg:#f3f8fb;--card:#fff;--ink:#153246;--muted:#60778a;--line:#d8e6ec;--ok:#08744f;--okbg:#e8f8ee;--bad:#ac2933;--badbg:#fff0f0;--warn:#966000;--warnbg:#fff7dc;--accent:#126a80;--dark:#143744}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
+    .wrap{width:min(1040px,calc(100% - 28px));margin:25px auto 75px}.hero{padding:26px;border-radius:22px;background:linear-gradient(130deg,#0a4c5c,#167f9c);color:#fff}.hero h1{font-size:clamp(26px,4vw,41px);line-height:1.14;margin:9px 0 12px}.hero p{margin:0;max-width:800px;opacity:.93}.pill{display:inline-block;padding:5px 10px;border:1px solid #ffffff70;border-radius:30px;font-weight:700;font-size:12px}
+    .toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:18px 0}.btn{appearance:none;border:none;border-radius:12px;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer;background:var(--accent);color:#fff}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn.dark{background:var(--dark)}.btn:disabled{opacity:.58;cursor:not-allowed}.toolbar a{color:var(--accent);font-weight:700}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 5px 18px #10324209}.wide{grid-column:1/-1}.card h2{margin:0 0 5px;font-size:19px}.sub{margin:0 0 16px;color:var(--muted);font-size:14px}.check{display:grid;grid-template-columns:27px minmax(0,1fr);gap:10px;padding:12px 0;border-top:1px solid #edf2f5}.check:first-child{border-top:0}.ico{display:grid;place-items:center;width:24px;height:24px;background:#eef3f6;color:#687a82;border-radius:50%;font-weight:800}.check.ok .ico{background:var(--okbg);color:var(--ok)}.check.bad .ico{background:var(--badbg);color:var(--bad)}.check.warn .ico{background:var(--warnbg);color:var(--warn)}.name{font-weight:750}.detail{color:var(--muted);font-size:13px;overflow-wrap:anywhere}.check.bad .detail{color:var(--bad)}.check.warn .detail{color:var(--warn)}
+    .summary{border-radius:12px;padding:13px 15px;margin-top:12px;background:#edf4f9;font-weight:700}.summary.ok{background:var(--okbg);color:var(--ok)}.summary.bad{background:var(--badbg);color:var(--bad)}.summary.warn{background:var(--warnbg);color:var(--warn)}.kv{display:grid;grid-template-columns:145px minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid #e8f0f3;font-size:14px}.kv span:first-child{color:var(--muted)}.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;overflow-wrap:anywhere}.note{padding:12px 14px;background:#f7fafc;border:1px solid var(--line);border-radius:12px;color:#526978;font-size:13px}.test-result{margin-top:12px}pre{padding:17px;background:#0b202c;color:#e5f2f4;border-radius:14px;white-space:pre-wrap;overflow:auto;max-height:430px;font-size:12px}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.kv{grid-template-columns:1fr;gap:2px}.hero{padding:21px}.btn{width:100%}.toolbar a{padding:6px 0}}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="config.js" defer></script>
+  <script src="diagnostics.js?v=20261015-2" defer></script>
+</head>
+<body><main class="wrap">
+  <section class="hero"><span class="pill">Служебная страница · Альфия · A1</span><h1>Полная диагностика сайта</h1><p>Проверяет цепочку файлы → браузер → Supabase / RLS → Edge Function → Telegram. Обычная диагностика не отправляет сообщения и не меняет прогресс.</p></section>
+  <div class="toolbar"><button id="run-all" class="btn">Проверить всё</button><button id="copy-report" class="btn secondary">Скопировать отчёт</button><button id="reload-page" class="btn secondary">Обновить страницу</button><a href="index.html">Вернуться на сайт</a></div>
+  <div class="grid">
+    <section class="card wide"><h2>Результаты проверок</h2><p class="sub">Красный означает ошибку. Жёлтый — неполная настройка или ограничение проверки.</p><div id="checks"></div><div class="summary" id="main-summary">Нажми «Проверить всё».</div></section>
+    <section class="card"><h2>Конфигурация</h2><p class="sub">Используется опубликованный config.js.</p><div id="config-info"></div></section>
+    <section class="card"><h2>Подключение Telegram</h2><p class="sub">Ожидаемая тема Альфии: chat_id −1004473831246, thread_id 5.</p><div id="telegram-info"></div><div class="note">Проверка состояния использует Telegram API для чтения. Сообщение отправляется только отдельной кнопкой ниже.</div></section>
+    <section class="card wide"><h2>Тест записи и удаления в Supabase</h2><p class="sub">По нажатию создаётся одна временная техническая запись в homework_progress, затем проверяются чтение и удаление. Настоящие ответы Альфии не изменяются.</p><button id="test-db-write" class="btn dark">Проверить запись домашней работы</button><div class="test-result" id="db-write-result"></div></section>
+    <section class="card wide"><h2>Тестовое сообщение в Telegram</h2><p class="sub">По нажатию отправляется одно служебное сообщение на английском языке в тему Альфии. Сервер ограничивает повторную отправку (60 секунд). Это не уведомление ученице о новом ДЗ.</p><label for="teacher-secret" class="sub" style="display:block">Для отправки введи <code>NOTIFY_WEBHOOK_SECRET</code> из настроек проекта. Секрет не сохраняется на сайте.</label><input type="password" id="teacher-secret" autocomplete="off" style="width:min(450px,100%);padding:12px;border:1px solid var(--line);border-radius:10px;margin-bottom:12px" placeholder="Секрет для уведомлений"><br><button id="send-test-report" class="btn dark">Отправить тестовое сообщение</button><div class="test-result" id="send-result"></div></section>
+    <section class="card wide"><h2>Подробный отчёт</h2><p class="sub">Пришли этот JSON, если одна из проверок показывает ошибку. Токены Telegram и ключ Supabase в отчёт не включаются.</p><pre id="raw-output">Диагностика ещё не запускалась.</pre></section>
+  </div>
+</main></body>
+</html>
