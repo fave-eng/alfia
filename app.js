@@ -1865,6 +1865,29 @@
     return `<div class="a1-profile-grid">${profiles}</div><div class="a1-chat-writing">${(block.items || []).map((item, i) => renderExerciseItem(item, blockId, i)).join('')}</div>`;
   }
 
+  // Lesson 1B: keep each original photo and the matching task together.
+  function renderJobsPhotoMatch(block, blockId) {
+    const photos = (block.photos || []).map((photo) => `<figure class="a1b-job-figure"><a href="${escapeHtml(photo.src)}" target="_blank" rel="noopener"><img src="${escapeHtml(photo.src)}" alt="Original workbook job photo ${escapeHtml(photo.label)}" loading="lazy"></a><figcaption>Photo ${escapeHtml(photo.label)}</figcaption></figure>`).join('');
+    const items = (block.items || []).map((item, i) => renderExerciseItem(item, blockId, i)).join('');
+    return `<div class="a1b-jobs-layout"><div class="a1b-jobs-photos" aria-label="Six original workbook photographs">${photos}</div><div class="a1b-jobs-answers exercise-items">${items}</div></div>`;
+  }
+
+  function renderJobMessages(block, blockId) {
+    return `<div class="a1b-job-chat"><div class="a1b-job-chat-bar">Chat</div><div class="a1b-job-chat-list">${(block.items || []).map((item, i) => `<div class="a1b-job-chat-bubble">${renderExerciseItem(item, blockId, i, true)}</div>`).join('')}</div></div>`;
+  }
+
+  function renderBlogTable(block) {
+    const itemMap = new Map((block.items || []).map((item) => [String(item.id), item]));
+    const people=(block.blogProfiles||[]).map((person) => `<article class="a1b-blog-person"><div class="a1b-blog-text"><h4>${escapeHtml(person.heading)}</h4><p>${escapeHtml(person.text)}</p></div><a href="${escapeHtml(person.image)}" target="_blank" rel="noopener"><img src="${escapeHtml(person.image)}" alt="Original workbook portrait of ${escapeHtml(person.name)}" loading="lazy"></a></article>`).join('');
+    const rows=(block.tableRows||[]).map((row)=>`<tr>${row.map((cell)=>{
+      const item=itemMap.get(String(cell.itemId));
+      if(!item)return '<td></td>';
+      const n=escapeHtml(item.number||item.id);
+      return `<td><div class="a1b-blog-gap" data-exercise-item="${escapeHtml(item.id)}" data-input-type="text"><label class="a1b-blog-gap-label">${n}<input type="text" class="text-field" autocomplete="off" aria-label="Blog table answer ${n}"></label><span class="feedback" aria-live="polite"></span></div></td>`;
+    }).join('')}</tr>`).join('');
+    return `<div class="a1b-blog-layout"><div class="a1b-blog" aria-label="Original jobs blog"><div class="a1b-blog-title"><strong>${escapeHtml(block.blogTitle)}</strong><span>${escapeHtml(block.blogByline)}</span></div><div class="a1b-blog-people">${people}</div></div><div class="a1b-blog-table"><div class="table-wrap"><table><thead><tr>${(block.tableHeaders||[]).map((x)=>`<th>${escapeHtml(x)}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div></div></div>`;
+  }
+
   function renderLessonBlock(block, index) {
     const id = safeText(block.id, `task-${index}`);
     const title = escapeHtml(block.title || block.prompt || `Task ${index + 1}`);
@@ -1917,7 +1940,13 @@
           }).join('')}</div>`
         : '';
       const intro = block.introTitle || block.introText ? `<div class="exercise-source"><h4>${escapeHtml(block.introTitle || '')}</h4>${block.introText ? `<p>${escapeHtml(block.introText)}</p>` : ''}</div>` : '';
-      const exerciseContent = block.layout === 'greeting-scenes'
+      const exerciseContent = block.layout === 'jobs-photo-match'
+        ? renderJobsPhotoMatch(block, id)
+        : block.layout === 'job-messages'
+          ? renderJobMessages(block, id)
+          : block.layout === 'blog-table'
+            ? renderBlogTable(block)
+            : block.layout === 'greeting-scenes'
         ? renderGreetingScenesExercise(block, id)
         : block.layout === 'inline-dialogue'
           ? renderInlineDialogueExercise(block, id)

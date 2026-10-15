@@ -1,4 +1,4 @@
-/* Speakout A1 · One vocabulary lesson with three internal study sections. */
+/* Speakout A1 · Vocabulary topics grouped by lesson. */
 window.VOCABULARY_DATA = [
   {
     "id": "vocab-lesson-1",
@@ -439,6 +439,236 @@ window.VOCABULARY_DATA = [
         "transcription": "/ˈspænɪʃ/",
         "exampleEn": "I’m Spanish.",
         "exampleRu": "Я испанец."
+      }
+    ]
+  },
+  {
+    "id": "vocab-lesson-2",
+    "title": "1B–1C · Jobs and personal details",
+    "label": "Speakout A1 · Unit 1 · Lessons 1B–1C",
+    "type": "lesson",
+    "linkedLessonId": "lesson-2",
+    "page": "vocabulary.html?id=vocab-lesson-2",
+    "icon": "💼",
+    "sections": [
+      {
+        "id": "jobs",
+        "title": "Jobs and workplaces",
+        "description": "People’s jobs and where they work"
+      },
+      {
+        "id": "details",
+        "title": "Personal details",
+        "description": "Names, addresses and phone numbers"
+      }
+    ],
+    "words": [
+      {
+        "section": "jobs",
+        "id": "1b-doctor",
+        "en": "doctor",
+        "ru": "врач",
+        "transcription": "/ˈdɒktə/",
+        "exampleEn": "Kasia is a doctor.",
+        "exampleRu": "Кася — врач."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-nurse",
+        "en": "nurse",
+        "ru": "медсестра, медбрат",
+        "transcription": "/nɜːs/",
+        "exampleEn": "Is Anya a nurse?",
+        "exampleRu": "Аня — медсестра?"
+      },
+      {
+        "section": "jobs",
+        "id": "1b-singer",
+        "en": "singer",
+        "ru": "певец, певица",
+        "transcription": "/ˈsɪŋə/",
+        "exampleEn": "He’s a singer.",
+        "exampleRu": "Он певец."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-actor",
+        "en": "actor",
+        "ru": "актёр, актриса",
+        "transcription": "/ˈæktə/",
+        "exampleEn": "David isn’t an actor.",
+        "exampleRu": "Дэвид не актёр."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-businessperson",
+        "en": "businessperson",
+        "ru": "человек, занимающийся бизнесом",
+        "transcription": "/ˈbɪznəsˌpɜːsən/",
+        "exampleEn": "He’s a businessperson.",
+        "exampleRu": "Он занимается бизнесом."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-businesswoman",
+        "en": "businesswoman",
+        "ru": "деловая женщина, предпринимательница",
+        "transcription": "/ˈbɪznəsˌwʊmən/",
+        "exampleEn": "Elena is a businesswoman.",
+        "exampleRu": "Елена — деловая женщина."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-police-officer",
+        "en": "police officer",
+        "ru": "сотрудник полиции",
+        "transcription": "/pəˈliːs ˌɒfɪsə/",
+        "exampleEn": "Is Elena a police officer?",
+        "exampleRu": "Елена работает в полиции?"
+      },
+      {
+        "section": "jobs",
+        "id": "1b-taxi-driver",
+        "en": "taxi driver",
+        "ru": "водитель такси",
+        "transcription": "/ˈtæksi ˌdraɪvə/",
+        "exampleEn": "He’s a taxi driver.",
+        "exampleRu": "Он водитель такси."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-office-worker",
+        "en": "office worker",
+        "ru": "офисный сотрудник",
+        "transcription": "/ˈɒfɪs ˌwɜːkə/",
+        "exampleEn": "Rob is an office worker.",
+        "exampleRu": "Роб — офисный сотрудник."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-shop-assistant",
+        "en": "shop assistant",
+        "ru": "продавец-консультант",
+        "transcription": "/ˈʃɒp əˌsɪstənt/",
+        "exampleEn": "She’s a shop assistant.",
+        "exampleRu": "Она продавец-консультант."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-digital-designer",
+        "en": "digital designer",
+        "ru": "цифровой дизайнер",
+        "transcription": "/ˈdɪdʒɪtəl dɪˌzaɪnə/",
+        "exampleEn": "Charlie is a digital designer.",
+        "exampleRu": "Чарли — цифровой дизайнер."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-artist",
+        "en": "artist",
+        "ru": "художник, художница",
+        "transcription": "/ˈɑːtɪst/",
+        "exampleEn": "He’s also an artist.",
+        "exampleRu": "Он также художник."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-waiter",
+        "en": "waiter",
+        "ru": "официант",
+        "transcription": "/ˈweɪtə/",
+        "exampleEn": "Sandra is a waiter at weekends.",
+        "exampleRu": "Сандра работает официанткой по выходным."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-football-player",
+        "en": "football player",
+        "ru": "футболист, футболистка",
+        "transcription": "/ˈfʊtbɔːl ˌpleɪə/",
+        "exampleEn": "He’s a football player.",
+        "exampleRu": "Он футболист."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-job",
+        "en": "job",
+        "ru": "работа, профессия",
+        "transcription": "/dʒɒb/",
+        "exampleEn": "What’s Jack’s job?",
+        "exampleRu": "Кем работает Джек?"
+      },
+      {
+        "section": "jobs",
+        "id": "1b-hospital",
+        "en": "hospital",
+        "ru": "больница",
+        "transcription": "/ˈhɒspɪtəl/",
+        "exampleEn": "Kasia works at a hospital.",
+        "exampleRu": "Кася работает в больнице."
+      },
+      {
+        "section": "jobs",
+        "id": "1b-company",
+        "en": "company",
+        "ru": "компания",
+        "transcription": "/ˈkʌmpəni/",
+        "exampleEn": "Charlie works for a company.",
+        "exampleRu": "Чарли работает в компании."
+      },
+      {
+        "section": "details",
+        "id": "1b-surname",
+        "en": "surname",
+        "ru": "фамилия",
+        "transcription": "/ˈsɜːneɪm/",
+        "exampleEn": "What’s your surname?",
+        "exampleRu": "Какая у тебя фамилия?"
+      },
+      {
+        "section": "details",
+        "id": "1b-first-name",
+        "en": "first name",
+        "ru": "имя",
+        "transcription": "/ˈfɜːst ˌneɪm/",
+        "exampleEn": "What’s your first name?",
+        "exampleRu": "Как тебя зовут?"
+      },
+      {
+        "section": "details",
+        "id": "1b-address",
+        "en": "address",
+        "ru": "адрес",
+        "transcription": "/əˈdres/",
+        "exampleEn": "What’s your address?",
+        "exampleRu": "Какой у тебя адрес?"
+      },
+      {
+        "section": "details",
+        "id": "1b-phone-number",
+        "en": "phone number",
+        "ru": "номер телефона",
+        "transcription": "/ˈfəʊn ˌnʌmbə/",
+        "exampleEn": "What’s your phone number?",
+        "exampleRu": "Какой у тебя номер телефона?"
+      },
+      {
+        "section": "details",
+        "id": "1b-spell",
+        "en": "spell",
+        "ru": "произносить слово по буквам",
+        "transcription": "/spel/",
+        "exampleEn": "Spell your surname, please.",
+        "exampleRu": "Произнеси свою фамилию по буквам, пожалуйста."
+      },
+      {
+        "section": "details",
+        "id": "1b-repeat",
+        "en": "repeat",
+        "ru": "повторять",
+        "transcription": "/rɪˈpiːt/",
+        "exampleEn": "Can you repeat that, please?",
+        "exampleRu": "Можешь повторить, пожалуйста?"
       }
     ]
   }
