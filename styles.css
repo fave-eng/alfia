@@ -3718,3 +3718,71 @@ label.odd-option {
 .a1-family-photo-remove{align-self:flex-start;background:white;border:1px solid #b5c3d9;color:#344d71;border-radius:9px;cursor:pointer;padding:8px 11px;font-weight:650}
 .a1-family-photo-status{font-size:.83rem;margin:12px 0 0;color:#375775;line-height:1.5}
 @media(max-width:540px){.a1-family-photo-preview{flex-direction:column}.a1-family-photo-preview img{width:100%;max-width:100%;max-height:250px}.a1-family-upload-action{display:flex;width:100%;box-sizing:border-box}}
+
+
+/* Alfiya · Lesson 2D / HW6 / exercise 1C only.
+   Give every question-and-answer exchange a complete, clearly visible frame.
+   Other family dialogues and previous lessons keep their existing styles. */
+.lesson-block[data-task="2d-1c-question-word"] .a1-family-conversation {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 790px;
+  margin: 14px auto 4px;
+  padding: 14px 16px 1px;
+  border: 1px solid #c5d3e8;
+  border-radius: 20px;
+  background: #f4f7fc;
+}
+.lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-row {
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  padding: 10px 13px 5px;
+  border-inline: 2px solid #c4d5ed;
+  background: #fff;
+}
+.lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-row.speaker-a {
+  margin-top: 13px;
+  padding-top: 14px;
+  border-top: 2px solid #c4d5ed;
+  border-radius: 16px 16px 0 0;
+}
+.lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-row.speaker-a:first-child {margin-top: 0;}
+.lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-row.speaker-b {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #c4d5ed;
+  border-radius: 0 0 16px 16px;
+}
+.lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-message {
+  flex: 0 1 auto;
+  max-width: calc(100% - 49px);
+}
+.lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-text select {
+  max-width: 100%;
+}
+@media (max-width: 520px) {
+  .lesson-block[data-task="2d-1c-question-word"] .a1-family-conversation {
+    padding: 9px 8px 1px;
+    border-radius: 15px;
+  }
+  .lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-row {
+    padding: 7px 8px 4px;
+    border-inline-width: 1.5px;
+  }
+  .lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-row.speaker-a {
+    padding-top: 10px;
+    border-top-width: 1.5px;
+    border-radius: 12px 12px 0 0;
+  }
+  .lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-row.speaker-b {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom-width: 1.5px;
+    border-radius: 0 0 12px 12px;
+  }
+  .lesson-block[data-task="2d-1c-question-word"] .a1-family-chat-message {
+    max-width: calc(100% - 37px);
+  }
+}
