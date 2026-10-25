@@ -1,0 +1,656 @@
+{
+  "id": "lesson-8",
+  "number": 8,
+  "title": "3A · Things and colours",
+  "subtitle": "Speakout A1 · Workbook · Everyday things, colours, possessive ’s",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-8",
+  "grammarIds": [
+    "grammar-possessive-s-3a"
+  ],
+  "publishedAt": "2026-10-26",
+  "totalPoints": 52,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "eyebrow": "Vocabulary · things",
+      "title": "Everyday objects",
+      "text": "Начни со словаря 3A: Things. Затем выполни 1A–1C."
+    },
+    {
+      "type": "exercise",
+      "id": "3a-1a-missing-vowels",
+      "title": "1A · Everyday things",
+      "instructions": "Write each complete word. Only the consonants are shown.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "prompt": "c _ r",
+          "answer": "car",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "b _ d",
+          "answer": "bed",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "b _ k _",
+          "answer": "bike",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "r _ ng",
+          "answer": "ring",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "w _ tch",
+          "answer": "watch",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "c _ m _ r _",
+          "answer": "camera",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "prompt": "g _ _ t _ r",
+          "answer": "guitar",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "prompt": "c _ ff _ _  m _ ch _ n _",
+          "answer": "coffee machine",
+          "placeholder": "Type your answer"
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "3a-1b-match-picture",
+      "title": "1B · Match the picture",
+      "instructions": "Look at the complete original picture. Match each object to the correct letter A–H.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "prompt": "car: Which letter in the picture (A–H)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "bed: Which letter in the picture (A–H)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "bike: Which letter in the picture (A–H)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "ring: Which letter in the picture (A–H)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "answer": 6
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "watch: Which letter in the picture (A–H)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "answer": 7
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "camera: Which letter in the picture (A–H)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "select",
+          "prompt": "guitar: Which letter in the picture (A–H)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "select",
+          "prompt": "coffee machine: Which letter in the picture (A–H)?",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "answer": 4
+        }
+      ],
+      "hideAnswersOnError": true,
+      "image": "images/lesson-8/objects-a-h.png",
+      "imageAlt": "Original workbook scene showing eight objects labelled A through H"
+    },
+    {
+      "type": "exercise",
+      "id": "3a-1c-best-object",
+      "title": "1C · Choose the object",
+      "instructions": "Choose the correct object to complete each sentence.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "prompt": "My ___ is great. I’m happy with my photos.",
+          "options": [
+            "car",
+            "camera",
+            "coffee machine"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "I love music. My ___ is old but it’s good.",
+          "options": [
+            "watch",
+            "ring",
+            "guitar"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "My favourite thing in my house is my ___. I love it when I’m tired.",
+          "options": [
+            "bike",
+            "bed",
+            "car"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "Akari’s ___ is very important to her. It’s Swiss and it’s 100 years old.",
+          "options": [
+            "watch",
+            "coffee machine",
+            "car"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "My favourite thing is my ___. I use it when I have breakfast.",
+          "options": [
+            "camera",
+            "bed",
+            "coffee machine"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "I love my ___. I use it to go to work.",
+          "options": [
+            "bike",
+            "ring",
+            "guitar"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "eyebrow": "Vocabulary · colours",
+      "title": "Learn the colours",
+      "text": "Слова находятся в одной теме Vocabulary 3A, но внутри выделены в отдельную категорию."
+    },
+    {
+      "type": "exercise",
+      "id": "3a-2-colours-snake",
+      "title": "2 · Colours word snake",
+      "instructions": "Read the snake from left to right and write the colours in order. The printed instruction says eight, but the supplied answer key contains ten; here you should find all ten.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "prompt": "Colour 1, from left to right in the snake",
+          "answer": "yellow",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "Colour 2, from left to right in the snake",
+          "answer": "white",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "Colour 3, from left to right in the snake",
+          "answer": "blue",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "Colour 4, from left to right in the snake",
+          "answer": "orange",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "Colour 5, from left to right in the snake",
+          "answer": "green",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "Colour 6, from left to right in the snake",
+          "answer": "brown",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "prompt": "Colour 7, from left to right in the snake",
+          "answer": "pink",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "prompt": "Colour 8, from left to right in the snake",
+          "answer": "black",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "9",
+          "number": 9,
+          "input": "text",
+          "prompt": "Colour 9, from left to right in the snake",
+          "answer": "purple",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "10",
+          "number": 10,
+          "input": "text",
+          "prompt": "Colour 10, from left to right in the snake",
+          "answer": "red",
+          "placeholder": "Type your answer"
+        }
+      ],
+      "hideAnswersOnError": true,
+      "image": "images/lesson-8/colours-snake.png",
+      "imageAlt": "Curved word snake formed from the colour words, originally printed in the workbook"
+    },
+    {
+      "type": "section",
+      "eyebrow": "Grammar · possessive ’s",
+      "title": "Whose thing is it?",
+      "text": "Перед грамматикой 3A изучи отдельную тему Possessive ’s: Lisa’s guitar ≠ Lisa’s happy."
+    },
+    {
+      "type": "exercise",
+      "id": "3a-3a-put-apostrophe",
+      "title": "3A · Add the possessive ’s",
+      "instructions": "Rewrite each sentence correctly. Add the possessive apostrophe (’s) in the right place. Write the whole sentence.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "prompt": "Hassan new bike is light purple and yellow.",
+          "answer": "Hassan’s new bike is light purple and yellow.",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "prompt": "My father mother is from Budapest.",
+          "answer": "My father’s mother is from Budapest.",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "prompt": "Zehra is my friend Berat sister.",
+          "answer": "Zehra is my friend Berat’s sister.",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "prompt": "What is Federica phone number?",
+          "answer": "What is Federica’s phone number?",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "prompt": "Olivia guitar is Spanish.",
+          "answer": "Olivia’s guitar is Spanish.",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "text",
+          "prompt": "Is that Lian new car?",
+          "answer": "Is that Lian’s new car?",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "text",
+          "prompt": "Antoni watch is Italian.",
+          "answer": "Antoni’s watch is Italian.",
+          "placeholder": "Type your answer"
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "text",
+          "prompt": "Seo-Yeon favourite thing is her cat.",
+          "answer": "Seo-Yeon’s favourite thing is her cat.",
+          "placeholder": "Type your answer"
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "3a-3b-possessive-or-is",
+      "title": "3B · P or C?",
+      "instructions": "Read each sentence. Choose P if ’s expresses possession, or C if it means is.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "prompt": "Where’s the new teacher from?",
+          "options": [
+            "P — possession (чей?)",
+            "C — contraction of is"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "Zuzanna’s job is difficult.",
+          "options": [
+            "P — possession (чей?)",
+            "C — contraction of is"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "Miguel’s in Australia now.",
+          "options": [
+            "P — possession (чей?)",
+            "C — contraction of is"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "What’s her email address?",
+          "options": [
+            "P — possession (чей?)",
+            "C — contraction of is"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "Nico’s apartment is very big!",
+          "options": [
+            "P — possession (чей?)",
+            "C — contraction of is"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "The Taj Mahal’s in India.",
+          "options": [
+            "P — possession (чей?)",
+            "C — contraction of is"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "select",
+          "prompt": "My sister’s husband is a businessman.",
+          "options": [
+            "P — possession (чей?)",
+            "C — contraction of is"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "select",
+          "prompt": "Our son’s name is Eduard.",
+          "options": [
+            "P — possession (чей?)",
+            "C — contraction of is"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "3a-3c-correct-mistake",
+      "title": "3C · Correct the mistake",
+      "instructions": "Choose the correct replacement for the underlined part of each sentence.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "prompt": "Whens Lizzies birthday?",
+          "options": [
+            "When’s Lizzies",
+            "When’s Lizzie’s",
+            "When Lizzie’s"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "Jans daughter’s are teachers.",
+          "options": [
+            "Jan’s daughter’s",
+            "Jans daughters",
+            "Jan’s daughters"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "Its my husband’s birthday today.",
+          "options": [
+            "Its my husbands",
+            "It’s my husband’s",
+            "It’s my husbands"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "Sais favourite thing’s his new camera.",
+          "options": [
+            "Sai’s favourite thing is",
+            "Sai’s favourite thing’s",
+            "Sais favourite things"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    }
+  ]
+}

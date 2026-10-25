@@ -2215,5 +2215,234 @@ window.GRAMMAR_DATA = [
       }
     ],
     "guideHtml": "<div class=\"g1-course\">\n<article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Lesson 2D · Wh-questions + be</span><h2>Wh-questions + be: как задать вопрос</h2><p>Ты уже знаешь <strong>am / is / are</strong>. Теперь научимся спрашивать не только «да или нет», но и <strong>кто, что, где, когда, как, сколько лет</strong>. Вопросительное слово определяет, какую информацию мы хотим получить.</p></article>\n<nav class=\"g1-navigation\" aria-label=\"Содержание\"><a href=\"#wb-01\">01 · Что мы спрашиваем?</a><a href=\"#wb-02\">02 · Порядок слов</a><a href=\"#wb-03\">03 · Особые сочетания</a><a href=\"#wb-04\">04 · Как отвечать?</a><a href=\"#wb-05\">05 · Частые ошибки</a><a href=\"#grammar-practice-section\">Практика · 16 заданий</a></nav>\n<section class=\"g1-section\" id=\"wb-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Выбери вопрос по смыслу ответа</h3></div><p>Сначала подумай: какой ответ тебе нужен? <strong>Человек? Место? Время? Состояние? Возраст?</strong></p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Вопросительное слово</th><th>Что узнаём</th><th>Пример вопроса → ответ</th></tr></thead><tbody><tr><td><strong>Who?</strong> — кто?</td><td>Человек</td><td>Who is your teacher? → Anna.</td></tr><tr><td><strong>What?</strong> — что? какой?</td><td>Предмет, название, информация</td><td>What is your favourite colour? → Blue.</td></tr><tr><td><strong>Where?</strong> — где?</td><td>Место</td><td>Where are your parents? → At work.</td></tr><tr><td><strong>When?</strong> — когда?</td><td>День, время события</td><td>When is the party? → On Friday.</td></tr><tr><td><strong>How?</strong> — как?</td><td>Состояние, самочувствие</td><td>How is your sister? → She’s fine.</td></tr><tr><td><strong>How old?</strong> — сколько лет?</td><td>Возраст</td><td>How old is Leo? → He’s 23.</td></tr></tbody></table></div><p><strong>Заметь:</strong> <em>How is your sister?</em> = «Как поживает сестра?»; <em>How old is your sister?</em> = «Сколько ей лет?». Добавление слова <strong>old</strong> меняет весь смысл вопроса.</p></section>\n<section class=\"g1-section\" id=\"wb-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Структура: вопросительное слово + be + подлежащее</h3></div><p>В утвердительном предложении <strong>be</strong> стоит после подлежащего, а в вопросе — перед ним. Если вопрос начинается с <strong>Who / Where / When / What / How</strong>, это слово ставим в самое начало.</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Утверждение</th><th>Вопрос</th></tr></thead><tbody><tr><td>Leo <strong>is</strong> 23.</td><td><strong>How old is</strong> Leo?</td></tr><tr><td>Your parents <strong>are</strong> at work.</td><td><strong>Where are</strong> your parents?</td></tr><tr><td>The party <strong>is</strong> on Friday.</td><td><strong>When is</strong> the party?</td></tr><tr><td>Anna <strong>is</strong> my best friend.</td><td><strong>Who is</strong> your best friend?</td></tr></tbody></table></div><p><strong>Схема:</strong> <strong>WH-WORD → AM / IS / ARE → SUBJECT → … ?</strong><br></p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Форма be</th><th>С кем используется</th><th>Вопрос</th></tr></thead><tbody><tr><td>am</td><td>I</td><td>Where am I?</td></tr><tr><td>is</td><td>he / she / it; one person or thing</td><td>Who is he? / When is the lesson?</td></tr><tr><td>are</td><td>you / we / they; two or more people or things</td><td>Where are they? / How are you?</td></tr></tbody></table></div><p><strong>Важно:</strong> в вопросе с <em>be</em> не добавляй <em>do/does</em>. Верно: <strong>Where is your brother?</strong> Неверно: <s>Where does your brother is?</s></p></section>\n<section class=\"g1-section\" id=\"wb-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Сочетания, которые лучше учить целиком</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Выражение</th><th>Значение</th><th>Пример</th></tr></thead><tbody><tr><td><strong>Where … from?</strong></td><td>Откуда? — происхождение</td><td>Where are you from? → From Canada.</td></tr><tr><td><strong>Where … ?</strong></td><td>Где? — местонахождение</td><td>Where are you? → At home.</td></tr><tr><td><strong>What time … ?</strong></td><td>Во сколько? Который час?</td><td>What time is it? → It’s three o’clock.</td></tr><tr><td><strong>How old … ?</strong></td><td>Сколько лет?</td><td>How old is Jyoti’s daughter? → She’s 22.</td></tr></tbody></table></div><p><strong>What’s</strong> = <strong>What is</strong>, <strong>Who’s</strong> = <strong>Who is</strong>. Апостроф заменяет букву <em>i</em> в <em>is</em>. В письменных заданиях оба варианта допустимы, если смысл не меняется.</p><p>Сравни: <strong>When is your class?</strong> — Когда урок? <strong>What time is your class?</strong> — Во сколько урок? Первый вопрос шире; второй спрашивает точное время.</p></section>\n<section class=\"g1-section\" id=\"wb-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Вопрос и ответ: сначала смысл, потом форма</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Вопрос</th><th>Правильный ответ</th><th>Почему</th></tr></thead><tbody><tr><td>Who is Tejo?</td><td>He’s Jyoti’s husband.</td><td>Вопрос о человеке</td></tr><tr><td>Where are the Baxters from?</td><td>They’re from Canada.</td><td>Вопрос о происхождении</td></tr><tr><td>Where is the cake shop?</td><td>It’s in Toronto.</td><td>Вопрос о месте</td></tr><tr><td>When is the lesson?</td><td>It’s on Monday.</td><td>Вопрос о дне</td></tr><tr><td>How are you?</td><td>I’m fine, thanks.</td><td>Вопрос о состоянии</td></tr><tr><td>How old is Leo?</td><td>He’s 23.</td><td>Вопрос о возрасте</td></tr></tbody></table></div><p>Проверяй себя: если в ответе <strong>at work / in Toronto</strong>, вероятнее всего нужен <strong>Where</strong>; если <strong>23</strong>, нужен <strong>How old</strong>; если имя или человек — <strong>Who</strong>.</p></section>\n<section class=\"g1-section\" id=\"wb-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Частые ошибки уровня A1</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Неправильно</th><th>Правильно</th><th>Объяснение</th></tr></thead><tbody><tr><td><s>Where your parents are?</s></td><td><strong>Where are your parents?</strong></td><td>Ставим are перед подлежащим</td></tr><tr><td><s>How old are Leo?</s></td><td><strong>How old is Leo?</strong></td><td>Leo = один человек → is</td></tr><tr><td><s>How is your brother? — He’s 25.</s></td><td><strong>How old is your brother?</strong></td><td>Спрашиваем возраст</td></tr><tr><td><s>When time is it?</s></td><td><strong>What time is it?</strong></td><td>Устойчивое сочетание what time</td></tr><tr><td><s>Where is they?</s></td><td><strong>Where are they?</strong></td><td>They → are</td></tr><tr><td><s>Where are you?</s> (если спрашиваем страну)</td><td><strong>Where are you from?</strong></td><td>from меняет вопрос: «откуда?»</td></tr></tbody></table></div><p>Перед ответом задай себе три вопроса: <strong>1.</strong> Что я хочу узнать? <strong>2.</strong> Нужна форма <em>am/is/are</em>? <strong>3.</strong> Стоит ли <em>be</em> перед подлежащим?</p></section></div>"
+  },
+  {
+    "id": "grammar-possessive-s-3a",
+    "order": 11,
+    "title": "Possessive ’s: Lisa’s guitar / Lisa’s happy",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-26",
+    "linkedLessonId": "lesson-8",
+    "page": "grammar-topic.html?id=grammar-possessive-s-3a",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Притяжательное ’s после имён, порядок слов, разница между ’s = принадлежность и ’s = is; особые формы множественного числа.",
+    "formula": "owner + ’s + noun → Lisa’s guitar; subject + ’s (= is) → Lisa’s happy",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "guideHtml": "<div class='a1-grammar-guide'>\n<section class='g1-course-section'><h2>01 · Чей это предмет?</h2><p>Когда нужно сказать, <strong>кому принадлежит вещь</strong>, после имени человека или существительного ставим <strong>’s</strong> и только потом называем предмет.</p><div class='g1-course-formula'><strong>owner + ’s + thing</strong><p><b>Anna’s camera</b> — фотоаппарат Анны; <b>my brother’s bike</b> — велосипед моего брата</p></div><p>Сравни: <strong>Anna has a camera.</strong> — У Анны есть фотоаппарат. <strong>This is Anna’s camera.</strong> — Это фотоаппарат Анны.</p></section>\n<section class='g1-course-section'><h2>02 · Чем ’s отличается от my / his / her?</h2><div class='table-wrap'><table><thead><tr><th>Чья вещь?</th><th>Форма</th><th>Пример</th></tr></thead><tbody><tr><td>Известный человек по имени</td><td>Lisa<strong>’s</strong> + noun</td><td><b>Lisa’s guitar</b></td></tr><tr><td>Он</td><td>his + noun</td><td><b>his guitar</b></td></tr><tr><td>Она</td><td>her + noun</td><td><b>her guitar</b></td></tr><tr><td>Я</td><td>my + noun</td><td><b>my guitar</b></td></tr></tbody></table></div><p><b>Lisa’s guitar</b> и <b>her guitar</b> обозначают принадлежность, но в первой конструкции мы <em>называем владельца</em>, а во второй используем уже известное местоимение.</p><p><strong>Нельзя:</strong> <s>Lisa’s her guitar</s> для значения «гитара Лизы»: получится повторение владельца.</p></section>\n<section class='g1-course-section'><h2>03 · Где ставить ’s в длинной фразе?</h2><p>Найди владельца, затем добавь <strong>’s непосредственно после владельца</strong>.</p><div class='table-wrap'><table><thead><tr><th>Без ’s</th><th>Правильно</th><th>Почему</th></tr></thead><tbody><tr><td>Antoni watch</td><td><b>Antoni’s</b> watch</td><td>Владелец — Antoni</td></tr><tr><td>my father mother</td><td>my <b>father’s</b> mother</td><td>Мать моего отца</td></tr><tr><td>my friend Berat sister</td><td>my friend <b>Berat’s</b> sister</td><td>Владелец — Berat; речь о его сестре</td></tr></tbody></table></div><p>Притяжательное <b>’s</b> ставим после человека (или словосочетания, обозначающего владельца), а не после названия предмета.</p></section>\n<section class='g1-course-section'><h2>04 · Два разных значения ’s: принадлежность и is</h2><div class='table-wrap'><table><thead><tr><th>Предложение</th><th>Значение ’s</th><th>Проверка</th></tr></thead><tbody><tr><td><b>Anna’s</b> bike is new.</td><td>чей? — Анны (P)</td><td>Anna’s <em>bike</em> = bike of Anna</td></tr><tr><td><b>Anna’s</b> happy.</td><td>Anna <b>is</b> (C)</td><td>Anna is happy</td></tr><tr><td><b>Where’s</b> the camera?</td><td>Where <b>is</b> (C)</td><td>Where is the camera?</td></tr><tr><td>My <b>sister’s</b> husband.</td><td>чей? — сестры (P)</td><td>the husband of my sister</td></tr></tbody></table></div><p>Для 3B <strong>P</strong> = possessive (принадлежность), <strong>C</strong> = contraction (сокращение от <em>is</em>). В этой теме именно <em>’s = is</em> сравниваем с притяжательным <em>’s</em>.</p><p><strong>Подсказка:</strong> попытайся заменить <em>’s</em> на <em>is</em>. Если фраза грамматически и по смыслу подходит, перед тобой, вероятно, сокращение. <em>Lisa’s watch</em> ≠ <s>Lisa is watch</s>.</p></section>\n<section class='g1-course-section'><h2>05 · Один человек и несколько владельцев</h2><p>Для одного владельца обычно пишем <strong>’s</strong>: <em>the girl’s bike</em>. Если обычное множественное число уже заканчивается на <b>-s</b>, апостроф чаще стоит после s: <em>the girls’ bikes</em> (велосипеды девочек). У неправильного множественного числа снова <strong>’s</strong>: <em>the children’s toys</em>.</p><div class='table-wrap'><table><thead><tr><th>Владелец</th><th>Форма</th></tr></thead><tbody><tr><td>one boy</td><td>the <strong>boy’s</strong> car</td></tr><tr><td>two boys</td><td>the <strong>boys’</strong> cars</td></tr><tr><td>children</td><td>the <strong>children’s</strong> room</td></tr></tbody></table></div><p>В заданиях Speakout 3A главное — научиться ставить <strong>’s</strong> после имени и отличать его от сокращённого <strong>is</strong>. Множественное число — дополнительное полезное сравнение.</p></section>\n<section class='g1-course-section'><h2>06 · Типичные ошибки</h2><div class='table-wrap'><table><thead><tr><th>Неудачно</th><th>Правильно</th></tr></thead><tbody><tr><td><s>My sister phone is new.</s></td><td><strong>My sister’s phone</strong> is new.</td></tr><tr><td><s>What is Maria phone number?</s></td><td>What is <strong>Maria’s</strong> phone number?</td></tr><tr><td><s>Its Sofia’s bike.</s></td><td><strong>It’s</strong> Sofia’s bike. (= It is)</td></tr><tr><td><s>My friends’ bag</s> (если друг один)</td><td><strong>My friend’s</strong> bag</td></tr></tbody></table></div><p>Проверь себя: <b>1.</b> Кто владелец? <b>2.</b> Где конец его имени? <b>3.</b> Стоит ли после ’s существительное, обозначающее его вещь, или конструкцию можно прочитать как «is»?</p></section></div>",
+    "exercises": [
+      {
+        "id": "pos3a-owner",
+        "type": "exercise",
+        "title": "1 · Чья это вещь?",
+        "instructions": "Выбери притяжательную форму имени.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "This is ___ guitar. (Lisa)",
+            "options": [
+              "Lisa",
+              "Lisa’s",
+              "Lisas"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Where is ___ camera? (Ben)",
+            "options": [
+              "Bens",
+              "Ben’s",
+              "Ben"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "My ___ bike is new. (brother)",
+            "options": [
+              "brothers",
+              "brother",
+              "brother’s"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "Is this ___ ring? (Anna)",
+            "options": [
+              "Anna’s",
+              "Annas",
+              "Anna"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "pos3a-pc",
+        "type": "exercise",
+        "title": "2 · Принадлежность или сокращение?",
+        "instructions": "P = принадлежность, C = сокращённое is.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "Maya’s camera is blue.",
+            "options": [
+              "P — whose?",
+              "C — is"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Where’s your guitar?",
+            "options": [
+              "P — whose?",
+              "C — is"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "Luca’s in the garden.",
+            "options": [
+              "P — whose?",
+              "C — is"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "My father’s bike is black.",
+            "options": [
+              "P — whose?",
+              "C — is"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "pos3a-fix",
+        "type": "exercise",
+        "title": "3 · Перепиши предложение с ’s",
+        "instructions": "Исправь предложение целиком, не меняя смысл.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "This is my sister car.",
+            "answer": "This is my sister’s car.",
+            "placeholder": "Type your answer"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "What is Emma phone number?",
+            "answer": "What is Emma’s phone number?",
+            "placeholder": "Type your answer"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "I like my dad camera.",
+            "answer": "I like my dad’s camera.",
+            "placeholder": "Type your answer"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "The girl guitar is old.",
+            "answer": "The girl’s guitar is old.",
+            "placeholder": "Type your answer"
+          }
+        ]
+      },
+      {
+        "id": "pos3a-compare",
+        "type": "exercise",
+        "title": "4 · Сравни похожие формы",
+        "instructions": "Выбери вариант по смыслу и количеству владельцев.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "These are two sisters. These are the ___ bicycles.",
+            "options": [
+              "sisters’",
+              "sister’s",
+              "sisters"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "The ___ room is clean. (the children)",
+            "options": [
+              "childrens",
+              "children’s",
+              "childrens’"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "That is ___ watch. (one teacher)",
+            "options": [
+              "the teachers’",
+              "the teacher’s",
+              "the teachers"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "___ Leo’s blue bike. (= It is)",
+            "options": [
+              "Its",
+              "It’s",
+              "Its’"
+            ],
+            "answer": 1
+          }
+        ]
+      }
+    ]
   }
 ];

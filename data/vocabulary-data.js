@@ -1498,5 +1498,172 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Мой любимый — апельсиновый торт."
       }
     ]
+  },
+  {
+    "id": "vocab-lesson-8",
+    "title": "3A · Things and colours",
+    "label": "Speakout A1 · Unit 3 · Lesson 3A",
+    "type": "lesson",
+    "linkedLessonId": "lesson-8",
+    "page": "vocabulary.html?id=vocab-lesson-8",
+    "icon": "🎨",
+    "sections": [
+      {
+        "id": "things",
+        "title": "Things",
+        "description": "Вещи: 8 слов"
+      },
+      {
+        "id": "colours",
+        "title": "Colours",
+        "description": "Цвета: 10 слов"
+      }
+    ],
+    "words": [
+      {
+        "section": "things",
+        "id": "3a-things-01",
+        "en": "car",
+        "ru": "машина",
+        "exampleEn": "This is my dad’s car.",
+        "exampleRu": "Это машина моего папы."
+      },
+      {
+        "section": "things",
+        "id": "3a-things-02",
+        "en": "bed",
+        "ru": "кровать",
+        "exampleEn": "My bed is new.",
+        "exampleRu": "Моя кровать новая."
+      },
+      {
+        "section": "things",
+        "id": "3a-things-03",
+        "en": "bike",
+        "ru": "велосипед",
+        "exampleEn": "This is Ben’s bike.",
+        "exampleRu": "Это велосипед Бена."
+      },
+      {
+        "section": "things",
+        "id": "3a-things-04",
+        "en": "ring",
+        "ru": "кольцо",
+        "exampleEn": "My ring is silver.",
+        "exampleRu": "Моё кольцо серебряное."
+      },
+      {
+        "section": "things",
+        "id": "3a-things-05",
+        "en": "watch",
+        "ru": "наручные часы",
+        "exampleEn": "Anna’s watch is old.",
+        "exampleRu": "Часы Анны старые."
+      },
+      {
+        "section": "things",
+        "id": "3a-things-06",
+        "en": "camera",
+        "ru": "фотокамера, фотоаппарат",
+        "exampleEn": "My camera is black.",
+        "exampleRu": "Мой фотоаппарат чёрный."
+      },
+      {
+        "section": "things",
+        "id": "3a-things-07",
+        "en": "guitar",
+        "ru": "гитара",
+        "exampleEn": "Tim’s guitar is Spanish.",
+        "exampleRu": "Гитара Тима испанская."
+      },
+      {
+        "section": "things",
+        "id": "3a-things-08",
+        "en": "coffee machine",
+        "ru": "кофемашина",
+        "exampleEn": "Our coffee machine is new.",
+        "exampleRu": "Наша кофемашина новая."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-01",
+        "en": "yellow",
+        "ru": "жёлтый",
+        "exampleEn": "My favourite colour is yellow.",
+        "exampleRu": "Мой любимый цвет — жёлтый."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-02",
+        "en": "white",
+        "ru": "белый",
+        "exampleEn": "My favourite colour is white.",
+        "exampleRu": "Мой любимый цвет — белый."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-03",
+        "en": "blue",
+        "ru": "синий, голубой",
+        "exampleEn": "My favourite colour is blue.",
+        "exampleRu": "Мой любимый цвет — синий."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-04",
+        "en": "orange",
+        "ru": "оранжевый",
+        "exampleEn": "My favourite colour is orange.",
+        "exampleRu": "Мой любимый цвет — оранжевый."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-05",
+        "en": "green",
+        "ru": "зелёный",
+        "exampleEn": "My favourite colour is green.",
+        "exampleRu": "Мой любимый цвет — зелёный."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-06",
+        "en": "brown",
+        "ru": "коричневый",
+        "exampleEn": "My favourite colour is brown.",
+        "exampleRu": "Мой любимый цвет — коричневый."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-07",
+        "en": "pink",
+        "ru": "розовый",
+        "exampleEn": "My favourite colour is pink.",
+        "exampleRu": "Мой любимый цвет — розовый."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-08",
+        "en": "black",
+        "ru": "чёрный",
+        "exampleEn": "My favourite colour is black.",
+        "exampleRu": "Мой любимый цвет — чёрный."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-09",
+        "en": "purple",
+        "ru": "фиолетовый",
+        "exampleEn": "My favourite colour is purple.",
+        "exampleRu": "Мой любимый цвет — фиолетовый."
+      },
+      {
+        "section": "colours",
+        "id": "3a-colours-10",
+        "en": "red",
+        "ru": "красный",
+        "exampleEn": "My favourite colour is red.",
+        "exampleRu": "Мой любимый цвет — красный."
+      }
+    ]
   }
 ];
