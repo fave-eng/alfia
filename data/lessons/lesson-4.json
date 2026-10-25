@@ -1,0 +1,743 @@
+{
+  "id": "lesson-4",
+  "number": 4,
+  "title": "2B · Family",
+  "subtitle": "Speakout A1 · Workbook · Family, possessive adjectives, listening and writing",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-4",
+  "grammarIds": [
+    "grammar-possessive-adjectives",
+    "grammar-irregular-plurals-family"
+  ],
+  "publishedAt": "2026-10-25",
+  "totalPoints": 39,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "eyebrow": "Vocabulary · family",
+      "title": "Family relationships",
+      "text": "Сначала повтори лексику семьи в Vocabulary урока 2B."
+    },
+    {
+      "type": "exercise",
+      "id": "2b-1-family-photo",
+      "title": "1 · Family photo",
+      "instructions": "Look at the photo. Complete the family words for each person.",
+      "items": [
+        {
+          "id": "1",
+          "number": "1",
+          "input": "text",
+          "answer": "mother",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "2",
+          "number": "2",
+          "input": "text",
+          "answer": "wife",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "3",
+          "number": "3",
+          "input": "text",
+          "answer": "father",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "4",
+          "number": "4",
+          "input": "text",
+          "answer": "husband",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "5",
+          "number": "5",
+          "input": "text",
+          "answer": "parents",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "6",
+          "number": "6",
+          "input": "text",
+          "answer": "son",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "7",
+          "number": "7",
+          "input": "text",
+          "answer": "brother",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "8",
+          "number": "8",
+          "input": "text",
+          "answer": "sister",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "9",
+          "number": "9",
+          "input": "text",
+          "answer": "daughter",
+          "placeholder": "Напиши слово"
+        },
+        {
+          "id": "10",
+          "number": "10",
+          "input": "text",
+          "answer": "children",
+          "placeholder": "Напиши слово"
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "family-photo-map",
+      "image": "images/lesson-4/family-photo.png",
+      "imageAlt": "Chloe and Will, with their children Theo and Elise, all four names visible",
+      "familyGroups": [
+        {
+          "name": "Chloe",
+          "itemIds": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "name": "Will",
+          "itemIds": [
+            "3",
+            "4"
+          ]
+        },
+        {
+          "name": "Chloe and Will",
+          "itemIds": [
+            "5"
+          ]
+        },
+        {
+          "name": "Theo",
+          "itemIds": [
+            "6",
+            "7"
+          ]
+        },
+        {
+          "name": "Elise",
+          "itemIds": [
+            "8",
+            "9"
+          ]
+        },
+        {
+          "name": "Theo and Elise",
+          "itemIds": [
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "2b-2a-family-dialogue",
+      "title": "2A · Family conversation",
+      "instructions": "Choose the correct alternative to complete the dialogue.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "options": [
+            "sisters",
+            "parents",
+            "daughters"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "options": [
+            "sister",
+            "father",
+            "mother"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "options": [
+            "son",
+            "mother",
+            "father"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "options": [
+            "sister",
+            "brother",
+            "children"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "options": [
+            "father",
+            "husband",
+            "wife"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "options": [
+            "children",
+            "daughters",
+            "sons"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "family-dialogue-choices",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "parts": [
+            "Who are they?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "They’re my ",
+            {
+              "itemId": "1"
+            },
+            " Maria and Richard."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "Where are they?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "They’re at our house in France. My ",
+            {
+              "itemId": "2"
+            },
+            " is Colombian. She’s from Cali."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "Is your ",
+            {
+              "itemId": "3"
+            },
+            " Colombian too?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "No, he’s American. He’s from Los Angeles."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "And who are they?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "That’s my ",
+            {
+              "itemId": "4"
+            },
+            " Helen and her ",
+            {
+              "itemId": "5"
+            },
+            " Kerem. He’s Turkish."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "Are they in Turkey now?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "Yes. They’re in Izmir. Their ",
+            {
+              "itemId": "6"
+            },
+            " are Isabel and Zeki. They’re five and three."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "eyebrow": "Vocabulary · people",
+      "title": "People: singular and plural",
+      "text": "Здесь исправляется только выделенное слово, не нужно переписывать всё предложение."
+    },
+    {
+      "type": "exercise",
+      "id": "2b-3a-correct-people",
+      "title": "3A · Correct the underlined word",
+      "instructions": "Correct the underlined mistake in each sentence. Write only the replacement word.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "text",
+          "answer": "men",
+          "contextParts": [
+            "The ",
+            {
+              "text": "mens",
+              "highlight": true
+            },
+            " in the photo are police officers."
+          ],
+          "placeholder": "Correct word"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "text",
+          "answer": "girls",
+          "contextParts": [
+            "The ",
+            {
+              "text": "girl",
+              "highlight": true
+            },
+            " are in the garden."
+          ],
+          "placeholder": "Correct word"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "text",
+          "answer": "people",
+          "contextParts": [
+            "Spanish ",
+            {
+              "text": "persons",
+              "highlight": true
+            },
+            " are very friendly."
+          ],
+          "placeholder": "Correct word"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "text",
+          "answer": "baby",
+          "contextParts": [
+            "My ",
+            {
+              "text": "babies",
+              "highlight": true
+            },
+            " is called Fred."
+          ],
+          "placeholder": "Correct word"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "text",
+          "answer": "woman’s",
+          "contextParts": [
+            "What’s that ",
+            {
+              "text": "women’s",
+              "highlight": true
+            },
+            " name?"
+          ],
+          "placeholder": "Correct word",
+          "acceptedAnswers": [
+            "woman's"
+          ]
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "eyebrow": "Grammar · possessive adjectives",
+      "title": "My, your, his, her, its, our, their",
+      "text": "Перед упражнениями открой грамматику «Possessive adjectives»."
+    },
+    {
+      "type": "exercise",
+      "id": "2b-5a-possessive-choice",
+      "title": "5A · Possessive adjectives",
+      "instructions": "Choose the correct word to complete the sentences.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "segments": [
+            "Jane is an artist and ",
+            " husband is an actor."
+          ],
+          "options": [
+            "its",
+            "she",
+            "her"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "segments": [
+            "My wife is in Poland now with ",
+            " children."
+          ],
+          "options": [
+            "their",
+            "its",
+            "our"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "segments": [
+            "Where are ",
+            " parents from?"
+          ],
+          "options": [
+            "your",
+            "you’re",
+            "you"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "segments": [
+            "This is my cat. ",
+            " name is Mac."
+          ],
+          "options": [
+            "It’s",
+            "Its",
+            "He"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "segments": [
+            "My father is Chinese. ",
+            " name is Liu Wei."
+          ],
+          "options": [
+            "He",
+            "Her",
+            "His"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "segments": [
+            "My husband and I are teachers. ",
+            " school is very big."
+          ],
+          "options": [
+            "Our",
+            "We",
+            "Your"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "single",
+          "segments": [
+            "Marta and Sara are Italian. ",
+            " family is from Rome."
+          ],
+          "options": [
+            "They’re",
+            "Their",
+            "They"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "single",
+          "segments": [
+            "",
+            " daughter is three. Her name is Leila."
+          ],
+          "options": [
+            "My",
+            "I",
+            "We"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true,
+      "inlineNumberedItems": true
+    },
+    {
+      "type": "exercise",
+      "id": "2b-5b-possessive-fill",
+      "title": "5B · Complete the sentences",
+      "instructions": "Complete the sentences with my, your, his, her, its, our or their.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "gaps",
+          "segments": [
+            "Excuse me! Is this ",
+            " phone?"
+          ],
+          "answers": [
+            [
+              "your"
+            ]
+          ]
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "gaps",
+          "segments": [
+            "Is that your brother? What’s ",
+            " name?"
+          ],
+          "answers": [
+            [
+              "his"
+            ]
+          ]
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "gaps",
+          "segments": [
+            "My sister and I are police officers and ",
+            " parents are police officers, too!"
+          ],
+          "answers": [
+            [
+              "our"
+            ]
+          ]
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "gaps",
+          "segments": [
+            "My friend has a pizza restaurant. ",
+            " name is ‘Perfect Pizza’."
+          ],
+          "answers": [
+            [
+              "its"
+            ]
+          ]
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "gaps",
+          "segments": [
+            "Kate and Kirsten are sisters. ",
+            " brother is an actor."
+          ],
+          "answers": [
+            [
+              "their"
+            ]
+          ]
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "gaps",
+          "segments": [
+            "My mother is American and ",
+            " father is British."
+          ],
+          "answers": [
+            [
+              "my"
+            ]
+          ]
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "gaps",
+          "segments": [
+            "My daughter is married. ",
+            " husband is Japanese."
+          ],
+          "answers": [
+            [
+              "her"
+            ]
+          ]
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "section",
+      "eyebrow": "Listening · the family tree",
+      "title": "Listen and complete Matt’s family tree",
+      "text": "Прослушай запись, затем выбери три имени из списка. Остальные имена лишние."
+    },
+    {
+      "type": "exercise",
+      "id": "2b-6b-family-tree",
+      "title": "6B · Family tree",
+      "instructions": "Listen again. Complete the family tree using names from the box.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "options": [
+            "Amanda",
+            "Giulia",
+            "Jennifer",
+            "Olivia",
+            "Sofia",
+            "Soraya"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "options": [
+            "Amanda",
+            "Giulia",
+            "Jennifer",
+            "Olivia",
+            "Sofia",
+            "Soraya"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "options": [
+            "Amanda",
+            "Giulia",
+            "Jennifer",
+            "Olivia",
+            "Sofia",
+            "Soraya"
+          ],
+          "answer": 3
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "family-tree",
+      "audio": "audio/SO3_A1_WB_2B_Audio_2_06.mp3",
+      "wordBank": [
+        "Amanda",
+        "Giulia",
+        "Jennifer",
+        "Olivia",
+        "Sofia",
+        "Soraya"
+      ],
+      "wordBankLabel": "Names"
+    },
+    {
+      "type": "section",
+      "eyebrow": "Writing · a family photo",
+      "title": "Describe your family or friends",
+      "text": "Один текст 50–80 слов. В конце используй Check answers, чтобы сохранить и затем отправить учителю."
+    },
+    {
+      "type": "exercise",
+      "id": "2b-7d-family-writing",
+      "title": "7D · Write about a photo",
+      "instructions": "Use your notes to write about a family or friends in a photo. Use and at least four times. Write 50–80 words. Include names, nationalities, jobs and relationships.",
+      "items": [
+        {
+          "id": "1",
+          "number": "",
+          "input": "textarea",
+          "placeholder": "This is a photo of …",
+          "scored": false,
+          "minWords": 50,
+          "maxWords": 80
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "family-writing",
+      "introTitle": "Writing tips",
+      "introText": "Who are the people? Where are they from? What are their jobs? How are they related? Use and to connect ideas. You can describe a real photo or imagine one."
+    }
+  ]
+}

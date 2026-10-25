@@ -1804,7 +1804,7 @@
         ? `<div class="sentence-gaps sentence-select-gap" aria-label="${prompt}"><span>${escapeHtml(segments[0] || '')}</span>${selectControl}<span>${escapeHtml(segments[1] || '')}</span></div>`
         : selectControl;
     } else if (item.input === 'textarea') {
-      control = `<textarea id="${escapeHtml(inputId)}" placeholder="${escapeHtml(item.placeholder || '')}"></textarea>`;
+      control = `<textarea id="${escapeHtml(inputId)}" placeholder="${escapeHtml(item.placeholder || '')}"${item.minWords ? ' data-family-writing-input' : ''}></textarea>${item.minWords ? `<p class="a1-family-writing-count" data-family-writing-count data-min-words="${Number(item.minWords)||50}" data-max-words="${Number(item.maxWords)||80}" aria-live="polite">0 words · aim for 50–80</p>` : ''}`;
     } else if (item.input === 'gaps') {
       const answers = Array.isArray(item.answers) ? item.answers : [];
       const segments = Array.isArray(item.segments) ? item.segments : [];
@@ -2141,6 +2141,44 @@
     return `<div class="a1b-blog-layout"><div class="a1b-blog" aria-label="Original jobs blog"><div class="a1b-blog-title"><strong>${escapeHtml(block.blogTitle)}</strong><span>${escapeHtml(block.blogByline)}</span></div><div class="a1b-blog-people">${people}</div></div><div class="a1b-blog-table"><div class="table-wrap"><table><thead><tr>${(block.tableHeaders||[]).map((x)=>`<th>${escapeHtml(x)}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div></div></div>`;
   }
 
+  // Speakout A1 · 2B. Family relationship labels share one photo and one row
+  // per person, so the pupil does not lose the connection between relatives.
+  function renderFamilyPhotoMap(block, blockId) {
+    const lookup = new Map((block.items || []).map((item, i) => [safeText(item.id), { item, i }]));
+    const groups = (block.familyGroups || []).map((group) => {
+      const cells = (group.itemIds || []).map((id) => {
+        const entry = lookup.get(safeText(id));
+        return entry ? renderExerciseItem(entry.item, blockId, entry.i, true) : '';
+      }).join('');
+      return `<div class="a1-family-row"><span class="a1-family-person">${escapeHtml(group.name)}</span><div class="a1-family-answers">${cells}</div></div>`;
+    }).join('');
+    return `<div class="a1-family-map" role="group" aria-label="Family words by person">${groups}</div>`;
+  }
+
+  function renderFamilyDialogueChoices(block, blockId) {
+    const itemById = new Map((block.items || []).map((item) => [safeText(item.id), item]));
+    return `<div class="a1-dialogue a1-family-dialogue" role="group" aria-label="A and B family conversation">${(block.dialogue || []).map((line) => {
+      const content = (line.parts || []).map((part) => {
+        if (typeof part === 'string') return escapeHtml(part);
+        const item = itemById.get(safeText(part.itemId));
+        if (!item) return '';
+        const options = (item.options || []).map((option, optionIndex) => `<option value="${optionIndex}">${escapeHtml(option)}</option>`).join('');
+        return `<span class="a1-family-dialogue-choice" data-exercise-item="${escapeHtml(item.id)}" data-input-type="select"><sup>${escapeHtml(item.number || item.id)}</sup><select aria-label="Choice ${escapeHtml(item.number || item.id)}"><option value="">Choose…</option>${options}</select><span class="feedback" aria-live="polite"></span></span>`;
+      }).join('');
+      return `<div class="a1-dialogue-line"><strong class="a1-dialogue-speaker">${escapeHtml(line.speaker || '')}</strong><p>${content}</p></div>`;
+    }).join('')}</div>`;
+  }
+
+  function renderFamilyTree(block) {
+    const selects = new Map((block.items || []).map((item) => [safeText(item.id), item]));
+    function gap(id) {
+      const item = selects.get(id);
+      if (!item) return '';
+      return `<span class="a1-family-tree-gap" data-exercise-item="${escapeHtml(id)}" data-input-type="select"><span class="a1-family-tree-number">${escapeHtml(item.number || id)}</span><select aria-label="Family tree person ${escapeHtml(id)}"><option value="">Choose a name</option>${(item.options || []).map((name, index) => `<option value="${index}">${escapeHtml(name)}</option>`).join('')}</select><span class="feedback" aria-live="polite"></span></span>`;
+    }
+    return `<div class="a1-family-tree" role="group" aria-label="Matt's family tree"><div class="a1-family-tree-parents"><span class="a1-family-tree-person is-filled">Matt</span><span class="a1-family-tree-partner" aria-hidden="true">&amp;</span>${gap('1')}</div><div class="a1-family-tree-line" aria-hidden="true"></div><div class="a1-family-tree-kids"><span class="a1-family-tree-person is-filled">Leo</span>${gap('2')}${gap('3')}</div></div>`;
+  }
+
   function renderLessonBlock(block, index) {
     const id = safeText(block.id, `task-${index}`);
     const title = escapeHtml(block.title || block.prompt || `Task ${index + 1}`);
@@ -2193,7 +2231,13 @@
           }).join('')}</div>`
         : '';
       const intro = block.introTitle || block.introText ? `<div class="exercise-source"><h4>${escapeHtml(block.introTitle || '')}</h4>${block.introText ? `<p>${escapeHtml(block.introText)}</p>` : ''}</div>` : '';
-      const exerciseContent = block.layout === 'number-word-order'
+      const exerciseContent = block.layout === 'family-photo-map'
+        ? renderFamilyPhotoMap(block,id)
+        : block.layout === 'family-dialogue-choices'
+        ? renderFamilyDialogueChoices(block,id)
+        : block.layout === 'family-tree'
+        ? renderFamilyTree(block)
+        : block.layout === 'number-word-order'
         ? renderNumberWordOrder(block,id)
         : block.layout === 'conversation-word-order'
         ? renderConversationWordOrder(block,id)
@@ -2598,6 +2642,20 @@
     wireWordOrderControls(root);
     wireNumberWordOrder(root);
     restoreLessonAnswers(root, blocks, savedResult?.answers);
+    // Writing is reviewed by the teacher, never marked wrong by the automatic checker.
+    function updateFamilyWritingCount() {
+      root.querySelectorAll('[data-family-writing-count]').forEach((counter) => {
+        const field = counter.parentElement?.querySelector('textarea[data-family-writing-input]');
+        if (!field) return;
+        const words = safeText(field.value).trim().split(/\s+/u).filter(Boolean).length;
+        const min = Number(counter.dataset.minWords || 50), max = Number(counter.dataset.maxWords || 80);
+        counter.textContent = `${words} words · ${words < min ? `aim for ${min}–${max}` : words > max ? `above ${max}, shorten your text` : 'good length'}`;
+        counter.classList.toggle('is-good', words >= min && words <= max);
+      });
+    }
+    root.querySelectorAll('textarea[data-family-writing-input]').forEach((field) => field.addEventListener('input', updateFamilyWritingCount));
+    updateFamilyWritingCount();
+
 
     root.querySelectorAll('[data-reorder-source]').forEach((source) => {
       source.addEventListener('click', (event) => {

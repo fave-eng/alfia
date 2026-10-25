@@ -1,4 +1,4 @@
-/* Speakout A1 · Vocabulary topics organised by lesson. */
+/* Speakout A1 · one vocabulary topic per lesson; independent categories */
 window.VOCABULARY_DATA = [
   {
     "id": "vocab-lesson-1",
@@ -1048,6 +1048,234 @@ window.VOCABULARY_DATA = [
         "transcription": "/ə ˈhʌndrəd/",
         "exampleEn": "There are a hundred people.",
         "exampleRu": "Там сто человек."
+      }
+    ]
+  },
+  {
+    "id": "vocab-lesson-4",
+    "title": "2B · Family",
+    "label": "Speakout A1 · Unit 2 · Lesson 2B",
+    "type": "lesson",
+    "linkedLessonId": "lesson-4",
+    "page": "vocabulary.html?id=vocab-lesson-4",
+    "icon": "👨‍👩‍👧‍👦",
+    "sections": [
+      {
+        "id": "family",
+        "title": "Family",
+        "description": "Family relationships and family members"
+      },
+      {
+        "id": "people",
+        "title": "People · singular / plural",
+        "description": "People and special plural forms"
+      },
+      {
+        "id": "writing",
+        "title": "Useful words for writing",
+        "description": "Describe the people in your photo"
+      }
+    ],
+    "words": [
+      {
+        "section": "family",
+        "id": "2b-mother",
+        "en": "mother",
+        "ru": "мама, мать",
+        "exampleEn": "Chloe is a mother.",
+        "exampleRu": "Хлоя — мама."
+      },
+      {
+        "section": "family",
+        "id": "2b-father",
+        "en": "father",
+        "ru": "папа, отец",
+        "exampleEn": "Will is a father.",
+        "exampleRu": "Уилл — отец."
+      },
+      {
+        "section": "family",
+        "id": "2b-parents",
+        "en": "parents",
+        "ru": "родители",
+        "exampleEn": "Chloe and Will are parents.",
+        "exampleRu": "Хлоя и Уилл — родители."
+      },
+      {
+        "section": "family",
+        "id": "2b-wife",
+        "en": "wife",
+        "ru": "жена",
+        "exampleEn": "Chloe is Will’s wife.",
+        "exampleRu": "Хлоя — жена Уилла."
+      },
+      {
+        "section": "family",
+        "id": "2b-husband",
+        "en": "husband",
+        "ru": "муж",
+        "exampleEn": "Will is Chloe’s husband.",
+        "exampleRu": "Уилл — муж Хлои."
+      },
+      {
+        "section": "family",
+        "id": "2b-son",
+        "en": "son",
+        "ru": "сын",
+        "exampleEn": "Theo is their son.",
+        "exampleRu": "Тео — их сын."
+      },
+      {
+        "section": "family",
+        "id": "2b-daughter",
+        "en": "daughter",
+        "ru": "дочь",
+        "exampleEn": "Elise is their daughter.",
+        "exampleRu": "Элиз — их дочь."
+      },
+      {
+        "section": "family",
+        "id": "2b-brother",
+        "en": "brother",
+        "ru": "брат",
+        "exampleEn": "Theo is Elise’s brother.",
+        "exampleRu": "Тео — брат Элиз."
+      },
+      {
+        "section": "family",
+        "id": "2b-sister",
+        "en": "sister",
+        "ru": "сестра",
+        "exampleEn": "Elise is Theo’s sister.",
+        "exampleRu": "Элиз — сестра Тео."
+      },
+      {
+        "section": "family",
+        "id": "2b-child",
+        "en": "child",
+        "ru": "ребёнок",
+        "exampleEn": "They have one child.",
+        "exampleRu": "У них один ребёнок."
+      },
+      {
+        "section": "family",
+        "id": "2b-children",
+        "en": "children",
+        "ru": "дети",
+        "exampleEn": "They have two children.",
+        "exampleRu": "У них двое детей."
+      },
+      {
+        "section": "family",
+        "id": "2b-family",
+        "en": "family",
+        "ru": "семья",
+        "exampleEn": "They are a happy family.",
+        "exampleRu": "Они счастливая семья."
+      },
+      {
+        "section": "people",
+        "id": "2b-man",
+        "en": "man",
+        "ru": "мужчина",
+        "exampleEn": "The man is my friend.",
+        "exampleRu": "Этот мужчина — мой друг."
+      },
+      {
+        "section": "people",
+        "id": "2b-men",
+        "en": "men",
+        "ru": "мужчины",
+        "exampleEn": "The men are brothers.",
+        "exampleRu": "Эти мужчины — братья."
+      },
+      {
+        "section": "people",
+        "id": "2b-woman",
+        "en": "woman",
+        "ru": "женщина",
+        "exampleEn": "The woman is a teacher.",
+        "exampleRu": "Эта женщина — учитель."
+      },
+      {
+        "section": "people",
+        "id": "2b-women",
+        "en": "women",
+        "ru": "женщины",
+        "exampleEn": "The women are sisters.",
+        "exampleRu": "Эти женщины — сёстры."
+      },
+      {
+        "section": "people",
+        "id": "2b-person",
+        "en": "person",
+        "ru": "человек",
+        "exampleEn": "One person is here.",
+        "exampleRu": "Здесь один человек."
+      },
+      {
+        "section": "people",
+        "id": "2b-people",
+        "en": "people",
+        "ru": "люди",
+        "exampleEn": "The people are friendly.",
+        "exampleRu": "Люди дружелюбные."
+      },
+      {
+        "section": "people",
+        "id": "2b-baby",
+        "en": "baby",
+        "ru": "малыш, ребёнок",
+        "exampleEn": "The baby is one year old.",
+        "exampleRu": "Малышу один год."
+      },
+      {
+        "section": "people",
+        "id": "2b-babies",
+        "en": "babies",
+        "ru": "малыши",
+        "exampleEn": "The babies are happy.",
+        "exampleRu": "Малыши счастливы."
+      },
+      {
+        "section": "people",
+        "id": "2b-girl",
+        "en": "girl",
+        "ru": "девочка",
+        "exampleEn": "The girl is in the garden.",
+        "exampleRu": "Девочка в саду."
+      },
+      {
+        "section": "writing",
+        "id": "2b-friend",
+        "en": "friend",
+        "ru": "друг, подруга",
+        "exampleEn": "This is my friend.",
+        "exampleRu": "Это мой друг."
+      },
+      {
+        "section": "writing",
+        "id": "2b-married",
+        "en": "married",
+        "ru": "женат, замужем",
+        "exampleEn": "She is married.",
+        "exampleRu": "Она замужем."
+      },
+      {
+        "section": "writing",
+        "id": "2b-photo",
+        "en": "photo",
+        "ru": "фотография",
+        "exampleEn": "This is a photo of my family.",
+        "exampleRu": "Это фотография моей семьи."
+      },
+      {
+        "section": "writing",
+        "id": "2b-name",
+        "en": "name",
+        "ru": "имя",
+        "exampleEn": "Her name is Elise.",
+        "exampleRu": "Её зовут Элиз."
       }
     ]
   }

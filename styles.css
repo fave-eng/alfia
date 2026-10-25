@@ -3652,3 +3652,35 @@ label.odd-option {
 .number-order-slot[role="button"]{cursor:pointer}
 .reading-section-no-number .reading-section-heading{display:block}
 .reading-section-no-number .reading-section-heading::before{content:none}
+
+/* Speakout A1 · Homework 4 (Family). Independent styles; other lessons unchanged. */
+.a1-family-map{display:grid;gap:8px;max-width:740px;margin:0 auto}
+.a1-family-row{display:grid;grid-template-columns:minmax(125px,170px) minmax(0,1fr);align-items:center;gap:14px;padding:12px 14px;border:1px solid #dbe4f2;border-radius:16px;background:#f8fbff}
+.a1-family-person{font-weight:750;color:#27446b}
+.a1-family-answers{display:flex;flex-wrap:wrap;align-items:center;gap:10px;min-width:0}
+.a1-family-answers .exercise-item{display:flex;gap:7px;align-items:center;margin:0!important;padding:0!important;box-shadow:none!important;border:0!important;background:transparent!important;flex:1 1 110px;min-width:95px}
+.a1-family-answers .exercise-item-inline-row{display:flex;align-items:center;gap:7px;flex:1}
+.a1-family-answers .exercise-item-inline-content{min-width:0;flex:1}
+.a1-family-answers .text-field{width:100%;min-width:0;max-width:180px;box-sizing:border-box}
+.a1-family-dialogue{max-width:820px}
+.a1-family-dialogue .a1-dialogue-line{align-items:start}
+.a1-family-dialogue-choice{display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px;vertical-align:middle;margin:4px 3px}
+.a1-family-dialogue-choice sup{font-weight:750;color:#3556a6}
+.a1-family-dialogue-choice select{max-width:min(100%,180px);padding:7px 22px 7px 9px;border-radius:9px;border:1px solid #9fb1d0;background:#fff;color:#18304e;font-size:.95rem}
+.a1-family-dialogue-choice .feedback{font-size:.79rem;width:100%}
+.a1-family-tree{max-width:760px;margin:16px auto 5px;padding:25px 16px 20px;border:1px solid #ccd8ed;border-radius:20px;background:#f7faff;text-align:center}
+.a1-family-tree-parents{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.a1-family-tree-person,.a1-family-tree-gap{display:inline-flex;align-items:center;justify-content:center;border:1px solid #b9cbe5;border-radius:13px;background:#fff;min-height:54px;min-width:110px;padding:8px 12px;box-sizing:border-box}
+.a1-family-tree-person.is-filled{font-weight:750;color:#24416b;background:#eaf0fa}
+.a1-family-tree-partner{font-size:1.2rem;font-weight:700;color:#6880a5}
+.a1-family-tree-gap{gap:5px;flex-wrap:wrap;max-width:200px}
+.a1-family-tree-gap select{border:1px solid #a4b7d2;border-radius:8px;padding:7px 5px;background:white;max-width:150px;min-width:0}
+.a1-family-tree-number{font-weight:750;color:#425eb2}
+.a1-family-tree-line{width:2px;height:42px;background:#adc0db;margin:0 auto;position:relative}
+.a1-family-tree-line:after{content:'';position:absolute;bottom:0;left:50%;width:min(75vw,430px);height:2px;background:#adc0db;transform:translateX(-50%)}
+.a1-family-tree-kids{display:flex;justify-content:space-around;gap:8px;align-items:stretch;flex-wrap:wrap;margin-top:16px}
+.a1-family-tree-kids>*{flex:1 1 125px;max-width:210px}
+.a1-family-writing-count{font-size:.84rem;font-weight:650;color:#6a7990;margin-top:9px}
+.a1-family-writing-count.is-good{color:#237851}
+[data-task="2b-7d-family-writing"] textarea{width:100%;min-height:210px;line-height:1.6;box-sizing:border-box}
+@media(max-width:560px){.a1-family-row{grid-template-columns:1fr;gap:8px}.a1-family-map{gap:9px}.a1-family-tree{padding:20px 9px}.a1-family-tree-parents{gap:8px}.a1-family-tree-kids>*{flex:1 1 85px;min-width:0}.a1-family-tree-gap{padding:6px}.a1-family-tree-gap select{width:100%;min-width:0}.a1-family-dialogue-choice select{max-width:160px}}

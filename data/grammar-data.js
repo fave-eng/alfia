@@ -1,4 +1,4 @@
-/* Speakout A1 · Independent grammar topics and guided practice. */
+/* Speakout A1 · structured Russian grammar lessons, independent progress per topic */
 window.GRAMMAR_DATA = [
   {
     "id": "grammar-be-i-you",
@@ -1339,5 +1339,411 @@ window.GRAMMAR_DATA = [
       }
     ],
     "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 3 · самостоятельная тема</span><h2>Be: we / you / they</h2><p>Вы уже знаете <em>I am</em> и <em>he/she/it is</em>. Теперь научимся говорить о <strong>нескольких людях</strong> и задавать о них вопросы.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#bt-01\">01 · Когда говорим we / you / they?</a><a href=\"#bt-02\">02 · Утверждения и сокращения</a><a href=\"#bt-03\">03 · Отрицания</a><a href=\"#bt-04\">04 · Вопросы и короткие ответы</a><a href=\"#bt-05\">05 · Вопросительные слова</a><a href=\"#bt-06\">06 · Сравните все формы be</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"bt-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Когда говорим we / you / they?</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Местоимение</th><th>Значение</th><th>Пример</th></tr></thead><tbody><tr><td><strong>we</strong></td><td>мы — я и другие люди</td><td>We <strong>are</strong> from Turkey.</td></tr><tr><td><strong>you</strong></td><td>ты или вы</td><td>You <strong>are</strong> Australian.</td></tr><tr><td><strong>they</strong></td><td>они — несколько людей или предметов</td><td>They <strong>are</strong> students.</td></tr></tbody></table></div><p>Сравните: <strong>he is</strong> (один человек), но <strong>they are</strong> (несколько человек).</p></section><section class=\"g1-section\" id=\"bt-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Утверждения и сокращения</h3></div><div class=\"g1-scheme\"><span class=\"g1-token \">We / You / They</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">are</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">...</span></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Полная форма</th><th>Сокращение</th></tr></thead><tbody><tr><td>We <strong>are</strong> friends.</td><td><strong>We’re</strong> friends.</td></tr><tr><td>You <strong>are</strong> British.</td><td><strong>You’re</strong> British.</td></tr><tr><td>They <strong>are</strong> from Mexico.</td><td><strong>They’re</strong> from Mexico.</td></tr></tbody></table></div><p>Существительное во множественном числе: <em>They’re <strong>students</strong></em>, а не <em>a students</em>.</p></section><section class=\"g1-section\" id=\"bt-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Отрицания</h3></div><div class=\"g1-scheme\"><span class=\"g1-token \">They</span><span class=\"g1-plus\">+</span><span class=\"g1-token g1-token-v\">are not</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">students</span></div><p><strong>They are not students.</strong> = <strong>They aren’t students.</strong> = <strong>They’re not students.</strong> — все три правильные.</p><p><span class=\"g1-wrong\">They not doctors.</span> → <span class=\"g1-right\">They aren’t doctors.</span> Форму <strong>are</strong> нельзя пропускать.</p></section><section class=\"g1-section\" id=\"bt-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Вопросы и короткие ответы</h3></div><div class=\"g1-scheme\"><span class=\"g1-token g1-token-v\">Are</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">they</span><span class=\"g1-plus\">+</span><span class=\"g1-token \">friends?</span></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Вопрос</th><th>Да</th><th>Нет</th></tr></thead><tbody><tr><td><strong>Are</strong> they doctors?</td><td>Yes, they <strong>are</strong>.</td><td>No, they <strong>aren’t</strong>.</td></tr><tr><td><strong>Are</strong> your parents Australian?</td><td>Yes, they <strong>are</strong>.</td><td>No, they <strong>aren’t</strong>.</td></tr></tbody></table></div><p>В коротком утвердительном ответе не сокращаем: <span class=\"g1-wrong\">Yes, they’re.</span> → <span class=\"g1-right\">Yes, they are.</span>.</p></section><section class=\"g1-section\" id=\"bt-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Вопросительные слова</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Слово</th><th>Порядок слов</th><th>Пример</th></tr></thead><tbody><tr><td><strong>Who</strong></td><td>Who + are + they?</td><td><strong>Who are they?</strong></td></tr><tr><td><strong>Where</strong></td><td>Where + are + they + from?</td><td><strong>Where are they from?</strong></td></tr></tbody></table></div><p><em>Who are they?</em> спрашивает, кто эти люди. <em>Where are they from?</em> — из какой они страны или города. Не путайте эти вопросы.</p></section><section class=\"g1-section\" id=\"bt-06\"><div class=\"g1-section-head\"><span class=\"g1-num\">06</span><h3>Сравните все формы be</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто?</th><th>Утверждение</th><th>Вопрос</th></tr></thead><tbody><tr><td>I</td><td>I <strong>am</strong> a student.</td><td><strong>Am</strong> I late?</td></tr><tr><td>he / she / it</td><td>She <strong>is</strong> a teacher.</td><td><strong>Is</strong> she a teacher?</td></tr><tr><td>we / you / they</td><td>They <strong>are</strong> teachers.</td><td><strong>Are</strong> they teachers?</td></tr></tbody></table></div><p>Это три формы одного глагола <strong>be</strong>, но каждая зависит от подлежащего.</p></section></div>"
+  },
+  {
+    "id": "grammar-possessive-adjectives",
+    "order": 7,
+    "title": "Possessive adjectives: my, your, his, her, its, our, their",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-25",
+    "linkedLessonId": "lesson-4",
+    "page": "grammar-topic.html?id=grammar-possessive-adjectives",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Чья это вещь? Чей это родственник? Формы my / your / his / her / its / our / their.",
+    "formula": "Owner → possessive adjective → noun",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "exercises": [
+      {
+        "id": "pa-select",
+        "type": "exercise",
+        "title": "1 · Who owns it?",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "Chloe is a mother. ___ son is Theo.",
+            "options": [
+              "His",
+              "Her",
+              "Their"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Will is married. ___ wife is Chloe.",
+            "options": [
+              "His",
+              "Its",
+              "Our"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "Chloe and Will have two children. ___ children are Theo and Elise.",
+            "options": [
+              "Their",
+              "Her",
+              "Its"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "My husband and I are teachers. ___ school is big.",
+            "options": [
+              "We",
+              "Our",
+              "Your"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "pa-contrast",
+        "type": "exercise",
+        "title": "2 · Choose the correct meaning",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "___ family is very friendly. (They are a family.)",
+            "options": [
+              "They’re",
+              "Their"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "This is my cat. ___ name is Mac.",
+            "options": [
+              "Its",
+              "It’s"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "___ a great teacher.",
+            "options": [
+              "Your",
+              "You’re"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "___ my sister. (She is my sister.)",
+            "options": [
+              "Her",
+              "She’s"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "pa-complete",
+        "type": "exercise",
+        "title": "3 · Write the possessive adjective",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "I am Anna. ___ mother is British.",
+            "answer": "My"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "He is David. ___ brother is a doctor.",
+            "answer": "His"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "They are Kate and Will. ___ daughter is three.",
+            "answer": "Their"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "We are a family. ___ names are Chloe and Will.",
+            "answer": "Our"
+          }
+        ]
+      },
+      {
+        "id": "pa-review",
+        "type": "exercise",
+        "title": "4 · Mixed review",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "Is that ___ phone? (you)",
+            "answer": "your"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "My sister is a nurse. ___ husband is an actor. (she)",
+            "answer": "her"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "The dog is very old. ___ name is Lucky. (it)",
+            "answer": "its"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "This is ___ family. (I)",
+            "answer": "my"
+          }
+        ]
+      }
+    ],
+    "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 2B · самостоятельная тема</span><h2>Possessive adjectives: my, your, his, her, its, our, their</h2><p>Когда мы говорим <strong>моя мама, его сестра, их дети</strong>, перед существительным ставим притяжательное прилагательное. Оно показывает, <strong>кому что принадлежит</strong> или с кем кто связан.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#pa-01\">01 · Чья семья? Главное правило</a><a href=\"#pa-02\">02 · Все семь форм</a><a href=\"#pa-03\">03 · Не путай с местоимениями</a><a href=\"#pa-04\">04 · Its / it’s, your / you’re, their / they’re</a><a href=\"#pa-05\">05 · Типичные ошибки и самопроверка</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"pa-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Чья семья? Главное правило</h3></div><div class=\"g1-scheme\"><span class=\"g1-token g1-token-v\">her</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">brother</span></div><p>Перед <em>brother, mother, name, school, phone</em> нужно слово <strong>my / your / his ...</strong>. Примеры: <strong>my parents</strong>, <strong>his sister</strong>, <strong>their children</strong>.</p><p>Английское притяжательное прилагательное зависит от <strong>владельца</strong>, а не от рода следующего существительного: <strong>her son</strong> и <strong>her daughter</strong> — в обоих примерах речь о женщине.</p></section><section class=\"g1-section\" id=\"pa-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Все семь форм</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто?</th><th>Чей?</th><th>Пример</th><th>Перевод</th></tr></thead><tbody><tr><td>I</td><td><strong>my</strong></td><td>my mother</td><td>моя мама</td></tr><tr><td>you</td><td><strong>your</strong></td><td>your parents</td><td>твои / ваши родители</td></tr><tr><td>he</td><td><strong>his</strong></td><td>his daughter</td><td>его дочь</td></tr><tr><td>she</td><td><strong>her</strong></td><td>her husband</td><td>её муж</td></tr><tr><td>it</td><td><strong>its</strong></td><td>its name</td><td>его / её название (для вещи, животного)</td></tr><tr><td>we</td><td><strong>our</strong></td><td>our family</td><td>наша семья</td></tr><tr><td>they</td><td><strong>their</strong></td><td>their children</td><td>их дети</td></tr></tbody></table></div><p><strong>His</strong> и <strong>her</strong> различаем по тому, о ком говорим: <em>Will → his wife</em>, <em>Chloe → her husband</em>.</p></section><section class=\"g1-section\" id=\"pa-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Не путай с местоимениями</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Подлежащее</th><th>Притяжательное слово</th><th>Правильно</th></tr></thead><tbody><tr><td>I</td><td>my</td><td>I am a student. <strong>My</strong> father is a doctor.</td></tr><tr><td>she</td><td>her</td><td>She is Australian. <strong>Her</strong> husband is British.</td></tr><tr><td>they</td><td>their</td><td>They are sisters. <strong>Their</strong> brother is an actor.</td></tr><tr><td>we</td><td>our</td><td>We live here. <strong>Our</strong> house is new.</td></tr></tbody></table></div><p>Слово перед существительным — <strong>her</strong>, не <em>she</em>: <span class=\"g1-wrong\">She brother</span> → <span class=\"g1-right\">Her brother</span>.</p></section><section class=\"g1-section\" id=\"pa-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Its / it’s, your / you’re, their / they’re</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Притяжательное (чей?)</th><th>Сокращение (кто/что + be)</th></tr></thead><tbody><tr><td><strong>its</strong> name = его название</td><td><strong>it’s</strong> = it is (это / оно есть)</td></tr><tr><td><strong>your</strong> sister = твоя сестра</td><td><strong>you’re</strong> = you are (ты / вы...)</td></tr><tr><td><strong>their</strong> parents = их родители</td><td><strong>they’re</strong> = they are (они...)</td></tr></tbody></table></div><p>Сравни: <strong>Their</strong> family is big. <strong>They’re</strong> very happy.</p><p><strong>It’s my cat. Its name is Mac.</strong> — первое <em>it’s</em> = it is, второе <em>its</em> показывает принадлежность.</p></section><section class=\"g1-section\" id=\"pa-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Типичные ошибки и самопроверка</h3></div><p><span class=\"g1-wrong\">My friend is here. She name is Lisa.</span> → <span class=\"g1-right\">Her name is Lisa.</span></p><p><span class=\"g1-wrong\">They’re children are young.</span> → <span class=\"g1-right\">Their children are young.</span></p><p><span class=\"g1-wrong\">This is a cat. It’s name is Mac.</span> → <span class=\"g1-right\">Its name is Mac.</span></p><p>Проверь: <strong>Чей?</strong> Если после пропуска стоит существительное, обычно нужен <em>my, your, his, her, its, our</em> или <em>their</em>.</p></section></div>"
+  },
+  {
+    "id": "grammar-irregular-plurals-family",
+    "order": 8,
+    "title": "People: irregular plural nouns",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-25",
+    "linkedLessonId": "lesson-4",
+    "page": "grammar-topic.html?id=grammar-irregular-plurals-family",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Множественное число названий людей: man/men, woman/women, child/children, person/people; woman’s vs women’s.",
+    "formula": "one child → two children",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "exercises": [
+      {
+        "id": "ip-select",
+        "type": "exercise",
+        "title": "1 · One or more?",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "One ___ is in the park.",
+            "options": [
+              "men",
+              "man"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Two ___ are students.",
+            "options": [
+              "woman",
+              "women"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "Three ___ are happy.",
+            "options": [
+              "child",
+              "children"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "Many ___ are here.",
+            "options": [
+              "person",
+              "people"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "ip-plurals",
+        "type": "exercise",
+        "title": "2 · Write the plural",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "one man → two ___",
+            "answer": "men"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "one woman → two ___",
+            "answer": "women"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "one child → two ___",
+            "answer": "children"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "one person → two ___",
+            "answer": "people"
+          }
+        ]
+      },
+      {
+        "id": "ip-rules",
+        "type": "exercise",
+        "title": "3 · Regular or irregular?",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "Two ___ (baby)",
+            "options": [
+              "babies",
+              "babys"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Two ___ (girl)",
+            "options": [
+              "girl",
+              "girls"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "One ___ name is Anna.",
+            "options": [
+              "woman’s",
+              "women"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "Two ___ names are Anna and Kate.",
+            "options": [
+              "woman’s",
+              "women’s"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "ip-sentence",
+        "type": "exercise",
+        "title": "4 · Complete the sentences",
+        "instructions": "Complete the exercise.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "The ___ in the photo are police officers. (man)",
+            "answer": "men"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "The ___ are in the garden. (girl)",
+            "answer": "girls"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "Spanish ___ are very friendly. (person)",
+            "answer": "people"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "My ___ is called Fred. (baby)",
+            "answer": "baby"
+          }
+        ]
+      }
+    ],
+    "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 2B · самостоятельная тема</span><h2>People: irregular plural nouns</h2><p>В уроке 2B встречаются слова, у которых множественное число образуется <strong>не только прибавлением -s</strong>. Запомни формы людей отдельно: <em>man, woman, child, person</em>.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#ip-01\">01 · Сначала различаем один и несколько</a><a href=\"#ip-02\">02 · Неправильные формы</a><a href=\"#ip-03\">03 · Обычные -s / -ies и исключения</a><a href=\"#ip-04\">04 · Woman’s / women / women’s</a><a href=\"#ip-05\">05 · Согласование с be</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"ip-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Сначала различаем один и несколько</h3></div><div class=\"g1-scheme\"><span class=\"g1-token\">one child</span><span class=\"g1-plus\">→</span><span class=\"g1-token g1-token-v\">two children</span></div><p><strong>A man</strong> — один мужчина; <strong>two men</strong> — двое мужчин. После чисел <strong>two, three</strong> и так далее выбирай форму множественного числа.</p></section><section class=\"g1-section\" id=\"ip-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Неправильные формы</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Один</th><th>Несколько</th><th>По-русски</th></tr></thead><tbody><tr><td>a <strong>man</strong></td><td>two <strong>men</strong></td><td>мужчина / мужчины</td></tr><tr><td>a <strong>woman</strong></td><td>two <strong>women</strong></td><td>женщина / женщины</td></tr><tr><td>a <strong>child</strong></td><td>three <strong>children</strong></td><td>ребёнок / дети</td></tr><tr><td>a <strong>person</strong></td><td>four <strong>people</strong></td><td>человек / люди</td></tr></tbody></table></div><p><strong>Women</strong> произносится не так, как <strong>woman</strong>: /ˈwɪmɪn/ и /ˈwʊmən/ (британский вариант произношения).</p></section><section class=\"g1-section\" id=\"ip-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Обычные -s / -ies и исключения</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Единственное число</th><th>Множественное</th><th>Почему</th></tr></thead><tbody><tr><td>a girl</td><td>girls</td><td>обычное <strong>-s</strong></td></tr><tr><td>a sister</td><td>sisters</td><td>обычное <strong>-s</strong></td></tr><tr><td>a baby</td><td>babies</td><td>согласная + y → <strong>-ies</strong></td></tr><tr><td>a person</td><td>people</td><td>неправильная форма</td></tr><tr><td>a child</td><td>children</td><td>неправильная форма</td></tr></tbody></table></div><p>Сравни <strong>baby → babies</strong> (правило -ies) и <strong>child → children</strong> (особая форма).</p></section><section class=\"g1-section\" id=\"ip-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Woman’s / women / women’s</h3></div><p>Здесь два разных правила:</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Форма</th><th>Что значит</th><th>Пример</th></tr></thead><tbody><tr><td><strong>woman</strong></td><td>одна женщина</td><td>The woman is here.</td></tr><tr><td><strong>women</strong></td><td>несколько женщин</td><td>The women are here.</td></tr><tr><td><strong>woman’s</strong></td><td>принадлежит одной женщине</td><td>What’s that woman’s name?</td></tr><tr><td><strong>women’s</strong></td><td>принадлежит нескольким женщинам</td><td>The women’s names are Anna and Kate.</td></tr></tbody></table></div><p><strong>’s</strong> обозначает принадлежность, а не множественное число. Поэтому <span class=\"g1-wrong\">that women’s name</span> (если одна женщина) → <span class=\"g1-right\">that woman’s name</span>.</p></section><section class=\"g1-section\" id=\"ip-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Согласование с be</h3></div><p><strong>One man is</strong> my friend. <strong>Two men are</strong> my friends.</p><p><strong>A child is</strong> in the garden. <strong>Children are</strong> in the garden.</p><p>Формы множественного числа обычно требуют <strong>are</strong>, не <em>is</em>: <span class=\"g1-wrong\">The people is friendly.</span> → <span class=\"g1-right\">The people are friendly.</span></p></section></div>"
   }
 ];
