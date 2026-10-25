@@ -1,0 +1,723 @@
+{
+  "id": "lesson-6",
+  "number": 6,
+  "title": "2D · Our family business",
+  "subtitle": "Speakout A1 · Workbook · Wh-questions + be and reading",
+  "status": "available",
+  "vocabularyId": "vocab-lesson-6",
+  "grammarIds": [
+    "grammar-wh-be-2d"
+  ],
+  "publishedAt": "2026-10-26",
+  "totalPoints": 35,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "eyebrow": "Speakout A1 · Unit 2 · Lesson 2D",
+      "title": "Grammar · Wh-questions + be",
+      "text": "Перед выполнением упражнений изучи грамматику Wh-questions + be. В словаре урока есть вопросительные слова и лексика текста."
+    },
+    {
+      "type": "exercise",
+      "id": "2d-1a-question-meanings",
+      "title": "1A · What kind of information?",
+      "instructions": "Example: What’s your favourite colour? — a thing. For questions 2–6, choose the type of information.",
+      "items": [
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "Who's your best friend?",
+          "options": [
+            "a person",
+            "a place",
+            "a time",
+            "a manner",
+            "an age"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "Where are your family from?",
+          "options": [
+            "a person",
+            "a place",
+            "a time",
+            "a manner",
+            "an age"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "When is the barbecue?",
+          "options": [
+            "a person",
+            "a place",
+            "a time",
+            "a manner",
+            "an age"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "How is your sister?",
+          "options": [
+            "a person",
+            "a place",
+            "a time",
+            "a manner",
+            "an age"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "How old is your brother?",
+          "options": [
+            "a person",
+            "a place",
+            "a time",
+            "a manner",
+            "an age"
+          ],
+          "answer": 4
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "2d-1b-word-order",
+      "title": "1B · Build the questions",
+      "instructions": "Put the words in the correct order. Drag or tap word cards to make a question.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "word-order",
+          "words": [
+            "Nasim",
+            "old",
+            "How",
+            "is"
+          ],
+          "answer": "How old is Nasim?",
+          "ending": "?"
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "word-order",
+          "words": [
+            "favourite",
+            "Jenny's",
+            "What's",
+            "book"
+          ],
+          "answer": "What's Jenny's favourite book?",
+          "ending": "?"
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "word-order",
+          "words": [
+            "is",
+            "our",
+            "class",
+            "English",
+            "When"
+          ],
+          "answer": "When is our English class?",
+          "ending": "?"
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "word-order",
+          "words": [
+            "are",
+            "things",
+            "How"
+          ],
+          "answer": "How are things?",
+          "ending": "?"
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "word-order",
+          "words": [
+            "you",
+            "are",
+            "Where",
+            "from"
+          ],
+          "answer": "Where are you from?",
+          "ending": "?"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "word-order",
+          "words": [
+            "is",
+            "your",
+            "Who",
+            "football",
+            "player",
+            "favourite"
+          ],
+          "answer": "Who is your favourite football player?",
+          "ending": "?"
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "2d-1c-question-word",
+      "title": "1C · Complete the conversations",
+      "instructions": "Choose the question word that makes sense. Read B’s answer before choosing.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "options": [
+            "Where",
+            "When",
+            "Who"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "options": [
+            "How",
+            "How old",
+            "Where"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "options": [
+            "What",
+            "Who",
+            "When"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "options": [
+            "Who",
+            "How",
+            "Where"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "options": [
+            "How",
+            "When",
+            "What"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "options": [
+            "What",
+            "Where",
+            "Who"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "family-dialogue-choices",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "1"
+            },
+            " is it the weekend in your country?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "On Friday and Saturday."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "2"
+            },
+            " are your parents?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "They’re very well, thanks."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "3"
+            },
+            " is your favourite singer?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "It’s Adele. She’s great!"
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "4"
+            },
+            " are Fabrice and Sylvie?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "They’re at work."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "5"
+            },
+            " old is your sister?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "She’s 36."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "6"
+            },
+            "’s in your bag?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "My phone, my wallet and an umbrella."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "2d-1d-fix-questions",
+      "title": "1D · Correct the questions",
+      "instructions": "Each question has an incorrect question word or phrase. Select the correct replacement.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "options": [
+            "Who",
+            "How",
+            "How old"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "options": [
+            "When",
+            "Where",
+            "What"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "options": [
+            "When",
+            "How",
+            "Who"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "options": [
+            "What",
+            "How",
+            "Where"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "family-dialogue-choices",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "1"
+            },
+            " are your children?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "They’re seven and three."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "2"
+            },
+            " is our English class?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "It’s in room G03."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "3"
+            },
+            " are Alexia and Min?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "They’re my friends."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "",
+            {
+              "itemId": "4"
+            },
+            " time is it?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "It’s three o’clock."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "eyebrow": "Reading · Our family business",
+      "title": "Read about the Baxter family",
+      "text": "Прочитай текст один раз. После этого ответь на вопросы и выполни задания 2A–2C."
+    },
+    {
+      "type": "reading",
+      "id": "2d-baxter-family-article",
+      "title": "2 · Reading: In the family (read for 2A–2C)",
+      "sections": [
+        {
+          "heading": "In the family",
+          "text": "The Baxter family are from Toronto in Canada. We talk to Jyoti Baxter about their family business."
+        },
+        {
+          "heading": "What is your business?",
+          "text": "We’re a family of bakers! We have a small cake shop in Toronto and all the family works here. Our shop’s name is Lake Cakes. We have lots of different cakes in our shop and we also have bread, sandwiches and hot pizzas."
+        },
+        {
+          "heading": "Who is in your family?",
+          "text": "I’m Jyoti. I’m from Australia, but now my home is in Canada. I have two jobs – I’m a businesswoman and the cake shop manager. My husband’s name is Tejo. He’s a baker. Both our sons are bakers, too. Their names are Luca and Leo. Luca is 28 and Leo is 23. They are really great bakers, and their cakes are amazing. My favourite is the chocolate and orange cake – it’s very good and it’s really beautiful! My daughter works in the shop, too. Her name is Saffron. She’s 22. She’s a shop assistant. She’s really friendly."
+        },
+        {
+          "heading": "Are you happy with your job?",
+          "text": "I’m really happy. Our jobs aren’t easy, so we’re very tired at night ... but we love our bakery!"
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "2d-2a-read-main-idea",
+      "title": "2A · Find the information",
+      "instructions": "Read “In the family”. Choose the correct alternative.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "prompt": "The Baxter family have a …",
+          "options": [
+            "restaurant",
+            "shop",
+            "hotel"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "prompt": "The family business is in …",
+          "options": [
+            "Australia",
+            "Canada",
+            "South Africa"
+          ],
+          "answer": 1
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "2d-2b-true-false",
+      "title": "2B · True or false?",
+      "instructions": "Read the article again. Decide whether each statement is true (T) or false (F).",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "prompt": "Jyoti isn’t from Canada.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "prompt": "They have a big cake shop in Toronto.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "prompt": "Jyoti and Tejo have two sons.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "prompt": "Jyoti’s favourite cake is a chocolate and apple cake.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "prompt": "Saffron isn’t a baker.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "prompt": "The Baxters’ jobs are difficult.",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "2d-2c-family-relationships",
+      "title": "2C · Who is who?",
+      "instructions": "Match the beginnings with the correct family relationship.",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "prompt": "Jyoti is Tejo’s …",
+          "options": [
+            "parents",
+            "son",
+            "mother",
+            "father",
+            "sister",
+            "wife"
+          ],
+          "answer": 5
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "Saffron is Leo’s …",
+          "options": [
+            "parents",
+            "son",
+            "mother",
+            "father",
+            "sister",
+            "wife"
+          ],
+          "answer": 4
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "Tejo is Luca’s …",
+          "options": [
+            "parents",
+            "son",
+            "mother",
+            "father",
+            "sister",
+            "wife"
+          ],
+          "answer": 3
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "Jyoti is Leo’s …",
+          "options": [
+            "parents",
+            "son",
+            "mother",
+            "father",
+            "sister",
+            "wife"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "Leo is Tejo’s …",
+          "options": [
+            "parents",
+            "son",
+            "mother",
+            "father",
+            "sister",
+            "wife"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "Jyoti and Tejo are Saffron’s …",
+          "options": [
+            "parents",
+            "son",
+            "mother",
+            "father",
+            "sister",
+            "wife"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    }
+  ]
+}

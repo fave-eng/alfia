@@ -1278,5 +1278,225 @@ window.VOCABULARY_DATA = [
         "exampleRu": "Её зовут Элиз."
       }
     ]
+  },
+  {
+    "id": "vocab-lesson-6",
+    "title": "2D · Our family business",
+    "label": "Speakout A1 · Unit 2 · Lesson 2D",
+    "type": "lesson",
+    "linkedLessonId": "lesson-6",
+    "page": "vocabulary.html?id=vocab-lesson-6",
+    "icon": "❓",
+    "sections": [
+      {
+        "id": "questions",
+        "title": "Question words",
+        "description": "Who, what, where, when, how, how old"
+      },
+      {
+        "id": "business",
+        "title": "Family business",
+        "description": "Bakers, shops and work"
+      },
+      {
+        "id": "descriptions",
+        "title": "Describing people and things",
+        "description": "Useful adjectives and expressions"
+      }
+    ],
+    "words": [
+      {
+        "section": "questions",
+        "id": "2d-questions-01",
+        "en": "who",
+        "ru": "кто",
+        "exampleEn": "Who is your best friend?",
+        "exampleRu": "Кто твой лучший друг?"
+      },
+      {
+        "section": "questions",
+        "id": "2d-questions-02",
+        "en": "what",
+        "ru": "что; какой",
+        "exampleEn": "What is your favourite colour?",
+        "exampleRu": "Какой твой любимый цвет?"
+      },
+      {
+        "section": "questions",
+        "id": "2d-questions-03",
+        "en": "where",
+        "ru": "где; куда",
+        "exampleEn": "Where are your parents?",
+        "exampleRu": "Где твои родители?"
+      },
+      {
+        "section": "questions",
+        "id": "2d-questions-04",
+        "en": "when",
+        "ru": "когда",
+        "exampleEn": "When is your English class?",
+        "exampleRu": "Когда у тебя урок английского?"
+      },
+      {
+        "section": "questions",
+        "id": "2d-questions-05",
+        "en": "how",
+        "ru": "как",
+        "exampleEn": "How are you?",
+        "exampleRu": "Как ты?"
+      },
+      {
+        "section": "questions",
+        "id": "2d-questions-06",
+        "en": "how old",
+        "ru": "сколько лет",
+        "exampleEn": "How old is your brother?",
+        "exampleRu": "Сколько лет твоему брату?"
+      },
+      {
+        "section": "questions",
+        "id": "2d-questions-07",
+        "en": "what time",
+        "ru": "во сколько; который час",
+        "exampleEn": "What time is it?",
+        "exampleRu": "Который час?"
+      },
+      {
+        "section": "questions",
+        "id": "2d-questions-08",
+        "en": "from",
+        "ru": "из; от",
+        "exampleEn": "Where are you from?",
+        "exampleRu": "Откуда ты?"
+      },
+      {
+        "section": "business",
+        "id": "2d-business-01",
+        "en": "family business",
+        "ru": "семейное дело, семейный бизнес",
+        "exampleEn": "It is a family business.",
+        "exampleRu": "Это семейный бизнес."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-02",
+        "en": "baker",
+        "ru": "пекарь",
+        "exampleEn": "Tejo is a baker.",
+        "exampleRu": "Теджо — пекарь."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-03",
+        "en": "bakery",
+        "ru": "пекарня",
+        "exampleEn": "We love our bakery.",
+        "exampleRu": "Мы любим нашу пекарню."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-04",
+        "en": "cake shop",
+        "ru": "магазин тортов",
+        "exampleEn": "They have a cake shop.",
+        "exampleRu": "У них есть магазин тортов."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-05",
+        "en": "manager",
+        "ru": "управляющий, менеджер",
+        "exampleEn": "Jyoti is the shop manager.",
+        "exampleRu": "Джйоти — управляющая магазином."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-06",
+        "en": "shop assistant",
+        "ru": "продавец-консультант",
+        "exampleEn": "Saffron is a shop assistant.",
+        "exampleRu": "Саффрон работает продавцом."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-07",
+        "en": "businesswoman",
+        "ru": "деловая женщина, предпринимательница",
+        "exampleEn": "Jyoti is a businesswoman.",
+        "exampleRu": "Джйоти — предпринимательница."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-08",
+        "en": "sandwich",
+        "ru": "сэндвич",
+        "exampleEn": "We have sandwiches.",
+        "exampleRu": "У нас есть сэндвичи."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-09",
+        "en": "bread",
+        "ru": "хлеб",
+        "exampleEn": "They also have bread.",
+        "exampleRu": "У них также есть хлеб."
+      },
+      {
+        "section": "business",
+        "id": "2d-business-10",
+        "en": "chocolate",
+        "ru": "шоколад",
+        "exampleEn": "The cake has chocolate.",
+        "exampleRu": "В торте есть шоколад."
+      },
+      {
+        "section": "descriptions",
+        "id": "2d-descriptions-01",
+        "en": "amazing",
+        "ru": "потрясающий",
+        "exampleEn": "Their cakes are amazing.",
+        "exampleRu": "Их торты потрясающие."
+      },
+      {
+        "section": "descriptions",
+        "id": "2d-descriptions-02",
+        "en": "friendly",
+        "ru": "дружелюбный",
+        "exampleEn": "Saffron is very friendly.",
+        "exampleRu": "Саффрон очень дружелюбная."
+      },
+      {
+        "section": "descriptions",
+        "id": "2d-descriptions-03",
+        "en": "tired",
+        "ru": "уставший",
+        "exampleEn": "We are tired at night.",
+        "exampleRu": "Ночью мы уставшие."
+      },
+      {
+        "section": "descriptions",
+        "id": "2d-descriptions-04",
+        "en": "different",
+        "ru": "разный, различный",
+        "exampleEn": "They have different cakes.",
+        "exampleRu": "У них разные торты."
+      },
+      {
+        "section": "descriptions",
+        "id": "2d-descriptions-05",
+        "en": "at night",
+        "ru": "ночью",
+        "exampleEn": "We are tired at night.",
+        "exampleRu": "Ночью мы уставшие."
+      },
+      {
+        "section": "descriptions",
+        "id": "2d-descriptions-06",
+        "en": "favourite",
+        "ru": "любимый",
+        "exampleEn": "My favourite is orange cake.",
+        "exampleRu": "Мой любимый — апельсиновый торт."
+      }
+    ]
   }
 ];

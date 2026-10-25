@@ -1978,5 +1978,242 @@ window.GRAMMAR_DATA = [
       }
     ],
     "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Grammar review · Homework 5 · отдельная тема</span><h2>Object pronouns: me, you, him, her, it, us, them</h2><p>Эти слова обозначают человека или предмет, на которого направлено действие, или того, о ком мы говорим <strong>после предлога</strong>. В русском это часто «меня, мне, его, ей, нас, их» — перевод зависит от предложения.</p></article>\n<nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\">\n<a href=\"#op-01\">01 · Кто действует, а на кого действует?</a>\n<a href=\"#op-02\">02 · Все местоимения: три разные роли</a>\n<a href=\"#op-03\">03 · После глагола и предлога</a>\n<a href=\"#op-04\">04 · Her и her, him и his</a>\n<a href=\"#op-05\">05 · Сложные случаи и ошибки</a>\n<a href=\"#grammar-practice-section\">Практика (16 вопросов)</a>\n</nav><section class=\"g1-section\" id=\"op-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Кто действует, а на кого действует?</h3></div><p>Сравни две фразы:</p>\n<div class=\"g1-scheme\"><span class=\"g1-token\">She</span><span class=\"g1-plus\">knows</span><span class=\"g1-token g1-token-v\">me.</span></div>\n<p><strong>She</strong> — кто знает? Она. <strong>Me</strong> — кого она знает? Меня.</p>\n<div class=\"g1-scheme\"><span class=\"g1-token\">I</span><span class=\"g1-plus\">know</span><span class=\"g1-token g1-token-v\">her.</span></div>\n<p><strong>I</strong> — кто знает? Я. <strong>Her</strong> — кого я знаю? Её.</p>\n<p><strong>Правило:</strong> если местоимение — подлежащее (кто выполняет действие), используй <strong>I, he, she, we, they</strong>. Если на местоимение направлено действие, чаще нужны <strong>me, him, her, us, them</strong>.</p></section><section class=\"g1-section\" id=\"op-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Три роли одного человека</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто? Subject</th><th>Кого/кому? Object</th><th>Чей? + noun</th><th>После действия</th><th>Перед существительным</th></tr></thead><tbody><tr><td><strong>I</strong></td><td><strong>me</strong></td><td><strong>my</strong></td><td>She knows <strong>me</strong>.</td><td><strong>My</strong> name is Ann.</td></tr><tr><td><strong>you</strong></td><td><strong>you</strong></td><td><strong>your</strong></td><td>I know <strong>you</strong>.</td><td><strong>Your</strong> name is Max.</td></tr><tr><td><strong>he</strong></td><td><strong>him</strong></td><td><strong>his</strong></td><td>I like <strong>him</strong>.</td><td><strong>His</strong> sister is here.</td></tr><tr><td><strong>she</strong></td><td><strong>her</strong></td><td><strong>her</strong></td><td>I know <strong>her</strong>.</td><td><strong>Her</strong> sister is here.</td></tr><tr><td><strong>it</strong></td><td><strong>it</strong></td><td><strong>its</strong></td><td>I like <strong>it</strong>.</td><td><strong>Its</strong> colour is blue.</td></tr><tr><td><strong>we</strong></td><td><strong>us</strong></td><td><strong>our</strong></td><td>They know <strong>us</strong>.</td><td><strong>Our</strong> home is small.</td></tr><tr><td><strong>they</strong></td><td><strong>them</strong></td><td><strong>their</strong></td><td>I can see <strong>them</strong>.</td><td><strong>Their</strong> house is big.</td></tr></tbody></table></div><p>Обрати внимание на две особенности: <strong>you → you</strong> и <strong>it → it</strong> не меняются между подлежащим и дополнением; <strong>she → her</strong>, причём <em>her</em> также бывает притяжательным словом перед существительным.</p><p>Притяжательные формы <strong>my, your, his, her, its, our, their</strong> подробно разбираются <a href=\"grammar-topic.html?id=grammar-possessive-adjectives\">в отдельной теме Possessive adjectives</a>.</p></section><section class=\"g1-section\" id=\"op-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>После глагола и после предлога</h3></div><p>Есть два особенно частых случая:</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Место</th><th>Правильный пример</th><th>Почему</th></tr></thead><tbody><tr><td><strong>После глагола</strong></td><td>I like <strong>him</strong>. / She helps <strong>us</strong>.</td><td>like кого? helps кому?</td></tr><tr><td><strong>После предлога</strong></td><td>I’m talking <strong>to her</strong>. / Come <strong>with me</strong>.</td><td>после to, with, for, at и др. нужны объектные формы</td></tr><tr><td><strong>Две вещи в предложении</strong></td><td>Give <strong>it</strong> to <strong>me</strong>.</td><td>it — что дать; me — кому дать</td></tr></tbody></table></div><p>Сравни: <strong>He</strong> is with <strong>me</strong>. — Он со мной. / I’m with <strong>him</strong>. — Я с ним.</p><p>Нельзя ставить <em>I</em> вместо <em>me</em> после <em>with</em>, <em>to</em>, <em>for</em> и других предлогов.</p></section><section class=\"g1-section\" id=\"op-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Особенно важно: her и her, him и his</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Что хотим сказать</th><th>Предложение</th><th>Почему</th></tr></thead><tbody><tr><td>Я знаю её.</td><td>I know <strong>her</strong>.</td><td>her = object (кого?)</td></tr><tr><td>Я знаю её сестру.</td><td>I know <strong>her sister</strong>.</td><td>her = possessive adjective (чья сестра?)</td></tr><tr><td>Я вижу его.</td><td>I can see <strong>him</strong>.</td><td>him = object (кого?)</td></tr><tr><td>Это его телефон.</td><td>This is <strong>his phone</strong>.</td><td>his = possessive adjective (чей телефон?)</td></tr><tr><td>Я люблю собаку.</td><td>I love <strong>it</strong>.</td><td>it заменяет слово dog</td></tr><tr><td>Её/его хвост длинный (у животного).</td><td><strong>Its</strong> tail is long.</td><td>its + существительное; без апострофа</td></tr></tbody></table></div><p><strong>Her</strong> можно определить по позиции: <em>see her</em> — после глагола, <em>her friend</em> — перед существительным. Это разные функции одного и того же слова.</p></section><section class=\"g1-section\" id=\"op-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Типичные ошибки и проверка себя</h3></div><p>Проверь себя по трём вопросам: <strong>кто?</strong> (subject), <strong>кого/кому?</strong> (object), <strong>чей + существительное?</strong> (possessive adjective).</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Ошибка</th><th>Правильно</th><th>Причина</th></tr></thead><tbody><tr><td><span class=\"g1-wrong\">Me like tea.</span></td><td><span class=\"g1-right\">I like tea.</span></td><td>Кто любит? — I.</td></tr><tr><td><span class=\"g1-wrong\">She knows I.</span></td><td><span class=\"g1-right\">She knows me.</span></td><td>Кого знает? — me.</td></tr><tr><td><span class=\"g1-wrong\">Can you help he?</span></td><td><span class=\"g1-right\">Can you help him?</span></td><td>Кому помогаешь? — him.</td></tr><tr><td><span class=\"g1-wrong\">I’m talking to she.</span></td><td><span class=\"g1-right\">I’m talking to her.</span></td><td>После to — her.</td></tr><tr><td><span class=\"g1-wrong\">Their are my friends.</span></td><td><span class=\"g1-right\">They are my friends.</span></td><td>Здесь нужно подлежащее they.</td></tr><tr><td><span class=\"g1-wrong\">The cat likes it’s food.</span></td><td><span class=\"g1-right\">The cat likes its food.</span></td><td>its = его/её; it’s = it is.</td></tr></tbody></table></div><p>Если ответ неверный, вернись к таблице из раздела 02. Не учи слова только парами без контекста: <em>he–him</em> и <em>he–his</em> нужны в разных местах предложения.</p></section></div>"
+  },
+  {
+    "id": "grammar-wh-be-2d",
+    "order": 10,
+    "title": "Wh-questions + be: who, what, where, when, how",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-26",
+    "linkedLessonId": "lesson-6",
+    "page": "grammar-topic.html?id=grammar-wh-be-2d",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Вопросительные слова и порядок слов в специальных вопросах с am, is, are; how / how old; where / where ... from; when / what time.",
+    "formula": "Who / What / Where / When / How (+ old) + am / is / are + subject + … ?",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "exercises": [
+      {
+        "id": "wb6-meaning",
+        "type": "exercise",
+        "title": "1 · Выбери подходящее вопросительное слово",
+        "instructions": "Подумай, какую информацию содержит ответ.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "___ is your favourite singer? — Adele.",
+            "options": [
+              "Where",
+              "Who",
+              "When"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "___ are you? — Fine, thanks.",
+            "options": [
+              "How",
+              "When",
+              "What"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "___ is the café? — In the city centre.",
+            "options": [
+              "Who",
+              "How",
+              "Where"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "___ old is your friend? — She’s 22.",
+            "options": [
+              "Where",
+              "How",
+              "What"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "wb6-order",
+        "type": "exercise",
+        "title": "2 · Построй вопрос",
+        "instructions": "Собери вопрос из карточек в правильном порядке.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "word-order",
+            "words": [
+              "are",
+              "Where",
+              "from",
+              "you"
+            ],
+            "answer": "Where are you from?",
+            "ending": "?"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "word-order",
+            "words": [
+              "is",
+              "When",
+              "the",
+              "party"
+            ],
+            "answer": "When is the party?",
+            "ending": "?"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "word-order",
+            "words": [
+              "old",
+              "How",
+              "is",
+              "Tejo"
+            ],
+            "answer": "How old is Tejo?",
+            "ending": "?"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "word-order",
+            "words": [
+              "is",
+              "Who",
+              "your",
+              "teacher"
+            ],
+            "answer": "Who is your teacher?",
+            "ending": "?"
+          }
+        ]
+      },
+      {
+        "id": "wb6-be",
+        "type": "exercise",
+        "title": "3 · Am, is или are?",
+        "instructions": "Выбери форму be по подлежащему.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "Where ___ your parents?",
+            "options": [
+              "am",
+              "is",
+              "are"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "How old ___ Leo?",
+            "options": [
+              "is",
+              "are",
+              "am"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "What ___ your favourite colour?",
+            "options": [
+              "are",
+              "am",
+              "is"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "Where ___ I?",
+            "options": [
+              "are",
+              "am",
+              "is"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "wb6-fix",
+        "type": "exercise",
+        "title": "4 · Исправь вопрос",
+        "instructions": "Напиши полный правильный вопрос.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "Where your sister is?",
+            "answer": "Where is your sister?",
+            "placeholder": "Write the correct question"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "When time is it?",
+            "answer": "What time is it?",
+            "placeholder": "Write the correct question"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "How old are Jyoti?",
+            "answer": "How old is Jyoti?",
+            "placeholder": "Write the correct question"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "Where is they?",
+            "answer": "Where are they?",
+            "placeholder": "Write the correct question"
+          }
+        ]
+      }
+    ],
+    "guideHtml": "<div class=\"g1-course\">\n<article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Lesson 2D · Wh-questions + be</span><h2>Wh-questions + be: как задать вопрос</h2><p>Ты уже знаешь <strong>am / is / are</strong>. Теперь научимся спрашивать не только «да или нет», но и <strong>кто, что, где, когда, как, сколько лет</strong>. Вопросительное слово определяет, какую информацию мы хотим получить.</p></article>\n<nav class=\"g1-navigation\" aria-label=\"Содержание\"><a href=\"#wb-01\">01 · Что мы спрашиваем?</a><a href=\"#wb-02\">02 · Порядок слов</a><a href=\"#wb-03\">03 · Особые сочетания</a><a href=\"#wb-04\">04 · Как отвечать?</a><a href=\"#wb-05\">05 · Частые ошибки</a><a href=\"#grammar-practice-section\">Практика · 16 заданий</a></nav>\n<section class=\"g1-section\" id=\"wb-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Выбери вопрос по смыслу ответа</h3></div><p>Сначала подумай: какой ответ тебе нужен? <strong>Человек? Место? Время? Состояние? Возраст?</strong></p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Вопросительное слово</th><th>Что узнаём</th><th>Пример вопроса → ответ</th></tr></thead><tbody><tr><td><strong>Who?</strong> — кто?</td><td>Человек</td><td>Who is your teacher? → Anna.</td></tr><tr><td><strong>What?</strong> — что? какой?</td><td>Предмет, название, информация</td><td>What is your favourite colour? → Blue.</td></tr><tr><td><strong>Where?</strong> — где?</td><td>Место</td><td>Where are your parents? → At work.</td></tr><tr><td><strong>When?</strong> — когда?</td><td>День, время события</td><td>When is the party? → On Friday.</td></tr><tr><td><strong>How?</strong> — как?</td><td>Состояние, самочувствие</td><td>How is your sister? → She’s fine.</td></tr><tr><td><strong>How old?</strong> — сколько лет?</td><td>Возраст</td><td>How old is Leo? → He’s 23.</td></tr></tbody></table></div><p><strong>Заметь:</strong> <em>How is your sister?</em> = «Как поживает сестра?»; <em>How old is your sister?</em> = «Сколько ей лет?». Добавление слова <strong>old</strong> меняет весь смысл вопроса.</p></section>\n<section class=\"g1-section\" id=\"wb-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Структура: вопросительное слово + be + подлежащее</h3></div><p>В утвердительном предложении <strong>be</strong> стоит после подлежащего, а в вопросе — перед ним. Если вопрос начинается с <strong>Who / Where / When / What / How</strong>, это слово ставим в самое начало.</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Утверждение</th><th>Вопрос</th></tr></thead><tbody><tr><td>Leo <strong>is</strong> 23.</td><td><strong>How old is</strong> Leo?</td></tr><tr><td>Your parents <strong>are</strong> at work.</td><td><strong>Where are</strong> your parents?</td></tr><tr><td>The party <strong>is</strong> on Friday.</td><td><strong>When is</strong> the party?</td></tr><tr><td>Anna <strong>is</strong> my best friend.</td><td><strong>Who is</strong> your best friend?</td></tr></tbody></table></div><p><strong>Схема:</strong> <strong>WH-WORD → AM / IS / ARE → SUBJECT → … ?</strong><br></p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Форма be</th><th>С кем используется</th><th>Вопрос</th></tr></thead><tbody><tr><td>am</td><td>I</td><td>Where am I?</td></tr><tr><td>is</td><td>he / she / it; one person or thing</td><td>Who is he? / When is the lesson?</td></tr><tr><td>are</td><td>you / we / they; two or more people or things</td><td>Where are they? / How are you?</td></tr></tbody></table></div><p><strong>Важно:</strong> в вопросе с <em>be</em> не добавляй <em>do/does</em>. Верно: <strong>Where is your brother?</strong> Неверно: <s>Where does your brother is?</s></p></section>\n<section class=\"g1-section\" id=\"wb-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Сочетания, которые лучше учить целиком</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Выражение</th><th>Значение</th><th>Пример</th></tr></thead><tbody><tr><td><strong>Where … from?</strong></td><td>Откуда? — происхождение</td><td>Where are you from? → From Canada.</td></tr><tr><td><strong>Where … ?</strong></td><td>Где? — местонахождение</td><td>Where are you? → At home.</td></tr><tr><td><strong>What time … ?</strong></td><td>Во сколько? Который час?</td><td>What time is it? → It’s three o’clock.</td></tr><tr><td><strong>How old … ?</strong></td><td>Сколько лет?</td><td>How old is Jyoti’s daughter? → She’s 22.</td></tr></tbody></table></div><p><strong>What’s</strong> = <strong>What is</strong>, <strong>Who’s</strong> = <strong>Who is</strong>. Апостроф заменяет букву <em>i</em> в <em>is</em>. В письменных заданиях оба варианта допустимы, если смысл не меняется.</p><p>Сравни: <strong>When is your class?</strong> — Когда урок? <strong>What time is your class?</strong> — Во сколько урок? Первый вопрос шире; второй спрашивает точное время.</p></section>\n<section class=\"g1-section\" id=\"wb-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Вопрос и ответ: сначала смысл, потом форма</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Вопрос</th><th>Правильный ответ</th><th>Почему</th></tr></thead><tbody><tr><td>Who is Tejo?</td><td>He’s Jyoti’s husband.</td><td>Вопрос о человеке</td></tr><tr><td>Where are the Baxters from?</td><td>They’re from Canada.</td><td>Вопрос о происхождении</td></tr><tr><td>Where is the cake shop?</td><td>It’s in Toronto.</td><td>Вопрос о месте</td></tr><tr><td>When is the lesson?</td><td>It’s on Monday.</td><td>Вопрос о дне</td></tr><tr><td>How are you?</td><td>I’m fine, thanks.</td><td>Вопрос о состоянии</td></tr><tr><td>How old is Leo?</td><td>He’s 23.</td><td>Вопрос о возрасте</td></tr></tbody></table></div><p>Проверяй себя: если в ответе <strong>at work / in Toronto</strong>, вероятнее всего нужен <strong>Where</strong>; если <strong>23</strong>, нужен <strong>How old</strong>; если имя или человек — <strong>Who</strong>.</p></section>\n<section class=\"g1-section\" id=\"wb-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Частые ошибки уровня A1</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Неправильно</th><th>Правильно</th><th>Объяснение</th></tr></thead><tbody><tr><td><s>Where your parents are?</s></td><td><strong>Where are your parents?</strong></td><td>Ставим are перед подлежащим</td></tr><tr><td><s>How old are Leo?</s></td><td><strong>How old is Leo?</strong></td><td>Leo = один человек → is</td></tr><tr><td><s>How is your brother? — He’s 25.</s></td><td><strong>How old is your brother?</strong></td><td>Спрашиваем возраст</td></tr><tr><td><s>When time is it?</s></td><td><strong>What time is it?</strong></td><td>Устойчивое сочетание what time</td></tr><tr><td><s>Where is they?</s></td><td><strong>Where are they?</strong></td><td>They → are</td></tr><tr><td><s>Where are you?</s> (если спрашиваем страну)</td><td><strong>Where are you from?</strong></td><td>from меняет вопрос: «откуда?»</td></tr></tbody></table></div><p>Перед ответом задай себе три вопроса: <strong>1.</strong> Что я хочу узнать? <strong>2.</strong> Нужна форма <em>am/is/are</em>? <strong>3.</strong> Стоит ли <em>be</em> перед подлежащим?</p></section></div>"
   }
 ];
