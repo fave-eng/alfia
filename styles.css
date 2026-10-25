@@ -3853,3 +3853,93 @@ label.odd-option {
 
 /* Preserve the paired-frame layout in 1C; 1D retains a stacked conversation. */
 .lesson-block[data-task="2d-1c-question-word"] .a1-family-conversation { display: block; }
+
+
+/* Alfiya · HW7 Review 1–2: provide breathing room for both dialogue formats.
+   The changes are scoped to HW7 and do not affect HW1–6. */
+.lesson-block[data-task="review12-ex1-word-order"] .conversation-word-order {
+  box-sizing: border-box;
+  width: calc(100% - 24px);
+  max-width: 850px;
+  margin: 18px auto 22px;
+  padding: clamp(12px, 2.5vw, 26px);
+  background: #f5f8fd;
+  border: 1px solid #d4dfef;
+  border-radius: 20px;
+}
+.lesson-block[data-task="review12-ex1-word-order"] .conversation-pair {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: clamp(16px, 3vw, 28px);
+}
+.lesson-block[data-task="review12-ex1-word-order"] .conversation-turn {
+  min-width: 0;
+  margin-inline: clamp(8px, 2.5vw, 24px);
+  gap: 15px;
+}
+.lesson-block[data-task="review12-ex1-word-order"] .conversation-avatar {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+}
+.lesson-block[data-task="review12-ex1-word-order"] .conversation-bubble {
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  width: min(650px, calc(100% - 60px));
+  max-width: calc(100% - 60px);
+}
+.lesson-block[data-task="review12-ex6-question-choice"] .a1-family-conversation {
+  box-sizing: border-box;
+  width: calc(100% - 24px);
+  max-width: 820px;
+  margin: 18px auto 22px;
+  padding: clamp(18px, 3vw, 30px);
+  background: #f6f9fe;
+  border: 1px solid #d4dfef;
+  border-radius: 20px;
+}
+.lesson-block[data-task="review12-ex6-question-choice"] .a1-family-chat-row {
+  box-sizing: border-box;
+  min-width: 0;
+  margin-inline: clamp(8px, 2vw, 20px);
+  gap: 15px;
+}
+.lesson-block[data-task="review12-ex6-question-choice"] .a1-family-chat-avatar {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+}
+.lesson-block[data-task="review12-ex6-question-choice"] .a1-family-chat-message {
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: calc(100% - 60px);
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .lesson-block[data-task="review12-ex1-word-order"] .conversation-word-order,
+  .lesson-block[data-task="review12-ex6-question-choice"] .a1-family-conversation {
+    width: calc(100% - 12px);
+    padding: 12px 10px;
+    border-radius: 16px;
+  }
+  .lesson-block[data-task="review12-ex1-word-order"] .conversation-pair {
+    padding: 16px 10px;
+  }
+  .lesson-block[data-task="review12-ex1-word-order"] .conversation-turn,
+  .lesson-block[data-task="review12-ex6-question-choice"] .a1-family-chat-row {
+    margin-inline: 5px;
+    gap: 9px;
+  }
+  .lesson-block[data-task="review12-ex1-word-order"] .conversation-avatar,
+  .lesson-block[data-task="review12-ex6-question-choice"] .a1-family-chat-avatar {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+  }
+  .lesson-block[data-task="review12-ex1-word-order"] .conversation-bubble,
+  .lesson-block[data-task="review12-ex6-question-choice"] .a1-family-chat-message {
+    max-width: calc(100% - 40px);
+    padding: 10px;
+  }
+}
