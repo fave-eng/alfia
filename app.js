@@ -2062,18 +2062,23 @@
     const items=new Map((block.items||[]).map((item,i)=>[safeText(item.id),{item,index:i}]));
     const lines=Array.isArray(block.dialogueLines)?block.dialogueLines:[];
     const pairs=[];
-    for(let idx=0;idx<lines.length;idx+=2){
-      const batch=lines.slice(idx,idx+2);
-      pairs.push(`<section class="conversation-pair" aria-label="Conversation ${Math.floor(idx/2)+1}">
-        <span class="conversation-pair-number">${Math.floor(idx/2)+1}</span>
+    // A review dialogue may contain consecutive turns by the same person.
+    // Respect explicitly supplied speakers and keep the full exchange together.
+    const batches = block.singleConversation === true
+      ? [lines]
+      : Array.from({length:Math.ceil(lines.length/2)},(_,i)=>lines.slice(i*2,i*2+2));
+    batches.forEach((batch,index)=>{
+      pairs.push(`<section class="conversation-pair" aria-label="${block.singleConversation === true ? 'Full conversation' : `Conversation ${index+1}`}">
+        ${block.singleConversation === true ? '' : `<span class="conversation-pair-number">${index+1}</span>`}
         ${batch.map((line,lineIndex)=>{
           const entry=items.get(safeText(line.itemIds?.[0]));
           if(!entry)return '';
-          const who=lineIndex===0?'A':'B';
+          const fallback=lineIndex%2===0?'A':'B';
+          const who=safeText(line.speaker,fallback).toUpperCase()==='B'?'B':'A';
           return `<div class="conversation-turn conversation-turn-${who.toLowerCase()}"><span class="conversation-avatar">${who}</span><div class="conversation-bubble">${renderWordOrderItem(entry.item,blockId,entry.index,true)}</div></div>`;
         }).join('')}
       </section>`);
-    }
+    });
     return `<div class="conversation-word-order" role="group" aria-label="Questions and answers">${pairs.join('')}</div>`;
   }
 
