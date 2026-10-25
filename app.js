@@ -2157,16 +2157,60 @@
 
   function renderFamilyDialogueChoices(block, blockId) {
     const itemById = new Map((block.items || []).map((item) => [safeText(item.id), item]));
-    return `<div class="a1-dialogue a1-family-dialogue" role="group" aria-label="A and B family conversation">${(block.dialogue || []).map((line) => {
+    return `<div class="a1-family-conversation" role="group" aria-label="Family conversation between A and B">${(block.dialogue || []).map((line) => {
+      const speaker = safeText(line.speaker, 'A').toUpperCase() === 'B' ? 'B' : 'A';
       const content = (line.parts || []).map((part) => {
         if (typeof part === 'string') return escapeHtml(part);
         const item = itemById.get(safeText(part.itemId));
         if (!item) return '';
         const options = (item.options || []).map((option, optionIndex) => `<option value="${optionIndex}">${escapeHtml(option)}</option>`).join('');
-        return `<span class="a1-family-dialogue-choice" data-exercise-item="${escapeHtml(item.id)}" data-input-type="select"><sup>${escapeHtml(item.number || item.id)}</sup><select aria-label="Choice ${escapeHtml(item.number || item.id)}"><option value="">Choose…</option>${options}</select><span class="feedback" aria-live="polite"></span></span>`;
+        return `<span class="a1-family-dialogue-choice" data-exercise-item="${escapeHtml(item.id)}" data-input-type="select"><span class="a1-family-choice-number" aria-hidden="true">${escapeHtml(item.number || item.id)}</span><select aria-label="Answer ${escapeHtml(item.number || item.id)} in speaker ${speaker}'s line"><option value="">Выбери…</option>${options}</select><span class="feedback" aria-live="polite"></span></span>`;
       }).join('');
-      return `<div class="a1-dialogue-line"><strong class="a1-dialogue-speaker">${escapeHtml(line.speaker || '')}</strong><p>${content}</p></div>`;
+      return `<div class="a1-family-chat-row speaker-${speaker.toLowerCase()}"><span class="a1-family-chat-avatar" aria-hidden="true">${speaker}</span><div class="a1-family-chat-message"><span class="a1-family-chat-name">${speaker === 'A' ? 'Speaker A' : 'Speaker B'}</span><div class="a1-family-chat-text">${content}</div></div></div>`;
     }).join('')}</div>`;
+  }
+
+  // Keep one small JPEG inside the existing homework answers object. The photo
+  // follows the same Supabase homework progress path as the writing answer.
+  const FAMILY_PHOTO_KEY = '__family_photo_2b_7d';
+  const FAMILY_PHOTO_NAME_KEY = '__family_photo_name_2b_7d';
+  const validFamilyPhoto = (value) => typeof value === 'string'
+    && value.length < 260000 && /^data:image\/jpeg;base64,[A-Za-z0-9+/=]+$/.test(value);
+
+  async function compressFamilyPhoto(file) {
+    if (!file || (!safeText(file.type).startsWith('image/') && !/\.(jpg|jpeg|png|webp|heic|heif)$/i.test(file.name || ''))) {
+      throw new Error('Выбери фотографию (JPG, PNG, HEIC или WebP).');
+    }
+    if (file.size > 24 * 1024 * 1024) throw new Error('Фото слишком большое (максимум 24 МБ).');
+    const temporaryUrl = URL.createObjectURL(file);
+    try {
+      const source = await new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = () => reject(new Error('Не удалось открыть фото. Попробуй JPG или PNG.'));
+        img.src = temporaryUrl;
+      });
+      const width = source.naturalWidth, height = source.naturalHeight;
+      if (!width || !height) throw new Error('Не удалось прочитать размер изображения.');
+      // Shrink large phone photographs to fit comfortably inside localStorage
+      // and the answers JSONB field without relying on public image hosting.
+      for (const maxSide of [960, 800, 640, 480]) {
+        const scale = Math.min(1, maxSide / Math.max(width, height));
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.max(1, Math.round(width * scale));
+        canvas.height = Math.max(1, Math.round(height * scale));
+        const ctx = canvas.getContext('2d');
+        if (!ctx) throw new Error('Это устройство не может обработать фотографию.');
+        ctx.drawImage(source, 0, 0, canvas.width, canvas.height);
+        for (const quality of [.8, .67, .54, .42]) {
+          const result = canvas.toDataURL('image/jpeg', quality);
+          if (validFamilyPhoto(result)) return result;
+        }
+      }
+      throw new Error('Не удалось уменьшить фото. Выбери другое изображение.');
+    } finally {
+      URL.revokeObjectURL(temporaryUrl);
+    }
   }
 
   function renderFamilyTree(block) {
@@ -2275,9 +2319,11 @@
                       ? renderImageSpellingGrid(block, id)
                       : `<div class="exercise-items">${items.map((item, itemIndex) => renderExerciseItem(item, id, itemIndex, block.inlineNumberedItems === true)).join('')}</div>`;
       const hasStickyImage = block.stickyImage === true && imageEntries.length === 1;
+      const photoAttachment = block.layout === 'family-writing'
+        ? `<div class="a1-family-photo-upload" data-family-photo-upload><div class="a1-family-photo-head"><strong>📷 Фотография для рассказа</strong><p>Прикрепи фото семьи или друзей. Оно сохранится вместе с текстом после загрузки в облако.</p></div><label class="a1-family-upload-action"><input type="file" accept="image/*,.heic,.heif" data-family-photo-file aria-label="Выбрать фото семьи или друзей"><span>Выбрать фотографию</span></label><div class="a1-family-photo-preview" data-family-photo-preview hidden><img alt="Прикреплённая фотография семьи или друзей" data-family-photo-image><div class="a1-family-photo-preview-details"><span data-family-photo-name></span><button type="button" class="a1-family-photo-remove" data-family-photo-remove>Удалить фотографию</button></div></div><p class="a1-family-photo-status" data-family-photo-status role="status" aria-live="polite">Фотография пока не выбрана</p></div>` : '';
       const exerciseBody = hasStickyImage
-        ? `<div class="exercise-sticky-layout"><div class="exercise-sticky-media">${image}</div><div class="exercise-sticky-content">${intro}${exerciseContent}</div></div>`
-        : `${image}${intro}${exerciseContent}`;
+        ? `<div class="exercise-sticky-layout"><div class="exercise-sticky-media">${image}</div><div class="exercise-sticky-content">${intro}${exerciseContent}${photoAttachment}</div></div>`
+        : `${image}${intro}${exerciseContent}${photoAttachment}`;
       return `<article class="card lesson-block exercise-card${block.layout === 'dialogue' ? ' dialogue-card' : ''}${hasStickyImage ? ' has-sticky-image' : ''}" data-task="${escapeHtml(id)}" data-type="exercise">
         <div class="exercise-heading">${Object.prototype.hasOwnProperty.call(block, 'eyebrow') ? (safeText(block.eyebrow) ? `<span class="eyebrow">${escapeHtml(safeText(block.eyebrow))}</span>` : '') : '<span class="eyebrow">Exercise</span>'}<h3>${title}</h3>${block.instructions ? `<p class="muted exercise-instructions">${escapeHtml(block.instructions)}</p>` : ''}${player}${wordBank}${wordBanks}</div>
         ${exerciseBody}
@@ -2656,6 +2702,105 @@
     root.querySelectorAll('textarea[data-family-writing-input]').forEach((field) => field.addEventListener('input', updateFamilyWritingCount));
     updateFamilyWritingCount();
 
+    // Photo and writing are autosaved without checking or grading the response.
+    const photoWidget = root.querySelector('[data-family-photo-upload]');
+    const photoInput = photoWidget?.querySelector('[data-family-photo-file]');
+    const photoPreview = photoWidget?.querySelector('[data-family-photo-preview]');
+    const photoImage = photoWidget?.querySelector('[data-family-photo-image]');
+    const photoName = photoWidget?.querySelector('[data-family-photo-name]');
+    const photoStatus = photoWidget?.querySelector('[data-family-photo-status]');
+    const photoRemove = photoWidget?.querySelector('[data-family-photo-remove]');
+    const writingField = root.querySelector('[data-task="2b-7d-family-writing"] textarea[data-family-writing-input]');
+    let photoSaveInProgress = false;
+    let writingSaveTimer;
+    function refreshFamilyPhoto() {
+      if (!photoWidget) return;
+      const current = window.ProgressService.loadHomeworkProgress().results[lesson.id]?.answers || {};
+      const photo = current[FAMILY_PHOTO_KEY];
+      const hasPhoto = validFamilyPhoto(photo);
+      photoPreview.hidden = !hasPhoto;
+      photoImage.removeAttribute('src');
+      if (hasPhoto) photoImage.src = photo;
+      if (hasPhoto && photoStatus.textContent === 'Фотография пока не выбрана') {
+        photoStatus.textContent = 'Прикреплённая фотография восстановлена из сохранённой работы.';
+      }
+      photoName.textContent = hasPhoto ? safeText(current[FAMILY_PHOTO_NAME_KEY], 'Фотография') : '';
+      const submitted = Boolean(window.ProgressService.loadHomeworkProgress().submissions[lesson.id]);
+      photoInput.disabled = submitted;
+      photoRemove.disabled = submitted;
+      if (submitted && photoStatus) photoStatus.textContent = 'Работа отправлена преподавателю.';
+    }
+    async function saveFamilyWriting(photo = undefined, fileName = undefined) {
+      const state = window.ProgressService.loadHomeworkProgress();
+      if (state.submissions[lesson.id]) throw new Error('ДЗ уже отправлено преподавателю.');
+      const previous = state.results[lesson.id] || { correct: 0, total: 0, percent: 0, answers: {} };
+      const answers = { ...(previous.answers || {}) };
+      if (writingField) {
+        answers['2b-7d-family-writing'] = { ...(answers['2b-7d-family-writing'] || {}), '1': writingField.value };
+      }
+      if (photo === null) {
+        delete answers[FAMILY_PHOTO_KEY];
+        delete answers[FAMILY_PHOTO_NAME_KEY];
+      } else if (validFamilyPhoto(photo)) {
+        answers[FAMILY_PHOTO_KEY] = photo;
+        answers[FAMILY_PHOTO_NAME_KEY] = safeText(fileName, 'Фотография').slice(0, 120);
+      }
+      state.results[lesson.id] = { ...previous, answers, checkedAt: new Date().toISOString() };
+      if (!window.ProgressService.saveHomeworkProgress(state)) {
+        throw new Error('Недостаточно памяти для сохранения фото на устройстве.');
+      }
+      if (CloudService.isConfigured()) {
+        if (photo !== undefined) await window.ProgressService.syncToCloud('homework');
+      }
+    }
+    if (photoWidget) {
+      refreshFamilyPhoto();
+      photoInput.addEventListener('change', async () => {
+        const file = photoInput.files?.[0];
+        if (!file) return;
+        if (photoSaveInProgress) return;
+        photoSaveInProgress = true;
+        photoStatus.textContent = 'Обрабатываем и сохраняем фото…';
+        photoInput.disabled = true;
+        try {
+          const compressed = await compressFamilyPhoto(file);
+          await saveFamilyWriting(compressed, file.name);
+          photoStatus.textContent = CloudService.isConfigured()
+            ? 'Фотография сохранена в Supabase и на этом устройстве.'
+            : 'Фотография сохранена только на этом устройстве.';
+          refreshFamilyPhoto();
+        } catch (error) {
+          refreshFamilyPhoto();
+          photoStatus.textContent = `Не удалось завершить сохранение: ${safeText(error?.message, 'Ошибка')}`;
+        } finally {
+          photoSaveInProgress = false;
+          photoInput.value = '';
+          photoInput.disabled = Boolean(window.ProgressService.loadHomeworkProgress().submissions[lesson.id]);
+        }
+      });
+      photoRemove.addEventListener('click', async () => {
+        if (photoSaveInProgress) return;
+        photoSaveInProgress = true;
+        photoRemove.disabled = true;
+        photoStatus.textContent = 'Удаляем фото…';
+        try {
+          await saveFamilyWriting(null);
+          photoStatus.textContent = 'Фотография удалена из сохранённой работы.';
+          refreshFamilyPhoto();
+        } catch (error) {
+          photoStatus.textContent = `Не удалось удалить: ${safeText(error?.message, 'Ошибка')}`;
+        } finally { photoSaveInProgress = false; photoRemove.disabled = false; }
+      });
+      if (writingField) writingField.addEventListener('input', () => {
+        if (window.ProgressService.loadHomeworkProgress().submissions[lesson.id]) return;
+        window.clearTimeout(writingSaveTimer);
+        writingSaveTimer = window.setTimeout(() => {
+          saveFamilyWriting()
+            .then(() => CloudService.isConfigured() ? window.ProgressService.syncToCloud('homework') : null)
+            .catch(error => console.warn('Writing draft not saved:', error));
+        }, 750);
+      });
+    }
 
     root.querySelectorAll('[data-reorder-source]').forEach((source) => {
       source.addEventListener('click', (event) => {
@@ -2697,6 +2842,15 @@
         }
       });
 
+      // Preserve the attached photograph when the student checks other answers.
+      // It is a non-scored part of 7D, not an automatically assessed response.
+      if (photoWidget) {
+        const photoProgress = window.ProgressService.loadHomeworkProgress().results[lesson.id]?.answers || {};
+        if (validFamilyPhoto(photoProgress[FAMILY_PHOTO_KEY])) {
+          answers[FAMILY_PHOTO_KEY] = photoProgress[FAMILY_PHOTO_KEY];
+          answers[FAMILY_PHOTO_NAME_KEY] = safeText(photoProgress[FAMILY_PHOTO_NAME_KEY], 'Фотография');
+        }
+      }
       return { correct, total, percent: safePercent(correct, total), answers };
     };
 

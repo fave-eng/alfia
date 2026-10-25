@@ -150,7 +150,7 @@
       "type": "exercise",
       "id": "2b-2a-family-dialogue",
       "title": "2A · Family conversation",
-      "instructions": "Choose the correct alternative to complete the dialogue.",
+      "instructions": "Read the conversation between A and B. Choose the correct family word in each line.",
       "items": [
         {
           "id": "1",
@@ -722,7 +722,7 @@
       "type": "exercise",
       "id": "2b-7d-family-writing",
       "title": "7D · Write about a photo",
-      "instructions": "Use your notes to write about a family or friends in a photo. Use and at least four times. Write 50–80 words. Include names, nationalities, jobs and relationships.",
+      "instructions": "Attach a photo of family or friends. Then write 50–80 words about the people in the photo. Use and at least four times. Include names, nationalities, jobs and relationships.",
       "items": [
         {
           "id": "1",
@@ -737,7 +737,7 @@
       "hideAnswersOnError": true,
       "layout": "family-writing",
       "introTitle": "Writing tips",
-      "introText": "Who are the people? Where are they from? What are their jobs? How are they related? Use and to connect ideas. You can describe a real photo or imagine one."
+      "introText": "Кликни «Выбрать фотографию», дождись сообщения о сохранении, затем напиши 50–80 слов. Фото и текст сохраняются отдельно от оценки упражнений."
     }
   ]
 }
