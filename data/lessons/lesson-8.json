@@ -239,7 +239,8 @@
       ],
       "hideAnswersOnError": true,
       "image": "images/lesson-8/objects-a-h.png",
-      "imageAlt": "Original workbook scene showing eight objects labelled A through H"
+      "imageAlt": "Original workbook scene showing eight objects labelled A through H",
+      "stickyImage": true
     },
     {
       "type": "exercise",
@@ -417,7 +418,8 @@
       ],
       "hideAnswersOnError": true,
       "image": "images/lesson-8/colours-snake.png",
-      "imageAlt": "Curved word snake formed from the colour words, originally printed in the workbook"
+      "imageAlt": "Curved word snake formed from the colour words, originally printed in the workbook",
+      "stickyImage": true
     },
     {
       "type": "section",
