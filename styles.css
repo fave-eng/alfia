@@ -3786,3 +3786,70 @@ label.odd-option {
     max-width: calc(100% - 37px);
   }
 }
+
+
+/* Alfiya · HW6 (2D): inset A/B avatars and dialogue bubbles from both edges.
+   The correction applies only to exercises 1C and 1D, never earlier lessons. */
+.lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-conversation {
+  box-sizing: border-box;
+  display: grid;
+  width: calc(100% - 48px);
+  max-width: 790px;
+  margin: 18px auto 22px;
+  padding: 22px 24px;
+  border: 1px solid #d3dfef;
+  border-radius: 19px;
+  background: #f7f9fe;
+}
+.lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-chat-row {
+  box-sizing: border-box;
+  min-width: 0;
+  padding-inline: 8px;
+  gap: 15px;
+}
+.lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-chat-avatar {
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+}
+.lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-chat-message {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: calc(100% - 65px);
+  overflow-wrap: anywhere;
+}
+/* Separate question/answer pairs without pushing the avatars to the edge. */
+.lesson-block[data-task="2d-1d-fix-questions"] .a1-family-chat-row.speaker-a:not(:first-child) {
+  padding-top: 17px;
+  border-top: 1px solid #e1e8f4;
+}
+@media (max-width: 600px) {
+  .lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-conversation {
+    width: calc(100% - 22px);
+    margin: 12px auto 17px;
+    padding: 14px 12px;
+    border-radius: 15px;
+  }
+  .lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-chat-row {
+    padding-inline: 4px;
+    gap: 10px;
+  }
+  .lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-chat-avatar {
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-chat-message {
+    max-width: calc(100% - 44px);
+    padding: 11px 12px;
+  }
+}
+@media (max-width: 370px) {
+  .lesson-block:is([data-task="2d-1c-question-word"], [data-task="2d-1d-fix-questions"]) .a1-family-conversation {
+    width: calc(100% - 14px);
+    padding: 11px 8px;
+  }
+}
+
+/* Preserve the paired-frame layout in 1C; 1D retains a stacked conversation. */
+.lesson-block[data-task="2d-1c-question-word"] .a1-family-conversation { display: block; }
