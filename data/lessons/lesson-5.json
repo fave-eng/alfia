@@ -5,6 +5,7 @@
   "subtitle": "A1 · English Grammar in Use Units 59–60 · I/me, he/him, my/your/his/her/its/our/their",
   "status": "available",
   "grammarIds": [
+    "grammar-object-pronouns",
     "grammar-possessive-adjectives"
   ],
   "publishedAt": "2026-10-25",
@@ -17,7 +18,7 @@
     {
       "type": "info",
       "title": "Before you start · Вспомни три группы",
-      "text": "КТО? I, you, he, she, it, we, they. КОГО / КОМУ? me, you, him, her, it, us, them. ЧЕЙ? my, your, his, her, its, our, their + существительное. Сравни: I know her. / I know her sister. Помни: its (принадлежность) ≠ it’s (it is)."
+      "text": "Перед ДЗ №5 изучи две темы по отдельности: 1) Object pronouns — me, you, him, her, it, us, them; 2) Possessive adjectives — my, your, his, her, its, our, their. Для каждого правила есть отдельное объяснение и тест в Grammar. Сравни: I know her. / I know her sister. Помни: its (принадлежность) ≠ it’s (it is)."
     },
     {
       "type": "exercise",

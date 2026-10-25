@@ -1,4 +1,4 @@
-/* Speakout A1 · structured Russian grammar lessons, independent progress per topic */
+/* Speakout A1 · Independently structured grammar guides. */
 window.GRAMMAR_DATA = [
   {
     "id": "grammar-be-i-you",
@@ -1543,7 +1543,7 @@ window.GRAMMAR_DATA = [
         ]
       }
     ],
-    "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 2B · самостоятельная тема</span><h2>Possessive adjectives: my, your, his, her, its, our, their</h2><p>Когда мы говорим <strong>моя мама, его сестра, их дети</strong>, перед существительным ставим притяжательное прилагательное. Оно показывает, <strong>кому что принадлежит</strong> или с кем кто связан.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#pa-01\">01 · Чья семья? Главное правило</a><a href=\"#pa-02\">02 · Все семь форм</a><a href=\"#pa-03\">03 · Не путай с местоимениями</a><a href=\"#pa-04\">04 · Its / it’s, your / you’re, their / they’re</a><a href=\"#pa-05\">05 · Типичные ошибки и самопроверка</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"pa-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Чья семья? Главное правило</h3></div><div class=\"g1-scheme\"><span class=\"g1-token g1-token-v\">her</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">brother</span></div><p>Перед <em>brother, mother, name, school, phone</em> нужно слово <strong>my / your / his ...</strong>. Примеры: <strong>my parents</strong>, <strong>his sister</strong>, <strong>their children</strong>.</p><p>Английское притяжательное прилагательное зависит от <strong>владельца</strong>, а не от рода следующего существительного: <strong>her son</strong> и <strong>her daughter</strong> — в обоих примерах речь о женщине.</p></section><section class=\"g1-section\" id=\"pa-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Все семь форм</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто?</th><th>Чей?</th><th>Пример</th><th>Перевод</th></tr></thead><tbody><tr><td>I</td><td><strong>my</strong></td><td>my mother</td><td>моя мама</td></tr><tr><td>you</td><td><strong>your</strong></td><td>your parents</td><td>твои / ваши родители</td></tr><tr><td>he</td><td><strong>his</strong></td><td>his daughter</td><td>его дочь</td></tr><tr><td>she</td><td><strong>her</strong></td><td>her husband</td><td>её муж</td></tr><tr><td>it</td><td><strong>its</strong></td><td>its name</td><td>его / её название (для вещи, животного)</td></tr><tr><td>we</td><td><strong>our</strong></td><td>our family</td><td>наша семья</td></tr><tr><td>they</td><td><strong>their</strong></td><td>their children</td><td>их дети</td></tr></tbody></table></div><p><strong>His</strong> и <strong>her</strong> различаем по тому, о ком говорим: <em>Will → his wife</em>, <em>Chloe → her husband</em>.</p></section><section class=\"g1-section\" id=\"pa-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Не путай с местоимениями</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Подлежащее</th><th>Притяжательное слово</th><th>Правильно</th></tr></thead><tbody><tr><td>I</td><td>my</td><td>I am a student. <strong>My</strong> father is a doctor.</td></tr><tr><td>she</td><td>her</td><td>She is Australian. <strong>Her</strong> husband is British.</td></tr><tr><td>they</td><td>their</td><td>They are sisters. <strong>Their</strong> brother is an actor.</td></tr><tr><td>we</td><td>our</td><td>We live here. <strong>Our</strong> house is new.</td></tr></tbody></table></div><p>Слово перед существительным — <strong>her</strong>, не <em>she</em>: <span class=\"g1-wrong\">She brother</span> → <span class=\"g1-right\">Her brother</span>.</p></section><section class=\"g1-section\" id=\"pa-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Its / it’s, your / you’re, their / they’re</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Притяжательное (чей?)</th><th>Сокращение (кто/что + be)</th></tr></thead><tbody><tr><td><strong>its</strong> name = его название</td><td><strong>it’s</strong> = it is (это / оно есть)</td></tr><tr><td><strong>your</strong> sister = твоя сестра</td><td><strong>you’re</strong> = you are (ты / вы...)</td></tr><tr><td><strong>their</strong> parents = их родители</td><td><strong>they’re</strong> = they are (они...)</td></tr></tbody></table></div><p>Сравни: <strong>Their</strong> family is big. <strong>They’re</strong> very happy.</p><p><strong>It’s my cat. Its name is Mac.</strong> — первое <em>it’s</em> = it is, второе <em>its</em> показывает принадлежность.</p></section><section class=\"g1-section\" id=\"pa-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Типичные ошибки и самопроверка</h3></div><p><span class=\"g1-wrong\">My friend is here. She name is Lisa.</span> → <span class=\"g1-right\">Her name is Lisa.</span></p><p><span class=\"g1-wrong\">They’re children are young.</span> → <span class=\"g1-right\">Their children are young.</span></p><p><span class=\"g1-wrong\">This is a cat. It’s name is Mac.</span> → <span class=\"g1-right\">Its name is Mac.</span></p><p>Проверь: <strong>Чей?</strong> Если после пропуска стоит существительное, обычно нужен <em>my, your, his, her, its, our</em> или <em>their</em>.</p></section></div>"
+    "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 2B · самостоятельная тема</span><h2>Possessive adjectives: my, your, his, her, its, our, their</h2><p>Когда мы говорим <strong>моя мама, его сестра, их дети</strong>, перед существительным ставим притяжательное прилагательное. Оно показывает, <strong>кому что принадлежит</strong> или с кем кто связан.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#pa-01\">01 · Чья семья? Главное правило</a><a href=\"#pa-02\">02 · Все семь форм</a><a href=\"#pa-03\">03 · Не путай с местоимениями</a><a href=\"#pa-04\">04 · Its / it’s, your / you’re, their / they’re</a><a href=\"#pa-05\">05 · Типичные ошибки и самопроверка</a><a href=\"#pa-object-compare\">06 · Объектные vs притяжательные</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"pa-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Чья семья? Главное правило</h3></div><div class=\"g1-scheme\"><span class=\"g1-token g1-token-v\">her</span><span class=\"g1-plus\">+</span><span class=\"g1-token\">brother</span></div><p>Перед <em>brother, mother, name, school, phone</em> нужно слово <strong>my / your / his ...</strong>. Примеры: <strong>my parents</strong>, <strong>his sister</strong>, <strong>their children</strong>.</p><p>Английское притяжательное прилагательное зависит от <strong>владельца</strong>, а не от рода следующего существительного: <strong>her son</strong> и <strong>her daughter</strong> — в обоих примерах речь о женщине.</p></section><section class=\"g1-section\" id=\"pa-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Все семь форм</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто?</th><th>Чей?</th><th>Пример</th><th>Перевод</th></tr></thead><tbody><tr><td>I</td><td><strong>my</strong></td><td>my mother</td><td>моя мама</td></tr><tr><td>you</td><td><strong>your</strong></td><td>your parents</td><td>твои / ваши родители</td></tr><tr><td>he</td><td><strong>his</strong></td><td>his daughter</td><td>его дочь</td></tr><tr><td>she</td><td><strong>her</strong></td><td>her husband</td><td>её муж</td></tr><tr><td>it</td><td><strong>its</strong></td><td>its name</td><td>его / её название (для вещи, животного)</td></tr><tr><td>we</td><td><strong>our</strong></td><td>our family</td><td>наша семья</td></tr><tr><td>they</td><td><strong>their</strong></td><td>their children</td><td>их дети</td></tr></tbody></table></div><p><strong>His</strong> и <strong>her</strong> различаем по тому, о ком говорим: <em>Will → his wife</em>, <em>Chloe → her husband</em>.</p></section><section class=\"g1-section\" id=\"pa-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Не путай с местоимениями</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Подлежащее</th><th>Притяжательное слово</th><th>Правильно</th></tr></thead><tbody><tr><td>I</td><td>my</td><td>I am a student. <strong>My</strong> father is a doctor.</td></tr><tr><td>she</td><td>her</td><td>She is Australian. <strong>Her</strong> husband is British.</td></tr><tr><td>they</td><td>their</td><td>They are sisters. <strong>Their</strong> brother is an actor.</td></tr><tr><td>we</td><td>our</td><td>We live here. <strong>Our</strong> house is new.</td></tr></tbody></table></div><p>Слово перед существительным — <strong>her</strong>, не <em>she</em>: <span class=\"g1-wrong\">She brother</span> → <span class=\"g1-right\">Her brother</span>.</p></section><section class=\"g1-section\" id=\"pa-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Its / it’s, your / you’re, their / they’re</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Притяжательное (чей?)</th><th>Сокращение (кто/что + be)</th></tr></thead><tbody><tr><td><strong>its</strong> name = его название</td><td><strong>it’s</strong> = it is (это / оно есть)</td></tr><tr><td><strong>your</strong> sister = твоя сестра</td><td><strong>you’re</strong> = you are (ты / вы...)</td></tr><tr><td><strong>their</strong> parents = их родители</td><td><strong>they’re</strong> = they are (они...)</td></tr></tbody></table></div><p>Сравни: <strong>Their</strong> family is big. <strong>They’re</strong> very happy.</p><p><strong>It’s my cat. Its name is Mac.</strong> — первое <em>it’s</em> = it is, второе <em>its</em> показывает принадлежность.</p></section><section class=\"g1-section\" id=\"pa-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Типичные ошибки и самопроверка</h3></div><p><span class=\"g1-wrong\">My friend is here. She name is Lisa.</span> → <span class=\"g1-right\">Her name is Lisa.</span></p><p><span class=\"g1-wrong\">They’re children are young.</span> → <span class=\"g1-right\">Their children are young.</span></p><p><span class=\"g1-wrong\">This is a cat. It’s name is Mac.</span> → <span class=\"g1-right\">Its name is Mac.</span></p><p>Проверь: <strong>Чей?</strong> Если после пропуска стоит существительное, обычно нужен <em>my, your, his, her, its, our</em> или <em>their</em>.</p></section><section class=\"g1-section\" id=\"pa-object-compare\"><div class=\"g1-section-head\"><span class=\"g1-num\">06</span><h3>Сравни с Object pronouns (ДЗ №5)</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Функция</th><th>Пример</th><th>Перевод</th></tr></thead><tbody><tr><td><strong>Object</strong> после глагола</td><td>I know <strong>her</strong>.</td><td>Я знаю её.</td></tr><tr><td><strong>Possessive</strong> перед существительным</td><td>I know <strong>her sister</strong>.</td><td>Я знаю её сестру.</td></tr><tr><td><strong>Object</strong> после глагола</td><td>Can you see <strong>him</strong>?</td><td>Ты видишь его?</td></tr><tr><td><strong>Possessive</strong> перед существительным</td><td>Can you see <strong>his car</strong>?</td><td>Ты видишь его машину?</td></tr></tbody></table></div><p>Остальные формы <strong>me / him / us / them</strong> и употребление после предлогов разобраны <a href=\"grammar-topic.html?id=grammar-object-pronouns\">в отдельной теме Object pronouns</a>.</p></section></div>"
   },
   {
     "id": "grammar-irregular-plurals-family",
@@ -1745,5 +1745,238 @@ window.GRAMMAR_DATA = [
       }
     ],
     "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Speakout A1 · Урок 2B · самостоятельная тема</span><h2>People: irregular plural nouns</h2><p>В уроке 2B встречаются слова, у которых множественное число образуется <strong>не только прибавлением -s</strong>. Запомни формы людей отдельно: <em>man, woman, child, person</em>.</p></article><nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\"><a href=\"#ip-01\">01 · Сначала различаем один и несколько</a><a href=\"#ip-02\">02 · Неправильные формы</a><a href=\"#ip-03\">03 · Обычные -s / -ies и исключения</a><a href=\"#ip-04\">04 · Woman’s / women / women’s</a><a href=\"#ip-05\">05 · Согласование с be</a><a href=\"#grammar-practice-section\">Практика</a></nav><section class=\"g1-section\" id=\"ip-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Сначала различаем один и несколько</h3></div><div class=\"g1-scheme\"><span class=\"g1-token\">one child</span><span class=\"g1-plus\">→</span><span class=\"g1-token g1-token-v\">two children</span></div><p><strong>A man</strong> — один мужчина; <strong>two men</strong> — двое мужчин. После чисел <strong>two, three</strong> и так далее выбирай форму множественного числа.</p></section><section class=\"g1-section\" id=\"ip-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Неправильные формы</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Один</th><th>Несколько</th><th>По-русски</th></tr></thead><tbody><tr><td>a <strong>man</strong></td><td>two <strong>men</strong></td><td>мужчина / мужчины</td></tr><tr><td>a <strong>woman</strong></td><td>two <strong>women</strong></td><td>женщина / женщины</td></tr><tr><td>a <strong>child</strong></td><td>three <strong>children</strong></td><td>ребёнок / дети</td></tr><tr><td>a <strong>person</strong></td><td>four <strong>people</strong></td><td>человек / люди</td></tr></tbody></table></div><p><strong>Women</strong> произносится не так, как <strong>woman</strong>: /ˈwɪmɪn/ и /ˈwʊmən/ (британский вариант произношения).</p></section><section class=\"g1-section\" id=\"ip-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>Обычные -s / -ies и исключения</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Единственное число</th><th>Множественное</th><th>Почему</th></tr></thead><tbody><tr><td>a girl</td><td>girls</td><td>обычное <strong>-s</strong></td></tr><tr><td>a sister</td><td>sisters</td><td>обычное <strong>-s</strong></td></tr><tr><td>a baby</td><td>babies</td><td>согласная + y → <strong>-ies</strong></td></tr><tr><td>a person</td><td>people</td><td>неправильная форма</td></tr><tr><td>a child</td><td>children</td><td>неправильная форма</td></tr></tbody></table></div><p>Сравни <strong>baby → babies</strong> (правило -ies) и <strong>child → children</strong> (особая форма).</p></section><section class=\"g1-section\" id=\"ip-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Woman’s / women / women’s</h3></div><p>Здесь два разных правила:</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Форма</th><th>Что значит</th><th>Пример</th></tr></thead><tbody><tr><td><strong>woman</strong></td><td>одна женщина</td><td>The woman is here.</td></tr><tr><td><strong>women</strong></td><td>несколько женщин</td><td>The women are here.</td></tr><tr><td><strong>woman’s</strong></td><td>принадлежит одной женщине</td><td>What’s that woman’s name?</td></tr><tr><td><strong>women’s</strong></td><td>принадлежит нескольким женщинам</td><td>The women’s names are Anna and Kate.</td></tr></tbody></table></div><p><strong>’s</strong> обозначает принадлежность, а не множественное число. Поэтому <span class=\"g1-wrong\">that women’s name</span> (если одна женщина) → <span class=\"g1-right\">that woman’s name</span>.</p></section><section class=\"g1-section\" id=\"ip-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Согласование с be</h3></div><p><strong>One man is</strong> my friend. <strong>Two men are</strong> my friends.</p><p><strong>A child is</strong> in the garden. <strong>Children are</strong> in the garden.</p><p>Формы множественного числа обычно требуют <strong>are</strong>, не <em>is</em>: <span class=\"g1-wrong\">The people is friendly.</span> → <span class=\"g1-right\">The people are friendly.</span></p></section></div>"
+  },
+  {
+    "id": "grammar-object-pronouns",
+    "order": 9,
+    "title": "Object pronouns: me, you, him, her, it, us, them",
+    "level": "A1",
+    "status": "available",
+    "publishedAt": "2026-10-25",
+    "linkedLessonId": "lesson-5",
+    "page": "grammar-topic.html?id=grammar-object-pronouns",
+    "passed": false,
+    "attempts": 0,
+    "lockOnPass": true,
+    "revealAnswersOnError": false,
+    "explanation": "Объектные местоимения: кто выполняет действие, на кого направлено действие, как выбрать форму после предлога. Сравнение с притяжательными прилагательными.",
+    "formula": "I → me · he → him · she → her · we → us · they → them",
+    "glanceCards": [],
+    "anchorLinks": [],
+    "miniRules": [],
+    "tables": [],
+    "exampleGroups": [],
+    "commonMistakes": [],
+    "exercises": [
+      {
+        "id": "op-role",
+        "type": "exercise",
+        "title": "1 · Кто или кого?",
+        "instructions": "Выбери правильную форму, исходя из смысла предложения.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "___ is my friend. (Она — моя подруга.)",
+            "options": [
+              "She",
+              "Her",
+              "Hers"
+            ],
+            "answer": 0
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "I know ___. (Я знаю её.)",
+            "options": [
+              "she",
+              "her",
+              "his"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "___ are ready. (Мы готовы.)",
+            "options": [
+              "Us",
+              "Our",
+              "We"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "They called ___. (Они позвонили нам.)",
+            "options": [
+              "our",
+              "us",
+              "we"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "op-after",
+        "type": "exercise",
+        "title": "2 · После глагола и предлога",
+        "instructions": "Выбери правильную форму, исходя из смысла предложения.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "I live with ___. (я живу с ним)",
+            "options": [
+              "he",
+              "him",
+              "his"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "Can you help ___? (помочь ей)",
+            "options": [
+              "she",
+              "her",
+              "his"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "Anna is talking to ___. (разговаривает с ними)",
+            "options": [
+              "their",
+              "they",
+              "them"
+            ],
+            "answer": 2
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "Please give the key to ___. (дай ключ мне)",
+            "options": [
+              "I",
+              "my",
+              "me"
+            ],
+            "answer": 2
+          }
+        ]
+      },
+      {
+        "id": "op-write",
+        "type": "exercise",
+        "title": "3 · Замени имя местоимением",
+        "instructions": "Впиши одно объектное местоимение (одно слово).",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "text",
+            "prompt": "Olivia is my sister. I love ___.",
+            "answer": "her",
+            "placeholder": "Одно слово"
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "text",
+            "prompt": "Ben and Tim are here. Can you see ___?",
+            "answer": "them",
+            "placeholder": "Одно слово"
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "text",
+            "prompt": "This is my phone. I use ___ every day.",
+            "answer": "it",
+            "placeholder": "Одно слово"
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "text",
+            "prompt": "My teacher is behind you. Go and speak to ___.",
+            "answer": "him",
+            "placeholder": "Одно слово"
+          }
+        ]
+      },
+      {
+        "id": "op-compare",
+        "type": "exercise",
+        "title": "4 · Object или possessive adjective?",
+        "instructions": "Выбери правильную форму, исходя из смысла предложения.",
+        "items": [
+          {
+            "id": "1",
+            "number": 1,
+            "input": "select",
+            "prompt": "This is Mia. I know ___.",
+            "options": [
+              "she",
+              "her",
+              "his"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "2",
+            "number": 2,
+            "input": "select",
+            "prompt": "This is Mia. I know ___ brother.",
+            "options": [
+              "she",
+              "her",
+              "him"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "3",
+            "number": 3,
+            "input": "select",
+            "prompt": "This is Leo. I like ___.",
+            "options": [
+              "he",
+              "him",
+              "his"
+            ],
+            "answer": 1
+          },
+          {
+            "id": "4",
+            "number": 4,
+            "input": "select",
+            "prompt": "This is Leo. I like ___ dog.",
+            "options": [
+              "he",
+              "him",
+              "his"
+            ],
+            "answer": 2
+          }
+        ]
+      }
+    ],
+    "guideHtml": "<div class=\"g1-course\"><article class=\"g1-lead\"><span class=\"g1-eyebrow\">Grammar review · Homework 5 · отдельная тема</span><h2>Object pronouns: me, you, him, her, it, us, them</h2><p>Эти слова обозначают человека или предмет, на которого направлено действие, или того, о ком мы говорим <strong>после предлога</strong>. В русском это часто «меня, мне, его, ей, нас, их» — перевод зависит от предложения.</p></article>\n<nav class=\"g1-navigation\" aria-label=\"Разделы грамматики\">\n<a href=\"#op-01\">01 · Кто действует, а на кого действует?</a>\n<a href=\"#op-02\">02 · Все местоимения: три разные роли</a>\n<a href=\"#op-03\">03 · После глагола и предлога</a>\n<a href=\"#op-04\">04 · Her и her, him и his</a>\n<a href=\"#op-05\">05 · Сложные случаи и ошибки</a>\n<a href=\"#grammar-practice-section\">Практика (16 вопросов)</a>\n</nav><section class=\"g1-section\" id=\"op-01\"><div class=\"g1-section-head\"><span class=\"g1-num\">01</span><h3>Кто действует, а на кого действует?</h3></div><p>Сравни две фразы:</p>\n<div class=\"g1-scheme\"><span class=\"g1-token\">She</span><span class=\"g1-plus\">knows</span><span class=\"g1-token g1-token-v\">me.</span></div>\n<p><strong>She</strong> — кто знает? Она. <strong>Me</strong> — кого она знает? Меня.</p>\n<div class=\"g1-scheme\"><span class=\"g1-token\">I</span><span class=\"g1-plus\">know</span><span class=\"g1-token g1-token-v\">her.</span></div>\n<p><strong>I</strong> — кто знает? Я. <strong>Her</strong> — кого я знаю? Её.</p>\n<p><strong>Правило:</strong> если местоимение — подлежащее (кто выполняет действие), используй <strong>I, he, she, we, they</strong>. Если на местоимение направлено действие, чаще нужны <strong>me, him, her, us, them</strong>.</p></section><section class=\"g1-section\" id=\"op-02\"><div class=\"g1-section-head\"><span class=\"g1-num\">02</span><h3>Три роли одного человека</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Кто? Subject</th><th>Кого/кому? Object</th><th>Чей? + noun</th><th>После действия</th><th>Перед существительным</th></tr></thead><tbody><tr><td><strong>I</strong></td><td><strong>me</strong></td><td><strong>my</strong></td><td>She knows <strong>me</strong>.</td><td><strong>My</strong> name is Ann.</td></tr><tr><td><strong>you</strong></td><td><strong>you</strong></td><td><strong>your</strong></td><td>I know <strong>you</strong>.</td><td><strong>Your</strong> name is Max.</td></tr><tr><td><strong>he</strong></td><td><strong>him</strong></td><td><strong>his</strong></td><td>I like <strong>him</strong>.</td><td><strong>His</strong> sister is here.</td></tr><tr><td><strong>she</strong></td><td><strong>her</strong></td><td><strong>her</strong></td><td>I know <strong>her</strong>.</td><td><strong>Her</strong> sister is here.</td></tr><tr><td><strong>it</strong></td><td><strong>it</strong></td><td><strong>its</strong></td><td>I like <strong>it</strong>.</td><td><strong>Its</strong> colour is blue.</td></tr><tr><td><strong>we</strong></td><td><strong>us</strong></td><td><strong>our</strong></td><td>They know <strong>us</strong>.</td><td><strong>Our</strong> home is small.</td></tr><tr><td><strong>they</strong></td><td><strong>them</strong></td><td><strong>their</strong></td><td>I can see <strong>them</strong>.</td><td><strong>Their</strong> house is big.</td></tr></tbody></table></div><p>Обрати внимание на две особенности: <strong>you → you</strong> и <strong>it → it</strong> не меняются между подлежащим и дополнением; <strong>she → her</strong>, причём <em>her</em> также бывает притяжательным словом перед существительным.</p><p>Притяжательные формы <strong>my, your, his, her, its, our, their</strong> подробно разбираются <a href=\"grammar-topic.html?id=grammar-possessive-adjectives\">в отдельной теме Possessive adjectives</a>.</p></section><section class=\"g1-section\" id=\"op-03\"><div class=\"g1-section-head\"><span class=\"g1-num\">03</span><h3>После глагола и после предлога</h3></div><p>Есть два особенно частых случая:</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Место</th><th>Правильный пример</th><th>Почему</th></tr></thead><tbody><tr><td><strong>После глагола</strong></td><td>I like <strong>him</strong>. / She helps <strong>us</strong>.</td><td>like кого? helps кому?</td></tr><tr><td><strong>После предлога</strong></td><td>I’m talking <strong>to her</strong>. / Come <strong>with me</strong>.</td><td>после to, with, for, at и др. нужны объектные формы</td></tr><tr><td><strong>Две вещи в предложении</strong></td><td>Give <strong>it</strong> to <strong>me</strong>.</td><td>it — что дать; me — кому дать</td></tr></tbody></table></div><p>Сравни: <strong>He</strong> is with <strong>me</strong>. — Он со мной. / I’m with <strong>him</strong>. — Я с ним.</p><p>Нельзя ставить <em>I</em> вместо <em>me</em> после <em>with</em>, <em>to</em>, <em>for</em> и других предлогов.</p></section><section class=\"g1-section\" id=\"op-04\"><div class=\"g1-section-head\"><span class=\"g1-num\">04</span><h3>Особенно важно: her и her, him и his</h3></div><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Что хотим сказать</th><th>Предложение</th><th>Почему</th></tr></thead><tbody><tr><td>Я знаю её.</td><td>I know <strong>her</strong>.</td><td>her = object (кого?)</td></tr><tr><td>Я знаю её сестру.</td><td>I know <strong>her sister</strong>.</td><td>her = possessive adjective (чья сестра?)</td></tr><tr><td>Я вижу его.</td><td>I can see <strong>him</strong>.</td><td>him = object (кого?)</td></tr><tr><td>Это его телефон.</td><td>This is <strong>his phone</strong>.</td><td>his = possessive adjective (чей телефон?)</td></tr><tr><td>Я люблю собаку.</td><td>I love <strong>it</strong>.</td><td>it заменяет слово dog</td></tr><tr><td>Её/его хвост длинный (у животного).</td><td><strong>Its</strong> tail is long.</td><td>its + существительное; без апострофа</td></tr></tbody></table></div><p><strong>Her</strong> можно определить по позиции: <em>see her</em> — после глагола, <em>her friend</em> — перед существительным. Это разные функции одного и того же слова.</p></section><section class=\"g1-section\" id=\"op-05\"><div class=\"g1-section-head\"><span class=\"g1-num\">05</span><h3>Типичные ошибки и проверка себя</h3></div><p>Проверь себя по трём вопросам: <strong>кто?</strong> (subject), <strong>кого/кому?</strong> (object), <strong>чей + существительное?</strong> (possessive adjective).</p><div class=\"g1-table-wrap\"><table class=\"g1-table\"><thead><tr><th>Ошибка</th><th>Правильно</th><th>Причина</th></tr></thead><tbody><tr><td><span class=\"g1-wrong\">Me like tea.</span></td><td><span class=\"g1-right\">I like tea.</span></td><td>Кто любит? — I.</td></tr><tr><td><span class=\"g1-wrong\">She knows I.</span></td><td><span class=\"g1-right\">She knows me.</span></td><td>Кого знает? — me.</td></tr><tr><td><span class=\"g1-wrong\">Can you help he?</span></td><td><span class=\"g1-right\">Can you help him?</span></td><td>Кому помогаешь? — him.</td></tr><tr><td><span class=\"g1-wrong\">I’m talking to she.</span></td><td><span class=\"g1-right\">I’m talking to her.</span></td><td>После to — her.</td></tr><tr><td><span class=\"g1-wrong\">Their are my friends.</span></td><td><span class=\"g1-right\">They are my friends.</span></td><td>Здесь нужно подлежащее they.</td></tr><tr><td><span class=\"g1-wrong\">The cat likes it’s food.</span></td><td><span class=\"g1-right\">The cat likes its food.</span></td><td>its = его/её; it’s = it is.</td></tr></tbody></table></div><p>Если ответ неверный, вернись к таблице из раздела 02. Не учи слова только парами без контекста: <em>he–him</em> и <em>he–his</em> нужны в разных местах предложения.</p></section></div>"
   }
 ];
