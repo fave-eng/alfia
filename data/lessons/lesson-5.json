@@ -1,0 +1,681 @@
+{
+  "id": "lesson-5",
+  "number": 5,
+  "title": "Grammar review · Pronouns and possessives",
+  "subtitle": "A1 · English Grammar in Use Units 59–60 · I/me, he/him, my/your/his/her/its/our/their",
+  "status": "available",
+  "grammarIds": [
+    "grammar-possessive-adjectives"
+  ],
+  "publishedAt": "2026-10-25",
+  "totalPoints": 39,
+  "notification": {
+    "enabled": false,
+    "version": 1
+  },
+  "blocks": [
+    {
+      "type": "info",
+      "title": "Before you start · Вспомни три группы",
+      "text": "КТО? I, you, he, she, it, we, they. КОГО / КОМУ? me, you, him, her, it, us, them. ЧЕЙ? my, your, his, her, its, our, their + существительное. Сравни: I know her. / I know her sister. Помни: its (принадлежность) ≠ it’s (it is)."
+    },
+    {
+      "type": "exercise",
+      "id": "review5-1-real-life",
+      "title": "1 · Who receives it?",
+      "instructions": "Read each situation. Choose the sentence that correctly expresses the meaning. (Прочитай ситуацию и выбери подходящее предложение.)",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "prompt": "Nina wants to speak to her teacher, Mr Green.",
+          "options": [
+            "I want to speak to him.",
+            "I want to speak to his.",
+            "I want to speak to he."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "prompt": "You have a new book. Your friend asks: “Can I read the book?”",
+          "options": [
+            "Can I read it?",
+            "Can I read its?",
+            "Can I read them?"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "prompt": "Mila and Lena are at the café. You want to see both of them.",
+          "options": [
+            "I want to see her.",
+            "I want to see them.",
+            "I want to see their."
+          ],
+          "answer": 1
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "prompt": "Your brother is calling you on the phone. What do you say?",
+          "options": [
+            "He is calling my.",
+            "He is calling I.",
+            "He is calling me."
+          ],
+          "answer": 2
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "prompt": "Your friends invite you and your sister to a party.",
+          "options": [
+            "They invite us.",
+            "They invite our.",
+            "They invite we."
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "prompt": "You want to talk to Anna. She is your friend.",
+          "options": [
+            "I want to talk to she.",
+            "I want to talk to her.",
+            "I want to talk to hers."
+          ],
+          "answer": 1
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "review5-2-labels",
+      "title": "2 · The lost-property desk",
+      "instructions": "Someone has left their things at school. Read each clue and choose the right label. (Чья это вещь?)",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "prompt": "Emma has a blue coat. Label the coat.",
+          "options": [
+            "her coat",
+            "she coat",
+            "him coat"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "Tom and Max have one skateboard together. Label it.",
+          "options": [
+            "them skateboard",
+            "their skateboard",
+            "they skateboard"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "I have a green notebook. Label it.",
+          "options": [
+            "me notebook",
+            "I notebook",
+            "my notebook"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "David has a black bike. Label it.",
+          "options": [
+            "his bike",
+            "him bike",
+            "he bike"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "We have a small classroom. Label it.",
+          "options": [
+            "us classroom",
+            "our classroom",
+            "we classroom"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "The dog has a red toy. Label the toy.",
+          "options": [
+            "it toy",
+            "its toy",
+            "it’s toy"
+          ],
+          "answer": 1
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "review5-3-chat",
+      "title": "3 · A family group chat",
+      "instructions": "Two friends are looking at a family photo. Choose the words directly in the dialogue. (Выбирай слова прямо в репликах.)",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "select",
+          "prompt": "",
+          "options": [
+            "your",
+            "you",
+            "yours"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "select",
+          "prompt": "",
+          "options": [
+            "my",
+            "me",
+            "mine"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "select",
+          "prompt": "",
+          "options": [
+            "him",
+            "his",
+            "he"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "select",
+          "prompt": "",
+          "options": [
+            "Their",
+            "Them",
+            "They"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "select",
+          "prompt": "",
+          "options": [
+            "them",
+            "their",
+            "they"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "select",
+          "prompt": "",
+          "options": [
+            "her",
+            "she",
+            "hers"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "select",
+          "prompt": "",
+          "options": [
+            "its",
+            "it’s",
+            "it"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "8",
+          "number": 8,
+          "input": "select",
+          "prompt": "",
+          "options": [
+            "us",
+            "our",
+            "we"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true,
+      "layout": "family-dialogue-choices",
+      "dialogue": [
+        {
+          "speaker": "A",
+          "parts": [
+            "Is this ",
+            {
+              "itemId": "1"
+            },
+            " family photo?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "Yes, it is ",
+            {
+              "itemId": "2"
+            },
+            " photo."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "Who is this boy?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "That is my brother. I often play with ",
+            {
+              "itemId": "3"
+            },
+            "."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "And who are these girls?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "They are my cousins. ",
+            {
+              "itemId": "4"
+            },
+            " names are Eva and Nina."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "Do you see ",
+            {
+              "itemId": "5"
+            },
+            " every weekend?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "No, but I often call ",
+            {
+              "itemId": "6"
+            },
+            ". Eva has a dog. ",
+            {
+              "itemId": "7"
+            },
+            " name is Rex."
+          ]
+        },
+        {
+          "speaker": "A",
+          "parts": [
+            "Can your cousins visit ",
+            {
+              "itemId": "8"
+            },
+            " on Saturday?"
+          ]
+        },
+        {
+          "speaker": "B",
+          "parts": [
+            "Yes! We can have lunch together."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "review5-4-detective",
+      "title": "4 · Pronoun detective",
+      "instructions": "Some messages have a mistake. Others are already correct. Choose the right action. (Иногда исправлять ничего не нужно.)",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "prompt": "“I know her brother.”",
+          "options": [
+            "Correct as written",
+            "Change her to him",
+            "Change her to she"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "prompt": "“We are going to invite they.”",
+          "options": [
+            "Correct as written",
+            "Change they to them",
+            "Change they to their"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "prompt": "“This is him phone.”",
+          "options": [
+            "Change him to his",
+            "Change him to he",
+            "Correct as written"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "prompt": "“I like your new photo.”",
+          "options": [
+            "Change your to you",
+            "Correct as written",
+            "Change your to yours"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "prompt": "“She can come with we.”",
+          "options": [
+            "Change we to our",
+            "Correct as written",
+            "Change we to us"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "prompt": "“The cat sleeps in it’s basket.”",
+          "options": [
+            "Correct as written",
+            "Change it’s to its",
+            "Change it’s to it"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "7",
+          "number": 7,
+          "input": "single",
+          "prompt": "“I visit my grandparents. I love them.”",
+          "options": [
+            "Correct as written",
+            "Change them to their",
+            "Change them to they"
+          ],
+          "answer": 0
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "reading",
+      "id": "review5-story",
+      "title": "The Saturday plan",
+      "sections": [
+        {
+          "heading": "A busy Saturday",
+          "text": "Hi! I’m Sam. My sister Anna is twelve. Our cousin Leo is in town. I want to invite him to our house. Anna has a new friend, Rita. Leo doesn’t know Rita, but he wants to meet her. Rita likes our dog Max. She wants to take him to the park. Max has a blue ball. He always takes it with him. Mum is busy, so she asks me to help her. Dad can drive Anna and me to the park. He can drive us there at three o’clock."
+        }
+      ]
+    },
+    {
+      "type": "exercise",
+      "id": "review5-5-reading",
+      "title": "5 · Follow the pronouns",
+      "instructions": "Read “The Saturday plan” above. Find who or what each pronoun refers to. (Кого или что обозначает местоимение?)",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "single",
+          "prompt": "“I want to invite him.” Who is him?",
+          "options": [
+            "Leo",
+            "Max",
+            "Dad"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "single",
+          "prompt": "“Our cousin Leo.” Whose cousin is Leo?",
+          "options": [
+            "Rita and Leo’s",
+            "Sam and Anna’s",
+            "Mum’s friend’s"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "single",
+          "prompt": "“He wants to meet her.” Who is her?",
+          "options": [
+            "Anna",
+            "Mum",
+            "Rita"
+          ],
+          "answer": 2
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "single",
+          "prompt": "“She wants to take him to the park.” Who is him?",
+          "options": [
+            "Max, the dog",
+            "Leo",
+            "Sam"
+          ],
+          "answer": 0
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "single",
+          "prompt": "“He always takes it with him.” What is it?",
+          "options": [
+            "a phone",
+            "a blue ball",
+            "a bag"
+          ],
+          "answer": 1
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "single",
+          "prompt": "“She asks me to help her.” Who is her?",
+          "options": [
+            "Rita",
+            "Anna",
+            "Mum"
+          ],
+          "answer": 2
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "review5-6-builder",
+      "title": "6 · Build the sentence",
+      "instructions": "Move the word tiles into the correct order. On a phone, tap each word. (Перетаскивай слова или нажимай по порядку.)",
+      "items": [
+        {
+          "id": "1",
+          "number": 1,
+          "input": "word-order",
+          "words": [
+            "call",
+            "her",
+            "to",
+            "I",
+            "want"
+          ],
+          "answer": "I want to call her.",
+          "ending": "."
+        },
+        {
+          "id": "2",
+          "number": 2,
+          "input": "word-order",
+          "words": [
+            "him",
+            "it",
+            "to",
+            "Please",
+            "give"
+          ],
+          "answer": "Please give it to him.",
+          "ending": "."
+        },
+        {
+          "id": "3",
+          "number": 3,
+          "input": "word-order",
+          "words": [
+            "knows",
+            "teacher",
+            "Our",
+            "us"
+          ],
+          "answer": "Our teacher knows us.",
+          "ending": "."
+        },
+        {
+          "id": "4",
+          "number": 4,
+          "input": "word-order",
+          "words": [
+            "neighbours",
+            "They",
+            "new",
+            "their",
+            "like"
+          ],
+          "answer": "They like their new neighbours.",
+          "ending": "."
+        },
+        {
+          "id": "5",
+          "number": 5,
+          "input": "word-order",
+          "words": [
+            "your",
+            "this",
+            "phone",
+            "Is"
+          ],
+          "answer": "Is this your phone?",
+          "ending": "?"
+        },
+        {
+          "id": "6",
+          "number": 6,
+          "input": "word-order",
+          "words": [
+            "toy",
+            "loves",
+            "its",
+            "dog",
+            "The"
+          ],
+          "answer": "The dog loves its toy.",
+          "ending": "."
+        }
+      ],
+      "hideAnswersOnError": true
+    },
+    {
+      "type": "exercise",
+      "id": "review5-7-writing",
+      "title": "7 · Write a friendly message",
+      "instructions": "A new student is joining your English group. Write a welcome message (50–80 words). Introduce yourself and your family or friends. Use at least 3 object pronouns (e.g. me, him, her, us, them) and 3 possessive adjectives (e.g. my, his, our, their). Do not copy sentences from the reading. This task is saved for your teacher.",
+      "items": [
+        {
+          "id": "1",
+          "number": "",
+          "input": "textarea",
+          "scored": false,
+          "placeholder": "Hi! Welcome to our English group. My name is ...",
+          "minWords": 50,
+          "maxWords": 80
+        }
+      ],
+      "hideAnswersOnError": true,
+      "introTitle": "Письменное задание",
+      "introText": "Напиши своё сообщение из 50–80 слов. Используй как минимум три объектных местоимения и три притяжательных прилагательных. Проверь текст, затем сохрани ответы и отправь учителю."
+    }
+  ]
+}
